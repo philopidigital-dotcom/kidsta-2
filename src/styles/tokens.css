@@ -1,0 +1,77 @@
+/* ==========================================================
+   Story Book — Design Tokens  (Enchanted Library · Cinematic Fantasy)
+   Identitas visual DIKUNCI: navy malam, emas antik, kayu tua, perkamen.
+   ========================================================== */
+:root {
+  /* Malam & navy */
+  --night-950: #050a18;
+  --night-900: #0b1530;
+  --night-800: #12224a;
+  --night-700: #1a3166;
+  --night-600: #24438a;
+  --moon-300: #9fc2ff;
+  --moon-200: #c9dcff;
+
+  /* Emas antik */
+  --gold-700: #8a6420;
+  --gold-600: #a97b2c;
+  --gold-500: #c99a45;
+  --gold-400: #d9b15f;
+  --gold-300: #ecca7f;
+  --gold-200: #f6e2a8;
+  --gold-glow: rgba(255, 207, 110, 0.55);
+
+  /* Kayu tua */
+  --wood-900: #1e110a;
+  --wood-800: #2d1a0f;
+  --wood-700: #432716;
+  --wood-600: #5c3720;
+  --wood-500: #7a4c2c;
+
+  /* Perkamen */
+  --parch-100: #fbf2dc;
+  --parch-200: #f3e3bd;
+  --parch-300: #e8d09d;
+  --parch-400: #d6b77c;
+  --parch-500: #b8945a;
+  --ink-900: #2b1b0e;
+  --ink-700: #4a3220;
+  --ink-500: #75573a;
+
+  /* Aksen ajaib (dipakai hemat) */
+  --violet-500: #6b4bc8;
+  --violet-400: #8a6be0;
+  --ok-500: #4aa35a;
+
+  /* Tipografi */
+  --font-display: 'Fraunces', 'Georgia', serif;      /* judul dongeng */
+  --font-label: 'Cinzel', 'Georgia', serif;          /* label/ornamen */
+  --font-read: 'Lora', 'Georgia', serif;             /* teks narasi */
+
+  --fs-hero: clamp(2.6rem, 5.2vw, 5rem);
+  --fs-h1: clamp(1.8rem, 3vw, 2.8rem);
+  --fs-h2: clamp(1.25rem, 1.9vw, 1.8rem);
+  --fs-body: clamp(1rem, 1.1vw, 1.15rem);
+  --fs-narr: clamp(1rem, 1.45vw, 1.5rem);
+  --fs-small: clamp(.8rem, .85vw, .92rem);
+
+  /* Bentuk & kedalaman */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 22px;
+  --r-pill: 999px;
+  --shadow-book: 0 40px 80px -20px rgba(0, 0, 0, .75), 0 18px 30px -12px rgba(0, 0, 0, .6);
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, .45);
+  --glow-gold: 0 0 18px var(--gold-glow), 0 0 50px rgba(255, 190, 90, .25);
+
+  /* Gerak */
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+  --ease-soft: cubic-bezier(.45, .05, .25, 1);
+  --t-fast: 180ms;
+  --t-med: 420ms;
+  --t-slow: 900ms;
+
+  /* Ukuran buku terbuka (spread) */
+  --spread-w: min(92vw, 158vh);
+  --spread-h: calc(var(--spread-w) / 1.74);
+}

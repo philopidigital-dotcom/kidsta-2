@@ -1,0 +1,76 @@
+/* ==========================================================
+   Buku 3D tertutup
+   ========================================================== */
+.book3d {
+  position: relative; width: var(--w); height: var(--h);
+  transform-style: preserve-3d;
+}
+.book3d > * { position: absolute; backface-visibility: hidden; }
+.b3-cover { inset: 0; transform-style: preserve-3d; transform-origin: 0 50%; transform: translateZ(calc(var(--d) / 2)); }
+.b3-cover__front, .b3-cover__inner { position: absolute; inset: 0; border-radius: 4px 12px 12px 4px; overflow: hidden; backface-visibility: hidden; }
+.b3-cover__front { box-shadow: inset 0 0 0 1px rgba(255, 220, 150, .15); }
+.b3-cover__front .cover-svg { width: 100%; height: 100%; }
+.b3-cover__inner {
+  transform: rotateY(180deg);
+  background:
+    radial-gradient(circle at 50% 45%, rgba(255, 220, 150, .16), transparent 55%),
+    radial-gradient(circle, rgba(217, 177, 95, .38) 1.2px, transparent 1.6px) 0 0 / 22px 22px,
+    radial-gradient(circle, rgba(217, 177, 95, .22) 1px, transparent 1.4px) 11px 11px / 22px 22px,
+    color-mix(in srgb, var(--tint) 85%, #000);
+  box-shadow: inset 0 0 0 10px rgba(201, 154, 69, .55), inset 0 0 40px rgba(0, 0, 0, .6);
+}
+.b3-sheen { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(115deg, transparent 35%, rgba(255, 240, 200, .22) 48%, transparent 60%); background-size: 250% 100%; background-position: 100% 0; transition: background-position 1.2s var(--ease-out); }
+.book3d:hover .b3-sheen, .is-focus .b3-sheen { background-position: 0 0; }
+.b3-back { inset: 0; border-radius: 4px 12px 12px 4px; background: color-mix(in srgb, var(--tint) 70%, #000); transform: rotateY(180deg) translateZ(calc(var(--d) / 2)); }
+.b3-spine {
+  top: 0; left: calc(50% - var(--d) / 2); width: var(--d); height: 100%;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--tint) 55%, #000), var(--tint) 50%, color-mix(in srgb, var(--tint) 55%, #000));
+  box-shadow: inset 0 14px 0 -10px #c99a45, inset 0 -14px 0 -10px #c99a45;
+  transform: rotateY(-90deg) translateZ(calc(var(--w) / 2));
+}
+.b3-edge { background: repeating-linear-gradient(90deg, #f3e3bd 0 2px, #d9c08c 2px 3px); }
+.b3-edge--r { top: 5px; left: calc(50% - var(--d) / 2 + 2px); width: calc(var(--d) - 4px); height: calc(100% - 10px); transform: rotateY(90deg) translateZ(calc(var(--w) / 2 - 4px)); }
+.b3-edge--t, .b3-edge--b { left: 4px; width: calc(100% - 10px); height: calc(var(--d) - 4px); top: calc(50% - var(--d) / 2 + 2px); background: repeating-linear-gradient(0deg, #f3e3bd 0 2px, #d9c08c 2px 3px); }
+.b3-edge--t { transform: rotateX(90deg) translateZ(calc(var(--h) / 2 - 4px)); }
+.b3-edge--b { transform: rotateX(-90deg) translateZ(calc(var(--h) / 2 - 4px)); }
+.b3-block {
+  top: 5px; left: 3px; width: calc(100% - 8px); height: calc(100% - 10px); border-radius: 2px 8px 8px 2px;
+  background: radial-gradient(ellipse at 40% 40%, #fff7e2, #ecd7a6 80%);
+  transform: translateZ(calc(var(--d) / 2 - 3px));
+  box-shadow: inset 12px 0 18px -8px rgba(90, 60, 20, .45);
+  overflow: hidden;
+}
+.b3-leaf { inset: 5px 5px 5px 3px; transform-style: preserve-3d; transform-origin: 0 50%; transform: translateZ(calc(var(--d) / 2 - 1px)); }
+.b3-leaf__f, .b3-leaf__b { position: absolute; inset: 0; backface-visibility: hidden; border-radius: 2px 8px 8px 2px;
+  background: linear-gradient(90deg, #e6cf9b, #fbf0d4 18%, #f5e3b8); box-shadow: inset 0 0 22px rgba(160, 110, 40, .25); }
+.b3-leaf__b { transform: rotateY(180deg); background: linear-gradient(270deg, #e6cf9b, #fbf0d4 18%, #f5e3b8); }
+.b3-leaf__f::after, .b3-leaf__b::after { content: ''; position: absolute; inset: 9% 10%; border-radius: 6px;
+  background: var(--art, none) center / cover no-repeat; opacity: .82;
+  -webkit-mask: radial-gradient(ellipse at 50% 50%, #000 52%, transparent 78%); mask: radial-gradient(ellipse at 50% 50%, #000 52%, transparent 78%);
+  filter: sepia(.25) saturate(1.1); }
+.b3-page-art { position: absolute; inset: 7% 8%; background: center / cover no-repeat; border-radius: 6px; opacity: .9;
+  -webkit-mask: radial-gradient(ellipse at 50% 50%, #000 55%, transparent 80%); mask: radial-gradient(ellipse at 50% 50%, #000 55%, transparent 80%); }
+.b3-glow { position: absolute; inset: -20%; opacity: 0; pointer-events: none;
+  background: radial-gradient(ellipse at 12% 50%, rgba(255, 252, 235, 1), rgba(255, 214, 130, .7) 30%, rgba(255, 180, 80, 0) 65%); mix-blend-mode: screen; }
+.landing__b3 .b3-cover__front { transition: filter .6s; }
+.b3-shadow { position: absolute; left: 50%; bottom: -6%; width: 120%; height: 18%; transform: translateX(-50%); border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(0, 0, 0, .65), transparent 70%); filter: blur(4px); }
+
+/* ---------- Sampul lukisan ---------- */
+.pcover { position: absolute; inset: 0; overflow: hidden; border-radius: inherit; background: #10183a; }
+.pcover img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.pcover::after { content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(90deg, rgba(0, 0, 0, .45), rgba(0, 0, 0, .08) 6%, transparent 12%, transparent 88%, rgba(0, 0, 0, .2)),
+    radial-gradient(ellipse at 35% 25%, rgba(255, 240, 210, .14), transparent 55%); }
+.pcover__plate { position: absolute; left: 14%; right: 14%; z-index: 2; display: flex; flex-direction: column; align-items: center; text-align: center;
+  padding: .35em .6em .4em; border-radius: 6px; font-size: calc(var(--w) * .075);
+  background: linear-gradient(180deg, rgba(14, 18, 48, .92), rgba(8, 10, 30, .92)); box-shadow: 0 0 0 1.5px #c99a45, 0 0 0 4px rgba(10, 12, 30, .6), 0 0 0 5px rgba(217, 177, 95, .5), 0 6px 14px rgba(0, 0, 0, .5); }
+.pcover__plate--top { top: 8.5%; }
+.pcover__plate--bottom { bottom: 9%; }
+.pcover__t { font-family: var(--font-display); font-weight: 700; line-height: 1.05; color: #f8e2a4;
+  background: linear-gradient(180deg, #fff6d6, #f0c86e 55%, #c99a45); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 1px 0 rgba(0, 0, 0, .7)); }
+.pcover__s { margin-top: .25em; font-family: var(--font-label); font-size: .48em; letter-spacing: .14em; color: var(--gold-300); text-transform: uppercase; }
+/* label di plakat yang sudah dilukis pada sampul */
+.pcover__plate--bottom { left: 23%; right: 23%; top: 73.6%; bottom: auto; height: 11.4%; padding: 0; justify-content: center;
+  background: none; box-shadow: none; }
+.pcover__plate--bottom .pcover__s { margin-top: .1em; font-size: .5em; }

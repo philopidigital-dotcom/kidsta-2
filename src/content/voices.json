@@ -1,0 +1,103 @@
+{
+  "_catatan": "DAFTAR SUARA TERKUNCI — satu-satunya sumber suara proyek Story Book. Narator DIKUNCI PERMANEN (suara perempuan Sulafat) untuk seluruh proyek. Setiap tokoh memakai SATU suara yang tidak boleh berubah antar kalimat, adegan, atau chapter. Satu suara hanya boleh dipakai satu tokoh. Tokoh baru: tambahkan di 'tokoh' dengan suara yang belum dipakai.",
+  "aturanSuara": "Pertahankan identitas suara yang sama persis di setiap kalimat; yang berubah hanya emosi dan intonasi, bukan warna suara, umur, atau jenis kelamin. Baca persis teks yang diberikan tanpa menambah atau mengurangi kata. Tag seperti <laugh> atau <gasp> dilakukan, bukan dibaca.",
+  "narator": {
+    "nama": "Narator",
+    "suara": "Sulafat",
+    "kelamin": "perempuan",
+    "terkunci": true,
+    "watak": "Pendongeng perempuan Indonesia yang hangat, lembut, ekspresif, dan jelas, seperti ibu atau guru TK yang membacakan buku cerita bergambar. Bahasa Indonesia baku, tempo sedang, jeda alami di tanda baca.",
+    "browser": {
+      "kelamin": "perempuan",
+      "pitch": 1.08,
+      "rate": 0.9
+    }
+  },
+  "tokoh": {
+    "momo": {
+      "nama": "Momo",
+      "suara": "Puck",
+      "kelamin": "laki-laki",
+      "watak": "Anak monyet laki-laki berumur enam tahun: riang, polos, penasaran, bernada tinggi seperti anak kecil.",
+      "browser": {
+        "kelamin": "perempuan",
+        "pitch": 1.5,
+        "rate": 1.02
+      }
+    },
+    "kakek": {
+      "nama": "Kakek Bobo",
+      "suara": "Algenib",
+      "kelamin": "laki-laki",
+      "watak": "Kakek monyet tua: hangat, agak serak, pelan, bijak, suka bercanda.",
+      "browser": {
+        "kelamin": "laki-laki",
+        "pitch": 0.72,
+        "rate": 0.82
+      }
+    },
+    "cici": {
+      "nama": "Cici",
+      "suara": "Laomedeia",
+      "kelamin": "perempuan",
+      "watak": "Burung pipit kecil perempuan: cerewet, cepat, ceria, bernada sangat tinggi.",
+      "browser": {
+        "kelamin": "perempuan",
+        "pitch": 1.8,
+        "rate": 1.12
+      }
+    },
+    "kura": {
+      "nama": "Nenek Kura",
+      "suara": "Gacrux",
+      "kelamin": "perempuan",
+      "watak": "Nenek kura-kura yang sangat tua: bijak, lembut, hangat, suara dalam; tempo tenang dan mengalir seperti nenek bercerita (jangan terlalu lambat, jangan memanjangkan kata).",
+      "browser": {
+        "kelamin": "perempuan",
+        "pitch": 0.66,
+        "rate": 0.76
+      }
+    },
+    "pipi": {
+      "nama": "Pipi",
+      "suara": "Leda",
+      "kelamin": "perempuan",
+      "watak": "Kunang-kunang kecil perempuan yang pemalu: suara mungil, lembut, polos seperti anak TK; mudah terisak saat takut dan berbinar saat senang.",
+      "browser": {
+        "kelamin": "perempuan",
+        "pitch": 1.7,
+        "rate": 0.98
+      }
+    },
+    "dodo": {
+      "nama": "Dodo",
+      "suara": "Sadachbia",
+      "kelamin": "laki-laki",
+      "watak": "Anak bebek laki-laki yang masih kecil sekali: suara mungil, polos, agak sengau lucu seperti bebek; mudah menangis saat takut, sangat riang dan penuh kagum saat senang.",
+      "browser": {
+        "kelamin": "perempuan",
+        "pitch": 1.9,
+        "rate": 1.05
+      }
+    },
+    "kiko": {
+      "nama": "Kiko",
+      "suara": "Umbriel",
+      "kelamin": "laki-laki",
+      "watak": "Anak badak laki-laki: suara agak berat tapi tetap kekanakan dan polos, bicara agak pelan, mudah tertawa malu-malu, penuh semangat saat senang, cepat menunduk sedih saat ditegur.",
+      "browser": {
+        "kelamin": "laki-laki",
+        "pitch": 0.7,
+        "rate": 0.92
+      }
+    }
+  },
+  "dipesan": {
+    "_catatan": "Suara yang sudah dipesan untuk tokoh chapter berikutnya, supaya tidak bentrok.",
+    "hantu": {
+      "nama": "Burung Hantu Tua",
+      "suara": "Charon",
+      "kelamin": "laki-laki"
+    }
+  }
+}

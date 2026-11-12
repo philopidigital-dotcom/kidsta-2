@@ -1,0 +1,11 @@
+node_modules/
+dist-single/
+archive/
+dev/
+docs/
+tools/suara/
+**/__pycache__/
+**/kunci-gemini.txt
+**/*.wav
+**/*.log
+.env*

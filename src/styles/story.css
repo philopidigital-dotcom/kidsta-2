@@ -1,0 +1,202 @@
+/* =====================================================================
+   PANGGUNG CERITA 2.5D — paper ink
+   ===================================================================== */
+.pp-host { background: #efe3c6; }
+.pp-stage { position: absolute; inset: 0; overflow: hidden; }
+.pp-world { position: absolute; inset: 0; transform-origin: 50% 50%; }
+.pp-layer { position: absolute; left: 0; top: 0; transform-origin: 0 0; will-change: transform; pointer-events: none; }
+.pp-layer > svg { display: block; overflow: visible; }
+.pp-layer--stage { pointer-events: none; }
+.pp-weather { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 2; }
+.pp-vignette { position: absolute; inset: 0; pointer-events: none; z-index: 3; background: radial-gradient(ellipse at 50% 55%, transparent 55%, rgba(80, 50, 20, .35) 100%); }
+
+/* ---------- waktu: langit & warna ---------- */
+.pp-stage .sk { opacity: 0; transition: opacity 2.4s ease; }
+.g-day .sk-day, .g-dawn .sk-dawn, .g-cloudy .sk-cloudy, .g-dusk .sk-dusk, .g-night .sk-night { opacity: 1; }
+.g-night .clouds, .g-cloudy .sk-day + .clouds { opacity: .25; }
+.pp-stage .clouds { transition: opacity 2s; }
+.pp-grade { position: absolute; inset: 0; pointer-events: none; z-index: 1; mix-blend-mode: multiply; opacity: 0; transition: opacity 2.4s ease, background 2.4s ease; }
+.g-dawn .pp-grade { opacity: 1; background: linear-gradient(180deg, rgba(248, 196, 170, .35), rgba(250, 226, 170, .2)); }
+.g-cloudy .pp-grade { opacity: 1; background: linear-gradient(180deg, rgba(130, 145, 160, .45), rgba(170, 170, 160, .35)); }
+.g-dusk .pp-grade { opacity: 1; background: linear-gradient(180deg, rgba(150, 110, 170, .4), rgba(240, 150, 90, .38)); }
+.g-night .pp-grade { opacity: 1; background: linear-gradient(180deg, rgba(30, 45, 95, .7), rgba(50, 62, 105, .48)); }
+.no-trans .sk, .no-trans .pp-grade, .no-trans .lv { transition: none !important; }
+.g-night .lamp-glow, .g-dusk .lamp-glow { opacity: .75 !important; }
+.lamp-glow { transition: opacity 2s; mix-blend-mode: screen; }
+.star { animation: ppTwinkle 3s ease-in-out infinite; }
+@keyframes ppTwinkle { 50% { opacity: .3; } }
+.pp-shaft { mix-blend-mode: screen; animation: ppShaft 6s ease-in-out infinite; }
+@keyframes ppShaft { 50% { opacity: .18; } }
+.g-night .pp-shaft { opacity: 0 !important; animation: none; }
+.rays polygon { mix-blend-mode: screen; animation: ppShaft 7s ease-in-out infinite; }
+.ff-glow { animation: ppGlow 1.6s ease-in-out infinite; }
+@keyframes ppGlow { 50% { opacity: .1; } }
+
+/* ---------- daun Pohon Induk: hijau → emas ---------- */
+.pp-leaves { --lv0: #9db872; --lv1: #8fa66b; --lv2: #a9c27e; }
+.pp-leaves .lv { transition: fill 3.5s ease; }
+.lv-gold .pp-leaves { --lv0: #e2b33c; --lv1: #d9963a; --lv2: #ecc65a; }
+
+/* daun emas yang bisa dihitung baru muncul setelah daun menguning */
+.pp-goldleaves { opacity: 0; transition: opacity 1.5s ease 1.5s; }
+.lv-gold .pp-goldleaves { opacity: 1; }
+
+/* ---------- kerumunan hewan ---------- */
+.pp-crowd .worry { opacity: 0; transition: opacity .6s; }
+.pp-crowd.is-worried .worry { opacity: 1; }
+.pp-crowd.is-scared .cr { animation: ppShiver .09s linear infinite alternate; transform-box: fill-box; transform-origin: 50% 100%; }
+@keyframes ppShiver { from { transform: translateX(-1.5px); } to { transform: translateX(1.5px); } }
+
+/* ---------- benda yang bisa diketuk ---------- */
+.pp-item { pointer-events: none; }
+.pp-item__ring { opacity: 0; }
+.pp-item.is-tappable, .pp-actor.is-tappable { pointer-events: auto; cursor: pointer; }
+.pp-item.is-tappable .pp-item__ring { opacity: 1; animation: ppRing 1.1s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes ppRing { 0%, 100% { transform: scale(.9); opacity: .9; } 50% { transform: scale(1.18); opacity: .35; } }
+.pp-item.is-counted .pp-item__ring { opacity: 0; }
+.pp-actor.is-tappable { filter: drop-shadow(0 0 10px rgba(246, 211, 106, .95)); animation: ppPulse 1.1s ease-in-out infinite; }
+@keyframes ppPulse { 50% { filter: drop-shadow(0 0 2px rgba(246, 211, 106, .4)); } }
+.pp-bananas.is-glow .pp-item { filter: drop-shadow(0 0 8px rgba(246, 211, 106, .9)); }
+.pp-actor { pointer-events: none; }
+
+/* ---------- kartu narasi & dialog ---------- */
+.pp-text { position: absolute; inset: 0; z-index: 9; pointer-events: none; }
+.pp-card { position: absolute; bottom: 4.5%; width: 42%; max-width: 560px; padding: 2.4cqh 2.6cqw 2.6cqh; box-sizing: border-box;
+  background: var(--paper-grain, none), #f6ecd4; border: 2px solid #3b2a1a; border-radius: 14px 18px 12px 20px / 18px 12px 20px 14px;
+  box-shadow: 4px 6px 0 rgba(59, 42, 26, .18), 0 10px 26px rgba(40, 20, 5, .25); }
+.pp-card--L { left: 3.5%; }
+.pp-card--R { right: 3.5%; }
+.pp-card p { margin: 0; font: 400 clamp(14px, 3.6cqh, 30px)/1.42 var(--f-hand, 'Kalam', cursive); color: #3b2a1a; }
+.pp-card .w { opacity: .22; transition: opacity .25s ease, color .25s; }
+.pp-card .w.on { opacity: 1; }
+.pp-card__who { position: absolute; top: -1.15em; left: 1.2em; padding: .2em .9em .25em; font: 400 clamp(12px, 2.6cqh, 22px)/1 var(--f-map, 'IM Fell English SC', serif); letter-spacing: .08em;
+  color: #fbf1da; background: #b5452f; border: 2px solid #3b2a1a; border-radius: 6px; transform: rotate(-2deg); box-shadow: 2px 3px 0 rgba(59, 42, 26, .25); }
+.pp-card--kakek .pp-card__who { background: #7a6a58; }
+.pp-card--cici .pp-card__who { background: #c98a3a; }
+.pp-card--kura .pp-card__who { background: #6f8a52; }
+.pp-card--talk::after { content: ''; position: absolute; bottom: -14px; left: 2.4em; width: 22px; height: 16px; background: #f6ecd4;
+  border-right: 2px solid #3b2a1a; border-bottom: 2px solid #3b2a1a; transform: skewX(-30deg) rotate(18deg); }
+.pp-card--R.pp-card--talk::after { left: auto; right: 2.4em; transform: skewX(30deg) rotate(-18deg); border-right: 0; border-left: 2px solid #3b2a1a; }
+
+/* ---------- pop-up pilihan ---------- */
+.pp-ui { position: absolute; inset: 0; z-index: 10; pointer-events: none; }
+.pp-pop-back { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: auto; background: radial-gradient(ellipse at 50% 50%, rgba(59, 42, 26, .18), rgba(59, 42, 26, .42)); }
+.pp-pop { width: min(76%, 860px); padding: 3.4cqh 3.4cqw 4cqh; text-align: center; box-sizing: border-box;
+  background: var(--paper-grain, none), #f6ecd4; border: 2.4px solid #3b2a1a; border-radius: 18px 24px 16px 26px / 24px 16px 26px 18px;
+  box-shadow: 6px 8px 0 rgba(59, 42, 26, .2), 0 20px 50px rgba(30, 15, 5, .4); position: relative; }
+.pp-pop::before { content: ''; position: absolute; inset: 8px; border: 1.2px dashed rgba(59, 42, 26, .45); border-radius: 12px; pointer-events: none; }
+.pp-pop__kick { margin: 0; font: 400 clamp(11px, 2.4cqh, 18px)/1 var(--f-map, 'IM Fell English SC', serif); letter-spacing: .35em; color: #b5452f; }
+.pp-pop__q { margin: .45em 0 .1em; font: 400 clamp(18px, 5cqh, 40px)/1.15 var(--f-old, 'IM Fell English', serif); color: #3b2a1a; }
+.pp-flourish { width: min(260px, 40%); height: auto; }
+.pp-opts { display: flex; gap: 2.4cqw; justify-content: center; margin-top: 2.4cqh; flex-wrap: wrap; }
+.pp-opt { position: relative; flex: 1 1 0; max-width: 230px; min-width: 120px; display: flex; flex-direction: column; align-items: center; gap: .5cqh; padding: 1.8cqh 1cqw 2cqh;
+  background: #fbf3e0; border: 2px solid #3b2a1a; border-radius: 14px 10px 16px 12px; cursor: pointer; transform: rotate(var(--tilt));
+  box-shadow: 3px 4px 0 rgba(59, 42, 26, .22); transition: transform .2s ease, box-shadow .2s, background .2s; font: inherit; color: #3b2a1a; }
+.pp-opt:hover, .pp-opt:focus-visible { transform: rotate(0deg) translateY(-6px) scale(1.04); box-shadow: 5px 9px 0 rgba(59, 42, 26, .22); outline: none; background: #fff8e6; }
+.pp-opt:disabled { opacity: .45; cursor: default; transform: rotate(var(--tilt)) scale(.96); }
+.pp-opt__art { width: clamp(56px, 18cqh, 140px); aspect-ratio: 1; }
+.pp-opt__art svg { width: 100%; height: 100%; }
+.pp-opt b { font: 400 clamp(14px, 3.6cqh, 28px)/1.1 var(--f-old, 'IM Fell English', serif); }
+.pp-opt__stamp { position: absolute; top: -12px; right: -10px; font: 700 clamp(24px, 6cqh, 46px)/1 var(--f-old, serif); font-style: normal; color: #b5452f; text-shadow: 0 0 0 #3b2a1a; pointer-events: none; }
+.pp-opt.is-right { background: #eef3d6; border-color: #4f6b2f; }
+.pp-opt.is-right .pp-opt__stamp { color: #4f6b2f; }
+.pp-opt.is-wrong { background: #f8dccf; }
+.pp-opt.is-hint { animation: ppHint .8s ease-in-out infinite; }
+@keyframes ppHint { 50% { box-shadow: 0 0 0 6px rgba(246, 211, 106, .9), 3px 4px 0 rgba(59, 42, 26, .22); } }
+
+/* ---------- kartu petunjuk ketuk ---------- */
+.pp-taphint { position: absolute; top: 4%; left: 50%; translate: -50% 0; display: flex; align-items: center; gap: 1.2cqw; padding: 1.4cqh 2.2cqw 1.6cqh 1.4cqw; max-width: 70%;
+  background: var(--paper-grain, none), #f6ecd4; border: 2px solid #3b2a1a; border-radius: 14px 18px 12px 18px; box-shadow: 4px 5px 0 rgba(59, 42, 26, .2); pointer-events: none; }
+.pp-taphint svg { width: clamp(30px, 8cqh, 60px); flex: none; animation: ppTapHand 1s ease-in-out infinite; }
+@keyframes ppTapHand { 50% { transform: translateY(5px) rotate(-6deg); } }
+.pp-taphint p { margin: 0 0 .4em; font: 400 clamp(13px, 3.2cqh, 26px)/1.25 var(--f-hand, 'Kalam', cursive); color: #3b2a1a; }
+.pp-dots { display: flex; gap: .5em; }
+.pp-dots i { width: 1.6em; height: 1.6em; border: 2px solid #3b2a1a; border-radius: 50%; display: grid; place-items: center; font: 400 clamp(11px, 2.4cqh, 18px)/1 var(--f-old, serif); font-style: normal; color: #b5452f; background: #fbf3e0; }
+.pp-dots i.on { background: #f6d36a; }
+.pp-taphint.is-done { background: var(--paper-grain, none), #eef3d6; }
+.pp-star { position: fixed; z-index: 9999; width: 16px; height: 16px; margin: -8px 0 0 -8px; pointer-events: none;
+  background: #f6d36a; clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+
+/* ---------- judul chapter & transisi tinta ---------- */
+.pp-title, .pp-trans { position: absolute; inset: 0; z-index: 11; display: grid; place-items: center; background: var(--paper-grain, none), #f1e3c2; }
+.pp-trans { display: none; }
+.pp-trans.on { display: grid; }
+.pp-title__in { text-align: center; }
+.pp-title__kick { margin: 0; font: 400 clamp(12px, 3cqh, 24px)/1 var(--f-map, 'IM Fell English SC', serif); letter-spacing: .35em; color: #b5452f; }
+.pp-title h2 { margin: .3em 0 0; font: 400 clamp(30px, 11cqh, 96px)/1.05 var(--f-old, 'IM Fell English', serif); color: #3b2a1a; }
+.pp-title svg { width: min(520px, 60cqw); height: auto; }
+.pp-trans__name { margin: 0; font: 400 clamp(14px, 4cqh, 32px)/1 var(--f-old, 'IM Fell English', serif); font-style: italic; color: #7a5634; }
+
+/* ---------- pembaca ---------- */
+.reader-screen--paper .spread__canvas { background: #efe3c6; }
+.reader-screen--paper .pause-seal { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: none; opacity: 0; z-index: 40; }
+.reader-screen--paper .pause-seal div { padding: .6em 1.4em; font: 400 22px/1 var(--f-old, serif); color: #3b2a1a; background: #f6ecd4; border: 2px solid #3b2a1a; border-radius: 10px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .star, .pp-shaft, .rays polygon, .ff-glow, .pp-item__ring, .pp-taphint svg { animation: none !important; }
+}
+
+/* ---------- Chapter 2: terang & gelap ---------- */
+.pp-light { position: absolute; inset: 0; pointer-events: none; z-index: 1; opacity: 0; mix-blend-mode: screen; transition: opacity .9s ease;
+  background: radial-gradient(circle at var(--lx, 50%) var(--ly, 50%), rgba(255, 234, 150, .4) 0, rgba(255, 220, 120, .15) calc(var(--lr, 0px) * .5), transparent var(--lr, 0px)); }
+.has-light .pp-light { opacity: 1; }
+.has-light .pp-grade {
+  -webkit-mask-image: radial-gradient(circle at var(--lx) var(--ly), rgba(0, 0, 0, .16) 0, rgba(0, 0, 0, .5) calc(var(--lr) * .55), #000 var(--lr));
+  mask-image: radial-gradient(circle at var(--lx) var(--ly), rgba(0, 0, 0, .16) 0, rgba(0, 0, 0, .5) calc(var(--lr) * .55), #000 var(--lr)); }
+[data-set="hutanBisik"].g-night .pp-grade { background: linear-gradient(180deg, rgba(18, 28, 70, .76), rgba(30, 42, 88, .6)); }
+[data-set="tanahLapang"].g-night .pp-grade { background: linear-gradient(180deg, rgba(24, 36, 84, .62), rgba(26, 38, 78, .7)); }
+.pp-shadowmon { animation: ppSway 2.6s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: 50% 100%; }
+.pp-shadowmon .eye { animation: ppGlow 1.3s ease-in-out infinite; }
+.pp-ranting { transform-box: fill-box; transform-origin: 50% 100%; }
+@keyframes ppSway { from { transform: rotate(-2.4deg); } to { transform: rotate(2.4deg); } }
+.pp-whisper { opacity: .85; animation: ppWhisper 3.2s ease-in-out infinite; }
+@keyframes ppWhisper { 0%, 100% { opacity: 0; translate: -14px 6px; } 45% { opacity: .9; } 70% { opacity: .6; translate: 16px -8px; } }
+[data-prop].is-glow { animation: ppShapePop 1.2s ease-in-out 3; transform-box: fill-box; transform-origin: 50% 100%; filter: drop-shadow(0 0 10px rgba(255, 240, 170, .95)); }
+@keyframes ppShapePop { 0%, 100% { scale: 1; } 50% { scale: 1.22; } }
+.pp-bigstars .pp-item { transform-box: fill-box; }
+.pp-bigstars.is-glow { animation: none; filter: none; }
+.pp-bigstars.is-glow .pp-item { filter: drop-shadow(0 0 9px rgba(255, 243, 160, .95)); }
+.pp-bigstars .pp-item.is-counted { filter: drop-shadow(0 0 16px rgba(255, 250, 200, 1)); }
+.pp-actor--pipi .pp-shadow { display: none; }
+@media (prefers-reduced-motion: reduce) { .pp-shadowmon, .pp-whisper, [data-prop].is-glow { animation: none !important; } }
+
+/* ---------------- sungai ---------------- */
+.pp-river__water { fill: #9b7c55; transition: fill 2.4s ease; }
+.pp-river.is-calm .pp-river__water { fill: #8fb4c8; }
+.pp-wave { animation: ppWave 1.1s linear infinite; }
+.pp-wave.w2 { animation-duration: 1.5s; } .pp-wave.w3 { animation-duration: 1.9s; opacity: .7; }
+.pp-river.is-calm .pp-wave { animation-duration: 6s; opacity: .5; }
+@keyframes ppWave { from { translate: 0 0; } to { translate: 80px 0; } }
+.pp-debris { animation: ppDebris 7s linear infinite; }
+.pp-river.is-calm .pp-debrisrow { opacity: 0; transition: opacity 2s; }
+@keyframes ppDebris { from { translate: -500px 0; } to { translate: 900px 0; } }
+.pp-splash { animation: ppSplash 1.2s ease-in-out infinite; }
+.pp-river.is-calm ~ g .pp-splash { animation: none; opacity: 0; }
+@keyframes ppSplash { 0%, 100% { opacity: .2; translate: 0 6px; } 50% { opacity: 1; translate: 0 -4px; } }
+@media (prefers-reduced-motion: reduce) { .pp-wave, .pp-debris, .pp-splash { animation: none !important; } }
+
+/* ---------------- chapter 4 ---------------- */
+.pp-fog { animation: ppFog 14s ease-in-out infinite alternate; }
+@keyframes ppFog { from { translate: -60px 0; } to { translate: 60px 0; } }
+.pp-owleyes { animation: ppBlink 4s steps(1) infinite; }
+@keyframes ppBlink { 0%, 92% { scale: 1 1; } 94% { scale: 1 .1; } 96%, 100% { scale: 1 1; } }
+@media (prefers-reduced-motion: reduce) { .pp-fog, .pp-owleyes { animation: none !important; } }
+
+/* ---------------- mode hemat (perangkat kelas rendah) ---------------- */
+/* Filter tinta (feTurbulence) mahal saat layer kamera diskalakan tiap frame. */
+html[data-perf="lite"] svg [filter] { filter: none !important; }
+html[data-perf="lite"] .pp-grade,
+html[data-perf="lite"] .pp-light,
+html[data-perf="lite"] .bd__glows,
+html[data-perf="lite"] .pj-map,
+html[data-perf="lite"] .pj-deco,
+html[data-perf="lite"] .level-map,
+html[data-perf="lite"] .toc-map,
+html[data-perf="lite"] .plate::after,
+html[data-perf="lite"] .pg--scene::after { mix-blend-mode: normal !important; }
+html[data-perf="lite"] .modal-back { backdrop-filter: none !important; }
+html[data-perf="lite"] .spread__page::before { display: none; }
+html[data-perf="lite"] .pp-actor.is-tappable { animation: none !important; }
+
+/* Selama kamera bergerak, filter tinta dimatikan agar transform tetap mulus. */
+.pp-stage.no-ink-filter .pp-layer svg [filter] { filter: none !important; }

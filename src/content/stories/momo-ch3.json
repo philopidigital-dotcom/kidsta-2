@@ -1,0 +1,2256 @@
+{
+ "format": "paper",
+ "id": "momo-ch3",
+ "bookId": "petualangan-si-monyet",
+ "chapterId": "momo-3",
+ "chapterLabel": "Chapter 3",
+ "title": "Sungai yang Marah",
+ "scenes": [
+  {
+   "id": "s1",
+   "name": "Hujan di Jalan Setapak",
+   "set": "jalan",
+   "grade": "dawn",
+   "weather": "motes",
+   "music": "ceria",
+   "ambience": "hutan",
+   "props": {
+    "ducks": "hidden",
+    "pecker": "hidden",
+    "momo.scarf": "on",
+    "momo.pack": "on",
+    "banana": "show"
+   },
+   "cast": [
+    {
+     "id": "momo",
+     "at": "start",
+     "face": "r",
+     "pose": "walk",
+     "expr": "happy"
+    },
+    {
+     "id": "cici",
+     "at": "@start:80,-170",
+     "face": "r",
+     "pose": "fly",
+     "expr": "happy"
+    }
+   ],
+   "cam": {
+    "x": 560,
+    "y": 560,
+    "z": 1.3
+   },
+   "beats": [
+    {
+     "say": "Pagi itu, Momo dan Cici berjalan keluar dari Hutan Bisik-Bisik. Matahari pagi bersinar hangat tepat di depan mereka.",
+     "tone": "ceria, hangat, segar seperti pagi yang cerah",
+     "do": [
+      {
+       "who": "momo",
+       "to": [
+        700,
+        810
+       ],
+       "dur": 6,
+       "pose": "walk",
+       "then": "idle"
+      },
+      {
+       "who": "cici",
+       "to": [
+        770,
+        640
+       ],
+       "dur": 6,
+       "pose": "fly",
+       "then": "fly"
+      }
+     ],
+     "cam": {
+      "follow": "momo",
+      "z": 1.3,
+      "dur": 6
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Lihat, Cici! Kata Kakek, Bukit Kabut ada di arah matahari terbit. Berarti kita sudah di jalan yang benar!",
+     "tone": "anak kecil riang dan yakin, menunjuk ke depan",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "point",
+       "expr": "joy",
+       "face": "r",
+       "then": "idle"
+      },
+      {
+       "fx": "sparkle",
+       "who": "momo",
+       "delay": 3.69
+      }
+     ],
+     "cam": {
+      "follow": "momo",
+      "z": 1.65,
+      "dur": 2
+     }
+    },
+    {
+     "say": "Momo membuka peta tua dari Kakek. Di peta itu ada gambar sungai, jembatan tali, dan bukit yang tertutup kabut.",
+     "tone": "penasaran, menjelaskan dengan jelas",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "think",
+       "expr": "curious"
+      },
+      {
+       "fx": "question",
+       "who": "momo",
+       "delay": 3.48
+      },
+      {
+       "who": "cici",
+       "pose": "hop",
+       "expr": "curious",
+       "delay": 5.42
+      }
+     ],
+     "cam": {
+      "x": 760,
+      "y": 640,
+      "z": 1.5,
+      "dur": 6
+     }
+    },
+    {
+     "who": "cici",
+     "say": "Wah, sebentar lagi kita sampai di sungai! Aku mau lihat ikan!",
+     "tone": "burung kecil cerewet, gembira sekali",
+     "do": [
+      {
+       "who": "cici",
+       "pose": "hop",
+       "expr": "joy"
+      },
+      {
+       "fx": "notes",
+       "who": "cici",
+       "delay": 1.46
+      }
+     ],
+     "cam": {
+      "follow": "cici",
+      "z": 1.8,
+      "dur": 1.5
+     }
+    },
+    {
+     "say": "Tapi tiba-tiba, angin bertiup kencang. Awan-awan hitam berkumpul dan menutupi matahari.",
+     "tone": "berubah tegang, pelan dan berat",
+     "do": [
+      {
+       "who": "momo",
+       "expr": "worried",
+       "look": "up"
+      },
+      {
+       "who": "cici",
+       "pose": "scared",
+       "expr": "worried",
+       "delay": 1.46
+      },
+      {
+       "who": "momo",
+       "expr": "scared",
+       "delay": 2.92
+      }
+     ],
+     "cam": {
+      "x": 900,
+      "y": 420,
+      "z": 1.1,
+      "dur": 7
+     },
+     "grade": "cloudy",
+     "weather": "wind",
+     "music": "cemas",
+     "ambience": "angin",
+     "sfx": [
+      "gust"
+     ]
+    },
+    {
+     "say": "Tes… tes… tes… Satu tetes, dua tetes, lalu hujan turun dengan deras!",
+     "tone": "mulai pelan seperti tetesan air, lalu makin cepat dan keras",
+     "tts": "Tes… tes… tes… Satu tetes, dua tetes… lalu hujan turun dengan deras!",
+     "do": [
+      {
+       "who": "momo",
+       "expr": "surprised",
+       "look": "up"
+      },
+      {
+       "fx": "exclaim",
+       "who": "momo",
+       "delay": 3.39
+      }
+     ],
+     "cam": {
+      "x": 760,
+      "y": 600,
+      "z": 1.4,
+      "dur": 5
+     },
+     "weather": "rain",
+     "ambience": "hujan"
+    },
+    {
+     "who": "momo",
+     "say": "Cici, cepat! Berteduh di bawah daun besar ini!",
+     "tone": "panik, cepat, berteriak menembus hujan",
+     "do": [
+      {
+       "who": "momo",
+       "to": "shelter",
+       "dur": 1.6,
+       "pose": "run",
+       "expr": "scared",
+       "then": "hide"
+      },
+      {
+       "who": "cici",
+       "to": "@shelter:40,-150",
+       "dur": 1.6,
+       "pose": "fly",
+       "then": "scared"
+      }
+     ],
+     "cam": {
+      "x": 1000,
+      "y": 640,
+      "z": 1.6,
+      "dur": 1.8
+     }
+    },
+    {
+     "say": "Momo dan Cici berlindung di bawah daun pisang yang lebar. Duaaar! Petir menyambar di kejauhan.",
+     "tone": "tegang, lalu kaget keras di kata duaaar",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "hide",
+       "expr": "scared",
+       "delay": 3.15
+      },
+      {
+       "who": "cici",
+       "pose": "scared",
+       "expr": "scared",
+       "delay": 3.15
+      }
+     ],
+     "cam": {
+      "x": 1000,
+      "y": 640,
+      "z": 1.6,
+      "dur": 1,
+      "shake": 8
+     },
+     "sfx": [
+      "thunder"
+     ]
+    },
+    {
+     "who": "cici",
+     "say": "Aduh, aku takut petir! Bulu-buluku basah semua!",
+     "tone": "takut dan merengek lucu, gemetar",
+     "do": [
+      {
+       "who": "cici",
+       "expr": "cry"
+      },
+      {
+       "fx": "tears",
+       "who": "cici",
+       "delay": 0.68
+      }
+     ],
+     "cam": {
+      "follow": "cici",
+      "z": 2,
+      "dur": 1.2
+     }
+    },
+    {
+     "say": "Momo memeluk Cici. Ia menarik napas pelan-pelan, seperti pesan Kakek.",
+     "tone": "sangat lembut dan menenangkan",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "hug",
+       "expr": "calm",
+       "then": "idle"
+      },
+      {
+       "who": "cici",
+       "expr": "calm",
+       "delay": 1.8
+      },
+      {
+       "fx": "hearts",
+       "who": "momo",
+       "delay": 2.7
+      }
+     ],
+     "cam": {
+      "x": 1030,
+      "y": 650,
+      "z": 1.8,
+      "dur": 2
+     }
+    },
+    {
+     "say": "Hujan turun lama sekali. Saat akhirnya mereda, terdengar suara gemuruh dari depan. Grrruuuh…",
+     "tone": "pelan, misterius; grrruuuh diucapkan berat dan panjang",
+     "do": [
+      {
+       "who": "momo",
+       "expr": "worried",
+       "look": "r",
+       "delay": 3.07
+      },
+      {
+       "who": "cici",
+       "expr": "worried",
+       "look": "r",
+       "delay": 3.07
+      },
+      {
+       "fx": "question",
+       "who": "momo",
+       "delay": 4.46
+      }
+     ],
+     "cam": {
+      "x": 1500,
+      "y": 560,
+      "z": 1.1,
+      "dur": 8
+     },
+     "weather": "wind",
+     "music": "tegang"
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "name": "Sungai yang Meluap",
+   "set": "sungai",
+   "grade": "cloudy",
+   "weather": "rain",
+   "music": "tegang",
+   "ambience": "hujan",
+   "props": {
+    "momo.scarf": "on",
+    "momo.pack": "on",
+    "river": "angry",
+    "map": "hidden",
+    "mama": "hidden",
+    "feather": "hidden"
+   },
+   "cast": [
+    {
+     "id": "momo",
+     "at": "offL",
+     "face": "r",
+     "pose": "idle",
+     "expr": "worried"
+    },
+    {
+     "id": "cici",
+     "at": "@offL:70,-170",
+     "face": "r",
+     "pose": "fly",
+     "expr": "worried"
+    },
+    {
+     "id": "dodo",
+     "at": "dodoRock",
+     "face": "l",
+     "pose": "scared",
+     "expr": "cry"
+    }
+   ],
+   "cam": {
+    "x": 700,
+    "y": 520,
+    "z": 1.2
+   },
+   "beats": [
+    {
+     "say": "Momo dan Cici berlari ke tepi sungai. Mereka terkejut melihatnya.",
+     "tone": "tegang, napas cepat",
+     "do": [
+      {
+       "who": "momo",
+       "to": "bankL",
+       "dur": 2.5,
+       "pose": "run",
+       "then": "idle",
+       "expr": "surprised"
+      },
+      {
+       "who": "cici",
+       "to": "@bankL:70,-170",
+       "dur": 2.5,
+       "pose": "fly",
+       "then": "fly"
+      }
+     ],
+     "cam": {
+      "x": 900,
+      "y": 560,
+      "z": 1.3,
+      "dur": 3
+     }
+    },
+    {
+     "say": "Air sungai naik tinggi, cokelat dan deras. Ranting dan daun hanyut terbawa arus. Sungai itu seperti sedang marah!",
+     "tone": "tegang, dramatis, menekankan kata marah",
+     "do": [
+      {
+       "who": "momo",
+       "expr": "scared"
+      },
+      {
+       "fx": "exclaim",
+       "who": "momo",
+       "delay": 0.74
+      }
+     ],
+     "cam": {
+      "x": 1650,
+      "y": 620,
+      "z": 1.0,
+      "dur": 9
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Wah… airnya deras sekali. Kita tidak bisa berenang menyeberang.",
+     "tone": "cemas, pelan, sedikit takut",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "shake",
+       "expr": "worried",
+       "then": "idle"
+      }
+     ],
+     "cam": {
+      "x": 640,
+      "y": 640,
+      "z": 1.6,
+      "dur": 2.5
+     }
+    },
+    {
+     "who": "cici",
+     "say": "Lihat, Momo! Di sebelah sana ada jembatan tali!",
+     "tone": "menunjuk, bersemangat, lega",
+     "do": [
+      {
+       "who": "cici",
+       "pose": "hop",
+       "expr": "joy",
+       "face": "r"
+      },
+      {
+       "fx": "exclaim",
+       "who": "cici",
+       "delay": 0.38
+      }
+     ],
+     "cam": {
+      "x": 800,
+      "y": 560,
+      "z": 1.4,
+      "dur": 1.5
+     }
+    },
+    {
+     "say": "Di sebelah kanan, ada jembatan tali yang tergantung tinggi di atas sungai. Jembatan itu kuat dan aman.",
+     "tone": "menjelaskan dengan jelas dan tenang",
+     "do": [
+      {
+       "who": "momo",
+       "look": "r",
+       "expr": "calm"
+      }
+     ],
+     "cam": {
+      "x": 1550,
+      "y": 480,
+      "z": 1.1,
+      "dur": 7
+     }
+    },
+    {
+     "say": "Ayo kita belajar arah! Cici menunjuk ke sebelah mana?",
+     "tone": "mengajak anak-anak, riang",
+     "ask": {
+      "type": "choice",
+      "q": "Jembatan tali ada di sebelah mana?",
+      "options": [
+       {
+        "id": "kiri",
+        "label": "Kiri",
+        "art": "left"
+       },
+       {
+        "id": "kanan",
+        "label": "Kanan",
+        "art": "right"
+       }
+      ],
+      "answer": "kanan",
+      "praise": "Betul! Jembatan tali ada di sebelah kanan.",
+      "retry": "Coba lihat lagi ke arah yang ditunjuk Cici, ya."
+     },
+     "cam": {
+      "x": 1000,
+      "y": 520,
+      "z": 1.2,
+      "dur": 2
+     }
+    },
+    {
+     "say": "Momo mulai berjalan ke arah jembatan. Tapi tiba-tiba, terdengar suara kecil dari tengah sungai.",
+     "tone": "berubah waspada, menggantung",
+     "do": [
+      {
+       "who": "momo",
+       "to": "bankEdge",
+       "dur": 3,
+       "pose": "walk",
+       "then": "idle",
+       "expr": "calm"
+      },
+      {
+       "who": "momo",
+       "expr": "surprised",
+       "look": "r",
+       "delay": 4.16
+      },
+      {
+       "fx": "exclaim",
+       "who": "momo",
+       "delay": 4.46
+      },
+      {
+       "who": "cici",
+       "expr": "worried",
+       "delay": 4.16
+      }
+     ],
+     "cam": {
+      "x": 900,
+      "y": 600,
+      "z": 1.4,
+      "dur": 3
+     }
+    },
+    {
+     "who": "dodo",
+     "say": "Tolooong! Tolooong! Ada yang bisa dengar aku?",
+     "tone": "anak bebek kecil menangis panik, berteriak dari jauh",
+     "do": [
+      {
+       "who": "dodo",
+       "pose": "scared",
+       "expr": "cry"
+      },
+      {
+       "fx": "exclaim",
+       "who": "dodo",
+       "delay": 0.34
+      }
+     ],
+     "cam": {
+      "x": 1940,
+      "y": 660,
+      "z": 1.9,
+      "dur": 2
+     }
+    },
+    {
+     "say": "Di atas batu di tengah sungai, ada seekor anak bebek kecil berwarna kuning. Ia gemetar dan basah kuyup.",
+     "tone": "iba, tegang, pelan",
+     "do": [
+      {
+       "who": "dodo",
+       "pose": "hide",
+       "expr": "scared"
+      },
+      {
+       "fx": "tears",
+       "who": "dodo",
+       "delay": 3.69
+      }
+     ],
+     "cam": {
+      "x": 1950,
+      "y": 680,
+      "z": 2.2,
+      "dur": 8
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Hei! Siapa namamu? Kenapa kamu di situ?",
+     "tone": "berteriak keras agar terdengar, khawatir",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "wave",
+       "expr": "worried",
+       "then": "idle"
+      }
+     ],
+     "cam": {
+      "x": 1300,
+      "y": 620,
+      "z": 1.2,
+      "dur": 2
+     }
+    },
+    {
+     "who": "dodo",
+     "say": "Aku Dodo! Tadi aku main di pinggir sungai… lalu airnya naik! Aku tidak bisa pulang ke Mama! Hiks…",
+     "tone": "terisak, suara mungil bergetar",
+     "do": [
+      {
+       "who": "dodo",
+       "pose": "scared",
+       "expr": "cry"
+      },
+      {
+       "fx": "tears",
+       "who": "dodo",
+       "delay": 2.21
+      },
+      {
+       "fx": "tears",
+       "who": "dodo",
+       "delay": 5.9
+      }
+     ],
+     "cam": {
+      "x": 1950,
+      "y": 680,
+      "z": 2,
+      "dur": 2
+     }
+    },
+    {
+     "say": "Batu tempat Dodo berdiri makin kecil, karena air terus naik.",
+     "tone": "tegang, cepat, cemas",
+     "do": [
+      {
+       "who": "dodo",
+       "pose": "hide",
+       "expr": "scared",
+       "delay": 1.35
+      },
+      {
+       "fx": "sweat",
+       "who": "dodo",
+       "delay": 2.25
+      }
+     ],
+     "cam": {
+      "x": 1950,
+      "y": 720,
+      "z": 1.6,
+      "dur": 3,
+      "shake": 3
+     }
+    },
+    {
+     "say": "Coba perhatikan Dodo baik-baik, ya.",
+     "tone": "mengajak memperhatikan",
+     "ask": {
+      "type": "choice",
+      "q": "Dodo berdiri di atas batu atau di bawah batu?",
+      "options": [
+       {
+        "id": "atas",
+        "label": "Di atas",
+        "art": "up"
+       },
+       {
+        "id": "bawah",
+        "label": "Di bawah",
+        "art": "down"
+       }
+      ],
+      "answer": "atas",
+      "praise": "Betul! Dodo ada di atas batu. Tapi airnya terus naik!",
+      "retry": "Coba lihat lagi kaki Dodo. Ia berdiri di mana?"
+     },
+     "cam": {
+      "x": 1950,
+      "y": 680,
+      "z": 1.6,
+      "dur": 1.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "name": "Pilihan Momo",
+   "set": "sungai",
+   "grade": "cloudy",
+   "weather": "rain",
+   "music": "cemas",
+   "ambience": "hujan",
+   "props": {
+    "momo.scarf": "on",
+    "momo.pack": "on",
+    "river": "angry",
+    "map": "hidden",
+    "mama": "hidden",
+    "feather": "hidden"
+   },
+   "cast": [
+    {
+     "id": "momo",
+     "at": "bankL",
+     "face": "r",
+     "pose": "think",
+     "expr": "worried"
+    },
+    {
+     "id": "cici",
+     "at": "@bankL:70,-170",
+     "face": "r",
+     "pose": "fly",
+     "expr": "worried"
+    },
+    {
+     "id": "dodo",
+     "at": "dodoRock",
+     "face": "l",
+     "pose": "scared",
+     "expr": "cry"
+    }
+   ],
+   "cam": {
+    "x": 1100,
+    "y": 560,
+    "z": 1.3
+   },
+   "beats": [
+    {
+     "say": "Momo berhenti. Hatinya bimbang.",
+     "tone": "pelan, ragu, berat",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "think",
+       "expr": "worried"
+      }
+     ],
+     "cam": {
+      "x": 560,
+      "y": 640,
+      "z": 1.7,
+      "dur": 2
+     }
+    },
+    {
+     "who": "cici",
+     "say": "Momo, kalau kita menyeberang lewat jembatan, kita aman. Tapi Dodo bagaimana?",
+     "tone": "cemas dan bingung",
+     "do": [
+      {
+       "who": "cici",
+       "pose": "hop",
+       "expr": "worried"
+      },
+      {
+       "fx": "question",
+       "who": "cici",
+       "delay": 2.43
+      }
+     ],
+     "cam": {
+      "x": 600,
+      "y": 600,
+      "z": 1.6,
+      "dur": 2
+     }
+    },
+    {
+     "say": "Kalau Momo lewat jembatan, perjalanannya lebih cepat dan aman. Tapi Dodo akan tertinggal sendirian di tengah sungai.",
+     "tone": "serius, menimbang dengan pelan",
+     "do": [
+      {
+       "who": "momo",
+       "look": "r"
+      },
+      {
+       "fx": "sweat",
+       "who": "momo",
+       "delay": 5.26
+      }
+     ],
+     "cam": {
+      "x": 1600,
+      "y": 560,
+      "z": 1.05,
+      "dur": 9
+     }
+    },
+    {
+     "say": "Kalau kamu jadi Momo, apa yang akan kamu lakukan?",
+     "tone": "bertanya lembut kepada anak-anak",
+     "ask": {
+      "type": "choice",
+      "q": "Apa yang sebaiknya Momo lakukan?",
+      "options": [
+       {
+        "id": "tolong",
+        "label": "Tolong Dodo dulu",
+        "art": "help"
+       },
+       {
+        "id": "jembatan",
+        "label": "Pergi lewat jembatan",
+        "art": "bridge"
+       }
+      ],
+      "answer": "tolong",
+      "praise": "Hebat! Menolong teman yang kesulitan itu sangat berani.",
+      "retry": "Hmm, kasihan Dodo sendirian. Coba pikir lagi, ya."
+     },
+     "cam": {
+      "x": 1100,
+      "y": 560,
+      "z": 1.2,
+      "dur": 2
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Benih Pelangi memang penting. Tapi Dodo lebih penting sekarang. Aku harus menolongnya!",
+     "tone": "tegas dan berani, penuh tekad",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "cheer",
+       "expr": "brave",
+       "then": "idle"
+      },
+      {
+       "fx": "sparkle",
+       "who": "momo",
+       "delay": 2.09
+      }
+     ],
+     "cam": {
+      "x": 540,
+      "y": 640,
+      "z": 1.7,
+      "dur": 2
+     }
+    },
+    {
+     "say": "Momo melihat ke sekeliling. Di sungai, ada batu-batu besar yang muncul di atas air, berjajar seperti jalan setapak.",
+     "tone": "berpikir, lalu menemukan ide",
+     "do": [
+      {
+       "who": "momo",
+       "look": "r",
+       "expr": "curious"
+      }
+     ],
+     "cam": {
+      "x": 1430,
+      "y": 700,
+      "z": 1.15,
+      "dur": 8
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Aku punya ide! Aku bisa melompat dari batu ke batu!",
+     "tone": "bersemangat, mata berbinar",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "jump",
+       "expr": "joy",
+       "then": "idle"
+      },
+      {
+       "fx": "exclaim",
+       "who": "momo",
+       "delay": 0.45
+      }
+     ],
+     "cam": {
+      "x": 560,
+      "y": 640,
+      "z": 1.7,
+      "dur": 1.5
+     }
+    },
+    {
+     "who": "cici",
+     "say": "Hati-hati, Momo! Batunya licin! Aku terbang di atasmu, ya, dan memberi tahu batu mana yang aman!",
+     "tone": "khawatir lalu bersemangat membantu",
+     "do": [
+      {
+       "who": "cici",
+       "to": "@bankL:60,-220",
+       "dur": 1.5,
+       "pose": "fly",
+       "then": "fly",
+       "expr": "worried"
+      }
+     ],
+     "cam": {
+      "x": 600,
+      "y": 580,
+      "z": 1.5,
+      "dur": 2
+     }
+    },
+    {
+     "say": "Berapa batu yang harus Momo lewati? Ayo hitung batu-batunya!",
+     "tone": "mengajak berhitung dengan riang",
+     "ask": {
+      "type": "tap",
+      "q": "Ketuk batunya satu per satu sambil berhitung!",
+      "items": [
+       "stone1",
+       "stone2",
+       "stone3",
+       "stone4",
+       "stone5",
+       "stone6",
+       "stone7",
+       "stone8",
+       "stone9",
+       "stone10"
+      ],
+      "count": "number",
+      "praise": "Ada SEPULUH batu! Momo pasti bisa!"
+     },
+     "cam": {
+      "x": 1430,
+      "y": 690,
+      "z": 1.1,
+      "dur": 2
+     }
+    },
+    {
+     "say": "Momo menarik napas dalam-dalam. Fuuuh. Lalu ia mulai melompat.",
+     "tone": "tegang, menahan napas, lalu berani",
+     "tts": "Momo menarik napas dalam-dalam… fuuuh… lalu ia mulai melompat.",
+     "do": [
+      {
+       "who": "momo",
+       "to": "bankEdge",
+       "dur": 2.5,
+       "pose": "walk",
+       "then": "idle",
+       "expr": "brave",
+       "delay": 1.86
+      },
+      {
+       "who": "cici",
+       "to": "@bankEdge:60,-200",
+       "dur": 2.5,
+       "pose": "fly",
+       "then": "fly",
+       "delay": 1.86
+      }
+     ],
+     "cam": {
+      "x": 900,
+      "y": 640,
+      "z": 1.6,
+      "dur": 4
+     }
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "name": "Melompati Batu",
+   "set": "sungai",
+   "grade": "cloudy",
+   "weather": "rain",
+   "music": "berani",
+   "ambience": "hujan",
+   "props": {
+    "momo.scarf": "on",
+    "momo.pack": "on",
+    "river": "angry",
+    "map": "hidden",
+    "mama": "hidden",
+    "feather": "hidden"
+   },
+   "cast": [
+    {
+     "id": "momo",
+     "at": "bankEdge",
+     "face": "r",
+     "pose": "idle",
+     "expr": "brave"
+    },
+    {
+     "id": "cici",
+     "at": "@bankEdge:60,-200",
+     "face": "r",
+     "pose": "fly",
+     "expr": "worried"
+    },
+    {
+     "id": "dodo",
+     "at": "dodoRock",
+     "face": "l",
+     "pose": "scared",
+     "expr": "scared"
+    }
+   ],
+   "cam": {
+    "x": 1100,
+    "y": 600,
+    "z": 1.6
+   },
+   "beats": [
+    {
+     "say": "Hup! Batu pertama. Hup! Batu kedua. Kaki Momo basah terkena cipratan air.",
+     "tone": "berirama seperti melompat, tegang tapi berani",
+     "do": [
+      {
+       "who": "momo",
+       "to": "s1",
+       "dur": 0.6,
+       "pose": "jump",
+       "then": "idle",
+       "delay": 0.63
+      },
+      {
+       "who": "momo",
+       "to": "s2",
+       "dur": 0.6,
+       "pose": "jump",
+       "then": "idle",
+       "delay": 2.61
+      }
+     ],
+     "cam": {
+      "follow": "momo",
+      "z": 1.6,
+      "dur": 2
+     }
+    },
+    {
+     "who": "cici",
+     "say": "Ke kiri, Momo! Batu yang kanan goyang!",
+     "tone": "berteriak memandu dari atas, cepat",
+     "do": [
+      {
+       "who": "cici",
+       "to": "@s4:0,-200",
+       "dur": 1,
+       "pose": "fly",
+       "then": "fly",
+       "expr": "worried"
+      },
+      {
+       "who": "momo",
+       "look": "up"
+      }
+     ],
+     "cam": {
+      "follow": "momo",
+      "z": 1.5,
+      "dur": 1
+     }
+    },
+    {
+     "say": "Momo melompat ke batu sebelah kiri. Benar saja, batu yang di kanan langsung terguling terbawa arus!",
+     "tone": "tegang lalu lega",
+     "do": [
+      {
+       "who": "momo",
+       "to": "s3",
+       "dur": 0.6,
+       "pose": "jump",
+       "then": "idle",
+       "delay": 0.67
+      },
+      {
+       "prop": "stone4",
+       "state": "shake",
+       "delay": 2.33
+      },
+      {
+       "prop": "stone4",
+       "state": "gone",
+       "delay": 4.13
+      },
+      {
+       "who": "momo",
+       "to": "s5",
+       "dur": 0.8,
+       "pose": "jump",
+       "then": "idle",
+       "delay": 5.0
+      }
+     ],
+     "cam": {
+      "follow": "momo",
+      "z": 1.5,
+      "dur": 2
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Terima kasih, Cici! Matamu memang tajam!",
+     "tone": "terengah, lega, berterima kasih",
+     "do": [
+      {
+       "who": "momo",
+       "expr": "joy",
+       "look": "up"
+      },
+      {
+       "fx": "sweat",
+       "who": "momo",
+       "delay": 0.61
+      }
+     ],
+     "cam": {
+      "follow": "momo",
+      "z": 1.8,
+      "dur": 1
+     }
+    },
+    {
+     "say": "Hup, hup, hup! Momo terus melompat, sampai akhirnya ia tiba di batu tempat Dodo berdiri.",
+     "tone": "makin cepat, lalu bangga di akhir",
+     "do": [
+      {
+       "who": "momo",
+       "to": "s6",
+       "dur": 0.5,
+       "pose": "jump",
+       "then": "idle",
+       "delay": 0.32
+      },
+      {
+       "who": "momo",
+       "to": "s7",
+       "dur": 0.5,
+       "pose": "jump",
+       "then": "idle",
+       "delay": 1.26
+      },
+      {
+       "who": "momo",
+       "to": "s8",
+       "dur": 0.5,
+       "pose": "jump",
+       "then": "idle",
+       "delay": 2.2
+      },
+      {
+       "who": "momo",
+       "to": "s9",
+       "dur": 0.5,
+       "pose": "jump",
+       "then": "idle",
+       "delay": 3.15
+      },
+      {
+       "who": "momo",
+       "to": "s10",
+       "dur": 0.5,
+       "pose": "jump",
+       "then": "idle",
+       "delay": 4.03
+      },
+      {
+       "who": "momo",
+       "to": "dodoRock",
+       "dur": 0.6,
+       "pose": "jump",
+       "then": "idle",
+       "delay": 5.04
+      },
+      {
+       "who": "cici",
+       "to": "@s9:0,-210",
+       "dur": 3,
+       "pose": "fly",
+       "then": "fly",
+       "delay": 1.89
+      }
+     ],
+     "cam": {
+      "follow": "momo",
+      "z": 1.5,
+      "dur": 2
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Dodo, jangan takut. Naik ke punggungku, ya. Pegangan yang erat!",
+     "tone": "lembut tapi tegas, seperti kakak yang melindungi",
+     "do": [
+      {
+       "who": "momo",
+       "expr": "calm",
+       "face": "r"
+      },
+      {
+       "who": "dodo",
+       "expr": "worried",
+       "face": "l"
+      }
+     ],
+     "cam": {
+      "x": 1930,
+      "y": 680,
+      "z": 2,
+      "dur": 1.5
+     }
+    },
+    {
+     "who": "dodo",
+     "say": "B-baik… aku pegangan erat-erat!",
+     "tone": "takut tapi berusaha berani, terbata",
+     "do": [
+      {
+       "who": "dodo",
+       "pose": "hop",
+       "expr": "brave"
+      }
+     ],
+     "cam": {
+      "x": 1930,
+      "y": 680,
+      "z": 2,
+      "dur": 1
+     }
+    },
+    {
+     "say": "Dodo naik ke punggung Momo dan memeluk syal merahnya. Lalu, pelan-pelan, Momo melompat kembali ke tepi.",
+     "tone": "tegang, pelan, hati-hati",
+     "do": [
+      {
+       "who": "dodo",
+       "to": "@dodoRock:-14,-62",
+       "dur": 0.8,
+       "pose": "hop",
+       "then": "idle",
+       "expr": "scared"
+      },
+      {
+       "who": "momo",
+       "face": "l",
+       "delay": 1.67
+      },
+      {
+       "who": "momo",
+       "to": "s10",
+       "dur": 0.6,
+       "pose": "jump",
+       "then": "idle",
+       "delay": 2.33
+      },
+      {
+       "who": "dodo",
+       "to": "@s10:-14,-62",
+       "dur": 0.6,
+       "pose": "hop",
+       "then": "idle",
+       "delay": 2.33
+      },
+      {
+       "who": "momo",
+       "to": "s8",
+       "dur": 0.6,
+       "pose": "jump",
+       "then": "idle",
+       "delay": 3.33
+      },
+      {
+       "who": "dodo",
+       "to": "@s8:-14,-62",
+       "dur": 0.6,
+       "pose": "hop",
+       "then": "idle",
+       "delay": 3.33
+      },
+      {
+       "who": "momo",
+       "to": "s6",
+       "dur": 0.6,
+       "pose": "jump",
+       "then": "idle",
+       "delay": 4.26
+      },
+      {
+       "who": "dodo",
+       "to": "@s6:-14,-62",
+       "dur": 0.6,
+       "pose": "hop",
+       "then": "idle",
+       "delay": 4.26
+      },
+      {
+       "who": "momo",
+       "to": "s5",
+       "dur": 0.6,
+       "pose": "jump",
+       "then": "idle",
+       "delay": 5.19
+      },
+      {
+       "who": "dodo",
+       "to": "@s5:-14,-62",
+       "dur": 0.6,
+       "pose": "hop",
+       "then": "idle",
+       "delay": 5.19
+      }
+     ],
+     "cam": {
+      "follow": "momo",
+      "z": 1.5,
+      "dur": 2
+     }
+    },
+    {
+     "say": "Tapi saat lompatan terakhir… byur! Ombak besar menghantam batu, dan ransel Momo tersangkut ranting!",
+     "tone": "kaget, cepat, dramatis",
+     "do": [
+      {
+       "who": "momo",
+       "to": "s3",
+       "dur": 0.6,
+       "pose": "jump",
+       "then": "idle",
+       "delay": 0.48
+      },
+      {
+       "who": "dodo",
+       "to": "@s3:-14,-62",
+       "dur": 0.6,
+       "pose": "hop",
+       "then": "idle",
+       "delay": 0.48
+      },
+      {
+       "who": "momo",
+       "to": "s2",
+       "dur": 0.6,
+       "pose": "jump",
+       "then": "idle",
+       "delay": 1.49
+      },
+      {
+       "who": "dodo",
+       "to": "@s2:-14,-62",
+       "dur": 0.6,
+       "pose": "hop",
+       "then": "idle",
+       "delay": 1.49
+      },
+      {
+       "who": "momo",
+       "to": "bankEdge",
+       "dur": 0.7,
+       "pose": "jump",
+       "then": "idle",
+       "delay": 3.27
+      },
+      {
+       "who": "dodo",
+       "to": "@bankEdge:-14,-62",
+       "dur": 0.7,
+       "pose": "hop",
+       "then": "idle",
+       "delay": 3.27
+      },
+      {
+       "prop": "snag",
+       "state": "shake",
+       "delay": 3.56
+      },
+      {
+       "who": "momo",
+       "expr": "scared",
+       "delay": 3.56
+      }
+     ],
+     "cam": {
+      "follow": "momo",
+      "z": 1.5,
+      "dur": 2,
+      "shake": 4
+     },
+     "sfx": [
+      "whoosh"
+     ]
+    },
+    {
+     "say": "Ransel Momo terbuka. Peta tua dari Kakek terlepas… dan jatuh ke sungai!",
+     "tone": "kaget lalu sedih",
+     "do": [
+      {
+       "prop": "map",
+       "state": "fall",
+       "delay": 2.09
+      },
+      {
+       "who": "momo",
+       "pose": "scared",
+       "expr": "surprised",
+       "delay": 2.09
+      },
+      {
+       "fx": "exclaim",
+       "who": "momo",
+       "delay": 2.35
+      }
+     ],
+     "cam": {
+      "x": 1020,
+      "y": 700,
+      "z": 1.7,
+      "dur": 2
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Petaku! Tidak!",
+     "tone": "terkejut, sedih, berteriak putus asa",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "point",
+       "expr": "cry",
+       "then": "sad"
+      },
+      {
+       "fx": "tears",
+       "who": "momo",
+       "delay": 0.72
+      }
+     ],
+     "cam": {
+      "x": 1060,
+      "y": 700,
+      "z": 1.9,
+      "dur": 1
+     }
+    },
+    {
+     "say": "Peta itu berputar-putar di air, lalu hanyut terbawa arus yang deras. Makin jauh… makin jauh… lalu hilang.",
+     "tone": "sedih, pelan, makin lirih di akhir",
+     "do": [
+      {
+       "prop": "map",
+       "state": "drift"
+      },
+      {
+       "who": "momo",
+       "pose": "sad",
+       "expr": "sad",
+       "delay": 2.11
+      }
+     ],
+     "cam": {
+      "x": 1650,
+      "y": 720,
+      "z": 1.3,
+      "dur": 9
+     }
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "name": "Peta yang Hanyut",
+   "set": "sungai",
+   "grade": "cloudy",
+   "weather": "none",
+   "music": "sedih",
+   "ambience": "angin",
+   "props": {
+    "momo.scarf": "on",
+    "momo.pack": "on",
+    "river": "calm",
+    "map": "hidden",
+    "mama": "hidden",
+    "feather": "hidden"
+   },
+   "cast": [
+    {
+     "id": "momo",
+     "at": "bankL",
+     "face": "r",
+     "pose": "idle",
+     "expr": "worried"
+    },
+    {
+     "id": "cici",
+     "at": "@bankL:70,-170",
+     "face": "l",
+     "pose": "idle",
+     "expr": "worried"
+    },
+    {
+     "id": "dodo",
+     "at": "@bankL:110,0",
+     "face": "l",
+     "pose": "idle",
+     "expr": "surprised"
+    }
+   ],
+   "cam": {
+    "x": 560,
+    "y": 600,
+    "z": 1.6
+   },
+   "beats": [
+    {
+     "say": "Momo dan Dodo sampai di tepi sungai dengan selamat. Tak lama kemudian, hujan pun berhenti.",
+     "tone": "lega, pelan, napas panjang",
+     "do": [
+      {
+       "who": "momo",
+       "expr": "calm",
+       "pose": "idle"
+      },
+      {
+       "fx": "puff",
+       "who": "momo",
+       "delay": 1.89
+      },
+      {
+       "prop": "river",
+       "state": "calm",
+       "delay": 3.78
+      },
+      {
+       "who": "dodo",
+       "expr": "calm",
+       "delay": 3.78
+      }
+     ],
+     "cam": {
+      "x": 560,
+      "y": 620,
+      "z": 1.5,
+      "dur": 8
+     }
+    },
+    {
+     "say": "Seekor induk bebek berlari menghampiri mereka sambil mengepakkan sayap.",
+     "tone": "haru, hangat",
+     "do": [
+      {
+       "prop": "mama",
+       "state": "show",
+       "delay": 0.21
+      },
+      {
+       "who": "dodo",
+       "face": "l",
+       "look": "l",
+       "expr": "surprised",
+       "delay": 1.24
+      }
+     ],
+     "cam": {
+      "x": 420,
+      "y": 640,
+      "z": 1.6,
+      "dur": 3
+     }
+    },
+    {
+     "who": "dodo",
+     "say": "Mama! Mama! Aku di sini!",
+     "tone": "girang sekali, menangis bahagia",
+     "do": [
+      {
+       "who": "dodo",
+       "to": "mamaSpot",
+       "dur": 1.2,
+       "pose": "hop",
+       "then": "idle",
+       "expr": "joy"
+      }
+     ],
+     "cam": {
+      "x": 360,
+      "y": 660,
+      "z": 1.9,
+      "dur": 1.5
+     }
+    },
+    {
+     "say": "Dodo berlari dan memeluk mamanya erat-erat. Mama Bebek menangis bahagia, kwek-kwek berkali-kali.",
+     "tone": "haru, hangat, sedikit lucu di kwek-kwek",
+     "do": [
+      {
+       "fx": "hearts",
+       "who": "dodo",
+       "delay": 1.04
+      },
+      {
+       "fx": "hearts",
+       "who": "dodo",
+       "delay": 3.13
+      },
+      {
+       "who": "dodo",
+       "pose": "hop",
+       "then": "idle",
+       "delay": 2.09
+      }
+     ],
+     "cam": {
+      "x": 340,
+      "y": 680,
+      "z": 2.1,
+      "dur": 2
+     }
+    },
+    {
+     "who": "dodo",
+     "say": "Terima kasih, Kak Momo! Kakak pahlawanku!",
+     "tone": "polos, kagum, tulus",
+     "do": [
+      {
+       "who": "dodo",
+       "face": "r",
+       "expr": "joy",
+       "pose": "hop",
+       "then": "idle"
+      },
+      {
+       "fx": "sparkle",
+       "who": "momo",
+       "delay": 1.53
+      },
+      {
+       "who": "momo",
+       "expr": "happy",
+       "delay": 1.53
+      }
+     ],
+     "cam": {
+      "x": 450,
+      "y": 650,
+      "z": 1.7,
+      "dur": 1.5
+     }
+    },
+    {
+     "say": "Momo tersenyum. Tapi senyumnya tidak lama. Ia memandangi ranselnya yang kosong.",
+     "tone": "berubah sedih, pelan",
+     "do": [
+      {
+       "who": "momo",
+       "expr": "happy"
+      },
+      {
+       "who": "momo",
+       "expr": "sad",
+       "look": "down",
+       "delay": 2.43
+      }
+     ],
+     "cam": {
+      "x": 520,
+      "y": 650,
+      "z": 2,
+      "dur": 3
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Petaku hilang… Bagaimana aku bisa menemukan Bukit Kabut sekarang?",
+     "tone": "sedih, suara bergetar hampir menangis",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "sad",
+       "expr": "sad"
+      },
+      {
+       "fx": "tears",
+       "who": "momo",
+       "delay": 2.48
+      }
+     ],
+     "cam": {
+      "x": 520,
+      "y": 650,
+      "z": 2.1,
+      "dur": 2
+     }
+    },
+    {
+     "say": "Momo duduk di atas batu. Matanya berkaca-kaca. Cici duduk di sampingnya, diam saja.",
+     "tone": "sedih, sangat lembut",
+     "do": [
+      {
+       "who": "momo",
+       "to": "seat",
+       "dur": 1.6,
+       "pose": "walk",
+       "then": "sit"
+      },
+      {
+       "who": "cici",
+       "to": "@seat:80,-120",
+       "dur": 1.8,
+       "pose": "fly",
+       "then": "idle",
+       "delay": 1.95
+      },
+      {
+       "fx": "tears",
+       "who": "momo",
+       "delay": 4.19
+      }
+     ],
+     "cam": {
+      "x": 660,
+      "y": 640,
+      "z": 1.8,
+      "dur": 3
+     }
+    },
+    {
+     "who": "cici",
+     "say": "Momo… kamu tadi sangat berani. Kalau tidak ada kamu, Dodo bisa celaka.",
+     "tone": "lembut, menghibur, pelan",
+     "do": [
+      {
+       "who": "cici",
+       "expr": "calm",
+       "pose": "talk",
+       "then": "idle"
+      }
+     ],
+     "cam": {
+      "x": 680,
+      "y": 640,
+      "z": 1.9,
+      "dur": 1.5
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Iya, aku senang Dodo selamat. Aku tidak menyesal menolongnya. Tapi sekarang aku tidak tahu jalan…",
+     "tone": "jujur, sedih bercampur lega",
+     "do": [
+      {
+       "who": "momo",
+       "expr": "sad"
+      },
+      {
+       "who": "momo",
+       "expr": "calm",
+       "delay": 3.15
+      }
+     ],
+     "cam": {
+      "x": 650,
+      "y": 640,
+      "z": 2,
+      "dur": 2
+     }
+    },
+    {
+     "say": "Coba lihat wajah Momo, ya.",
+     "tone": "lembut, mengajak memperhatikan",
+     "ask": {
+      "type": "choice",
+      "q": "Bagaimana perasaan Momo sekarang?",
+      "options": [
+       {
+        "id": "sedih",
+        "label": "Sedih",
+        "art": "sad"
+       },
+       {
+        "id": "senang",
+        "label": "Senang",
+        "art": "joy"
+       }
+      ],
+      "answer": "sedih",
+      "praise": "Betul, Momo sedang sedih. Kalau sedih, tidak apa-apa bercerita pada teman.",
+      "retry": "Lihat lagi wajah Momo. Matanya berkaca-kaca, kan?"
+     },
+     "cam": {
+      "x": 640,
+      "y": 630,
+      "z": 1.7,
+      "dur": 1
+     }
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "name": "Arah Matahari",
+   "set": "sungai",
+   "grade": "cloudy",
+   "weather": "motes",
+   "music": "haru",
+   "ambience": "hutan",
+   "props": {
+    "momo.scarf": "on",
+    "momo.pack": "on",
+    "river": "calm",
+    "map": "hidden",
+    "mama": "show",
+    "feather": "hidden"
+   },
+   "cast": [
+    {
+     "id": "momo",
+     "at": "seat",
+     "face": "r",
+     "pose": "sit",
+     "expr": "sad"
+    },
+    {
+     "id": "cici",
+     "at": "@seat:80,-120",
+     "face": "l",
+     "pose": "idle",
+     "expr": "calm"
+    },
+    {
+     "id": "dodo",
+     "at": "mamaSpot",
+     "face": "l",
+     "pose": "idle",
+     "expr": "happy"
+    }
+   ],
+   "cam": {
+    "x": 900,
+    "y": 500,
+    "z": 1.2
+   },
+   "beats": [
+    {
+     "say": "Tiba-tiba, awan-awan bergeser. Matahari muncul kembali, bersinar hangat di atas bukit.",
+     "tone": "takjub, hangat, bercahaya",
+     "do": [
+      {
+       "who": "momo",
+       "look": "up",
+       "expr": "surprised",
+       "delay": 1.46
+      },
+      {
+       "who": "cici",
+       "look": "up",
+       "delay": 1.46
+      }
+     ],
+     "cam": {
+      "x": 1700,
+      "y": 380,
+      "z": 1.0,
+      "dur": 7
+     },
+     "grade": "day",
+     "music": "haru"
+    },
+    {
+     "say": "Momo menatap matahari itu lama sekali. Lalu, ia teringat sesuatu.",
+     "tone": "pelan, mulai tersadar",
+     "do": [
+      {
+       "who": "momo",
+       "expr": "curious",
+       "pose": "think",
+       "delay": 1.8
+      },
+      {
+       "fx": "exclaim",
+       "who": "momo",
+       "delay": 3.83
+      }
+     ],
+     "cam": {
+      "x": 660,
+      "y": 620,
+      "z": 1.9,
+      "dur": 3
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Cici! Ingat kata Kakek? Bukit Kabut ada di arah matahari terbit!",
+     "tone": "bersemangat, tersadar, mata berbinar",
+     "do": [
+      {
+       "who": "momo",
+       "to": "bankL",
+       "dur": 0.8,
+       "pose": "jump",
+       "then": "idle",
+       "expr": "joy"
+      },
+      {
+       "fx": "sparkle",
+       "who": "momo",
+       "delay": 1.46
+      }
+     ],
+     "cam": {
+      "x": 600,
+      "y": 620,
+      "z": 1.6,
+      "dur": 1.5
+     }
+    },
+    {
+     "who": "cici",
+     "say": "Iya! Dan tadi pagi, matahari ada di depan kita!",
+     "tone": "gembira, cepat",
+     "do": [
+      {
+       "who": "cici",
+       "pose": "hop",
+       "expr": "joy",
+       "then": "idle"
+      }
+     ],
+     "cam": {
+      "x": 620,
+      "y": 600,
+      "z": 1.6,
+      "dur": 1
+     }
+    },
+    {
+     "say": "Matahari selalu terbit di sebelah timur, di pagi hari. Jadi, walau peta hilang, Momo masih bisa tahu arah.",
+     "tone": "menjelaskan dengan jelas seperti guru yang hangat",
+     "do": [
+      {
+       "who": "momo",
+       "look": "r"
+      },
+      {
+       "fx": "shine",
+       "who": "momo",
+       "delay": 3.69
+      }
+     ],
+     "cam": {
+      "x": 2550,
+      "y": 380,
+      "z": 1.05,
+      "dur": 9
+     }
+    },
+    {
+     "say": "Ayo bantu Momo!",
+     "tone": "mengajak, riang",
+     "ask": {
+      "type": "choice",
+      "q": "Bukit Kabut ada di arah mana?",
+      "options": [
+       {
+        "id": "matahari",
+        "label": "Arah matahari",
+        "art": "sun"
+       },
+       {
+        "id": "bulan",
+        "label": "Arah bulan",
+        "art": "moon"
+       }
+      ],
+      "answer": "matahari",
+      "praise": "Pintar! Momo tinggal mengikuti matahari pagi.",
+      "retry": "Ingat kata Kakek: Bukit Kabut ada di arah matahari terbit."
+     },
+     "cam": {
+      "x": 900,
+      "y": 540,
+      "z": 1.2,
+      "dur": 1.5
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Peta boleh hilang. Tapi aku masih punya matahari, punya teman, dan punya keberanian!",
+     "tone": "bangga, yakin, lantang",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "cheer",
+       "expr": "brave",
+       "then": "idle"
+      },
+      {
+       "fx": "sparkle",
+       "who": "momo",
+       "delay": 2.79
+      }
+     ],
+     "cam": {
+      "x": 560,
+      "y": 620,
+      "z": 1.7,
+      "dur": 2
+     }
+    },
+    {
+     "who": "dodo",
+     "say": "Kak Momo, Kak Cici, ini untuk kalian!",
+     "tone": "malu-malu, senang",
+     "do": [
+      {
+       "who": "dodo",
+       "to": "@bankL:120,0",
+       "dur": 1.4,
+       "pose": "hop",
+       "then": "idle",
+       "expr": "happy",
+       "face": "l"
+      }
+     ],
+     "cam": {
+      "x": 560,
+      "y": 650,
+      "z": 1.9,
+      "dur": 1.5
+     }
+    },
+    {
+     "say": "Dodo memberikan sehelai bulu kuningnya yang lembut. Kata Mama Bebek, bulu itu tanda persahabatan.",
+     "tone": "haru, hangat",
+     "do": [
+      {
+       "prop": "feather",
+       "state": "float",
+       "delay": 0.89
+      },
+      {
+       "fx": "hearts",
+       "who": "momo",
+       "delay": 3.86
+      }
+     ],
+     "cam": {
+      "x": 520,
+      "y": 620,
+      "z": 1.8,
+      "dur": 2
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Terima kasih, Dodo! Akan kusimpan baik-baik di ranselku.",
+     "tone": "hangat dan tulus",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "hug",
+       "expr": "joy",
+       "then": "idle"
+      }
+     ],
+     "cam": {
+      "x": 560,
+      "y": 650,
+      "z": 1.9,
+      "dur": 1
+     }
+    },
+    {
+     "say": "Momo dan Cici menyeberangi jembatan tali, lalu berjalan ke arah matahari. Dodo dan mamanya melambai dari tepi sungai.",
+     "tone": "hangat, bersemangat, melangkah maju",
+     "do": [
+      {
+       "who": "momo",
+       "to": "bankEdge",
+       "dur": 3,
+       "pose": "walk",
+       "then": "idle",
+       "expr": "happy"
+      },
+      {
+       "who": "cici",
+       "to": "@bankEdge:40,-180",
+       "dur": 3,
+       "pose": "fly",
+       "then": "fly"
+      },
+      {
+       "prop": "momo",
+       "state": "hidden",
+       "delay": 4.06
+      },
+      {
+       "prop": "cici",
+       "state": "hidden",
+       "delay": 4.06
+      },
+      {
+       "who": "dodo",
+       "pose": "hop",
+       "then": "idle",
+       "delay": 4.43
+      }
+     ],
+     "cam": {
+      "x": 1600,
+      "y": 470,
+      "z": 1.05,
+      "dur": 8
+     },
+     "music": "haru"
+    },
+    {
+     "say": "Hari itu Momo belajar: menolong teman lebih berharga daripada peta mana pun. Kalau tersesat, lihat sekeliling, karena alam bisa menunjukkan jalan.",
+     "tone": "bijak, pelan, menyampaikan pesan cerita",
+     "do": [
+      {
+       "who": "momo",
+       "to": [
+        3160,
+        792
+       ],
+       "dur": 0.2,
+       "delay": 0.42
+      },
+      {
+       "who": "cici",
+       "to": [
+        3230,
+        640
+       ],
+       "dur": 0.2,
+       "delay": 0.42
+      }
+     ],
+     "cam": {
+      "x": 1750,
+      "y": 450,
+      "z": 0.95,
+      "dur": 12
+     }
+    },
+    {
+     "say": "Tapi di tikungan jalan, terdengar suara keras. Bruk! Bruk! Tanah sampai bergetar…",
+     "tone": "berubah tegang dan misterius; bruk diucapkan berat",
+     "do": [
+      {
+       "prop": "momo",
+       "state": "show",
+       "delay": 0.26
+      },
+      {
+       "prop": "cici",
+       "state": "show",
+       "delay": 0.26
+      },
+      {
+       "who": "momo",
+       "expr": "surprised",
+       "face": "r",
+       "delay": 0.52
+      },
+      {
+       "fx": "exclaim",
+       "who": "momo",
+       "delay": 2.09
+      }
+     ],
+     "cam": {
+      "x": 3150,
+      "y": 640,
+      "z": 1.5,
+      "dur": 2.5,
+      "shake": 5
+     },
+     "music": "misteri",
+     "ambience": "angin",
+     "sfx": [
+      "thud"
+     ]
+    },
+    {
+     "who": "cici",
+     "say": "Momo… itu suara apa? Besar sekali kedengarannya!",
+     "tone": "berbisik cemas",
+     "do": [
+      {
+       "who": "cici",
+       "pose": "scared",
+       "expr": "scared"
+      }
+     ],
+     "cam": {
+      "x": 3190,
+      "y": 620,
+      "z": 1.8,
+      "dur": 1.2
+     }
+    },
+    {
+     "say": "Siapakah yang datang? Kita lanjutkan di cerita berikutnya.",
+     "tone": "menutup bab dengan penasaran, mengajak anak-anak kembali",
+     "do": [
+      {
+       "who": "momo",
+       "look": "r",
+       "expr": "curious"
+      },
+      {
+       "fx": "question",
+       "who": "momo",
+       "delay": 1.13
+      }
+     ],
+     "cam": {
+      "x": 3200,
+      "y": 600,
+      "z": 1.6,
+      "dur": 5,
+      "shake": 2
+     }
+    }
+   ]
+  }
+ ]
+}

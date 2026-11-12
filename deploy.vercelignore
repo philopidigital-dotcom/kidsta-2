@@ -1,0 +1,11 @@
+/DEPLOY.bat
+/BACA-SAYA.txt
+/hasil-link.txt
+/.vercel/
+**/node_modules/
+**/mentah/
+**/kunci-gemini*
+**/*.wav
+**/*.zip
+**/*.log
+**/.env*

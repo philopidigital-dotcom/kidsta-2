@@ -1,0 +1,190 @@
+/* ==========================================================
+   Base, utilitas, dan komponen dasar (tombol, banner, HUD, toast)
+   ========================================================== */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body {
+  background: var(--night-950);
+  color: var(--parch-100);
+  font-family: var(--font-read);
+  font-size: var(--fs-body);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+button { font: inherit; color: inherit; }
+img, svg { display: block; }
+#app { position: fixed; inset: 0; overflow: hidden; }
+
+:focus-visible {
+  outline: 3px solid var(--gold-300);
+  outline-offset: 4px;
+  border-radius: 10px;
+}
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+/* ---------- Preloader ---------- */
+.preloader {
+  position: absolute; inset: 0; z-index: 100;
+  display: grid; place-content: center; justify-items: center; gap: 22px;
+  background: radial-gradient(ellipse at 50% 40%, #142654 0%, var(--night-950) 70%);
+  transition: opacity .8s ease, visibility .8s;
+}
+.preloader.is-done { opacity: 0; visibility: hidden; }
+.preloader__sigil {
+  width: 74px; height: 74px; border-radius: 50%;
+  border: 2px solid rgba(217, 177, 95, .25);
+  border-top-color: var(--gold-300);
+  box-shadow: var(--glow-gold);
+  animation: spin 1.4s linear infinite;
+}
+.preloader__text { font-family: var(--font-label); letter-spacing: .12em; color: var(--gold-200); font-size: .95rem; margin: 0; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ---------- Lapisan utama ---------- */
+.stage {
+  position: absolute; inset: 0; z-index: 10;
+  perspective: 1600px;
+  transform-origin: 50% 50%;
+}
+.screen {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+
+/* ---------- Banner judul (pita emas) ---------- */
+.banner {
+  position: relative; display: inline-flex; align-items: center; justify-content: center;
+  padding: .55em 2.4em .6em;
+  font-family: var(--font-display); font-weight: 600;
+  font-size: var(--fs-h1); line-height: 1.05;
+  color: var(--gold-200);
+  text-shadow: 0 2px 0 rgba(0, 0, 0, .45), 0 0 22px rgba(255, 200, 110, .35);
+  letter-spacing: .01em;
+  white-space: nowrap;
+  isolation: isolate;
+}
+.banner__bg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; z-index: -1; }
+.banner small {
+  display: block; font-family: var(--font-label); font-size: .38em; letter-spacing: .3em;
+  color: var(--gold-400); text-transform: uppercase; margin-bottom: .35em;
+}
+.banner__inner { display: flex; flex-direction: column; align-items: center; }
+
+.screen-title { position: absolute; top: 6vh; left: 0; right: 0; display: flex; justify-content: center; pointer-events: none; z-index: 4; }
+
+/* ---------- Tombol utama (ajaib) ---------- */
+.btn-magic {
+  --bg1: #3a2a86; --bg2: #1d1a55;
+  position: relative; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center; gap: .6em;
+  padding: .7em 2.1em;
+  min-height: 48px;
+  border-radius: var(--r-pill);
+  border: 2px solid var(--gold-400);
+  background: linear-gradient(180deg, var(--bg1), var(--bg2));
+  color: var(--gold-100, #fff3d6);
+  font-family: var(--font-display); font-weight: 600; font-size: 1.15rem; letter-spacing: .02em;
+  box-shadow: 0 0 0 4px rgba(20, 14, 40, .65), 0 0 0 5px rgba(217, 177, 95, .45), 0 10px 30px rgba(0, 0, 0, .5), inset 0 1px 0 rgba(255, 255, 255, .25);
+  transition: transform var(--t-fast) var(--ease-out), box-shadow var(--t-med) ease, filter var(--t-med);
+  overflow: hidden;
+}
+.btn-magic::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(110deg, transparent 30%, rgba(255, 240, 200, .45) 50%, transparent 70%);
+  transform: translateX(-120%);
+  transition: transform .9s var(--ease-out);
+}
+.btn-magic:hover { transform: translateY(-2px) scale(1.03); filter: brightness(1.12); box-shadow: 0 0 0 4px rgba(20, 14, 40, .65), 0 0 0 5px var(--gold-300), 0 0 30px var(--gold-glow), 0 14px 34px rgba(0, 0, 0, .55); }
+.btn-magic:hover::after { transform: translateX(120%); }
+.btn-magic:active { transform: translateY(1px) scale(.98); }
+.btn-magic[disabled] { opacity: .6; cursor: progress; }
+.btn-magic--ghost { --bg1: rgba(40, 30, 20, .75); --bg2: rgba(20, 14, 10, .85); }
+.btn-magic--sm { font-size: 1rem; padding: .55em 1.5em; min-height: 42px; }
+
+/* ---------- Tombol bundar HUD (cincin emas) ---------- */
+.ring-btn {
+  width: 58px; height: 58px; border-radius: 50%; cursor: pointer;
+  display: grid; place-items: center;
+  border: 2px solid var(--gold-400);
+  background: radial-gradient(circle at 50% 35%, #4a2c1a, #1f120a 75%);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, .45), 0 0 0 4px rgba(217, 177, 95, .35), 0 8px 18px rgba(0, 0, 0, .5), inset 0 2px 0 rgba(255, 220, 150, .25);
+  color: var(--gold-200);
+  transition: transform var(--t-fast) var(--ease-out), box-shadow var(--t-med);
+}
+.ring-btn svg { width: 26px; height: 26px; }
+.ring-btn:hover { transform: scale(1.08); box-shadow: 0 0 0 3px rgba(0, 0, 0, .45), 0 0 0 4px var(--gold-300), 0 0 22px var(--gold-glow); }
+.ring-btn:active { transform: scale(.95); }
+.ring-btn[aria-pressed="false"] { color: var(--parch-400); }
+
+.hud { position: absolute; inset: 0; z-index: 40; pointer-events: none; }
+.hud__slot { position: absolute; top: 26px; display: flex; gap: 14px; pointer-events: auto; }
+.hud__slot--l { left: 28px; }
+.hud__slot--r { right: 28px; }
+.hud .ring-btn { opacity: 0; transform: scale(.6); transition: opacity .4s, transform .5s var(--ease-out), box-shadow var(--t-med); }
+.hud .ring-btn.is-on { opacity: 1; transform: scale(1); }
+.hud .ring-btn:not(.is-on) { pointer-events: none; }
+.hud .ring-btn.is-on:hover { transform: scale(1.08); }
+
+.who {
+  display: flex; align-items: center; gap: 10px; pointer-events: auto;
+  font-family: var(--font-label); font-size: .85rem; letter-spacing: .06em; color: var(--gold-200);
+}
+
+/* Menu akun */
+.acct-menu {
+  position: absolute; top: 96px; right: 28px; z-index: 45; min-width: 230px;
+  padding: 16px; border-radius: var(--r-md);
+  background: linear-gradient(180deg, rgba(40, 26, 16, .97), rgba(22, 14, 9, .97));
+  border: 1px solid rgba(217, 177, 95, .5);
+  box-shadow: var(--shadow-soft), 0 0 30px rgba(0, 0, 0, .4);
+  color: var(--parch-200);
+  transform-origin: top right;
+}
+.acct-menu[hidden] { display: none; }
+.acct-menu__name { font-family: var(--font-display); font-size: 1.15rem; color: var(--gold-200); margin: 0 0 2px; }
+.acct-menu__mail { font-size: .85rem; opacity: .75; margin: 0 0 14px; word-break: break-all; }
+
+/* ---------- Toast ---------- */
+.toast-root { position: absolute; left: 50%; bottom: 34px; transform: translateX(-50%); z-index: 90; display: grid; gap: 10px; pointer-events: none; }
+.toast {
+  padding: 12px 22px; border-radius: var(--r-pill);
+  background: rgba(30, 20, 12, .94); border: 1px solid var(--gold-500);
+  color: var(--parch-100); font-size: .95rem; box-shadow: var(--shadow-soft);
+  animation: toast-in .5s var(--ease-out);
+}
+.toast--err { border-color: #d77b5f; }
+@keyframes toast-in { from { opacity: 0; transform: translateY(14px); } }
+
+/* ---------- Panah carousel ---------- */
+.arrow-btn {
+  position: absolute; top: 50%; z-index: 6; width: 64px; height: 64px; margin-top: -32px;
+  border-radius: 50%; border: 2px solid var(--gold-400); cursor: pointer;
+  background: radial-gradient(circle at 50% 35%, rgba(70, 44, 26, .95), rgba(25, 15, 9, .95));
+  color: var(--gold-200); display: grid; place-items: center;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, .4), 0 8px 20px rgba(0, 0, 0, .5);
+  transition: transform var(--t-fast) var(--ease-out), box-shadow var(--t-med), opacity .3s;
+}
+.arrow-btn svg { width: 28px; height: 28px; }
+.arrow-btn:hover { transform: scale(1.1); box-shadow: 0 0 0 3px rgba(0, 0, 0, .4), 0 0 24px var(--gold-glow); }
+.arrow-btn:disabled { opacity: .25; cursor: default; transform: none; }
+.arrow-btn--l { left: 4vw; }
+.arrow-btn--r { right: 4vw; }
+
+/* Petunjuk keyboard */
+.kbd-hint {
+  position: absolute; bottom: 3.2vh; left: 0; right: 0; text-align: center;
+  font-family: var(--font-label); font-size: .78rem; letter-spacing: .14em; color: rgba(246, 226, 168, .55);
+  pointer-events: none;
+}
+.kbd-hint kbd {
+  font-family: inherit; padding: 1px 7px; border-radius: 5px; border: 1px solid rgba(217, 177, 95, .4);
+  background: rgba(0, 0, 0, .3); margin: 0 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}

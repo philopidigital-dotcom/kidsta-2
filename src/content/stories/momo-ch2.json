@@ -1,0 +1,2074 @@
+{
+ "format": "paper",
+ "id": "momo-ch2",
+ "bookId": "petualangan-si-monyet",
+ "chapterId": "momo-2",
+ "chapterLabel": "Chapter 2",
+ "title": "Hutan Bisik-Bisik",
+ "scenes": [
+  {
+   "id": "s1",
+   "name": "Pamit di Kala Fajar",
+   "set": "teras",
+   "grade": "dawn",
+   "weather": "motes",
+   "music": "tenang",
+   "ambience": "hutan",
+   "props": {
+    "momo.scarf": "on",
+    "momo.pack": "on"
+   },
+   "cast": [
+    {
+     "id": "momo",
+     "at": "momo",
+     "face": "r",
+     "pose": "idle",
+     "expr": "calm"
+    },
+    {
+     "id": "kakek",
+     "at": "kakek",
+     "face": "l",
+     "pose": "idle",
+     "expr": "calm"
+    },
+    {
+     "id": "cici",
+     "at": "railSit",
+     "face": "l",
+     "pose": "idle",
+     "expr": "happy"
+    }
+   ],
+   "cam": {
+    "x": 900,
+    "y": 520,
+    "z": 1.15,
+    "rot": -1.5
+   },
+   "beats": [
+    {
+     "say": "Pagi masih berkabut ketika Momo berdiri di teras rumah pohon, dengan syal merah di lehernya.",
+     "tone": "lembut dan tenang, seperti membuka pagi yang penting",
+     "cam": {
+      "x": 820,
+      "y": 640,
+      "z": 1.9,
+      "rot": 0,
+      "dur": 6,
+      "ease": "sine.inOut"
+     },
+     "do": [
+      {
+       "who": "momo",
+       "look": "up",
+       "expr": "calm"
+      }
+     ]
+    },
+    {
+     "say": "Di ranselnya ada peta tua, sebuah pisang, dan sehelai daun emas yang semalam menunjukkan jalan.",
+     "tone": "hangat, sedikit misterius di akhir",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "think"
+      },
+      {
+       "fx": "sparkle",
+       "who": "momo",
+       "delay": 3.2
+      }
+     ]
+    },
+    {
+     "who": "kakek",
+     "say": "Ingat pesan Kakek, Momo. Kalau gelap, cari cahaya. Kalau takut, tarik napas pelan-pelan.",
+     "tone": "kakek yang hangat dan bijak menasihati cucunya, pelan",
+     "cam": {
+      "x": 960,
+      "y": 640,
+      "z": 2.0,
+      "dur": 2.5
+     },
+     "do": [
+      {
+       "who": "kakek",
+       "pose": "point"
+      },
+      {
+       "who": "momo",
+       "pose": "idle",
+       "look": "r",
+       "expr": "curious"
+      }
+     ]
+    },
+    {
+     "who": "momo",
+     "say": "Tarik napas… fuuuh. Baik, Kek! Momo ingat!",
+     "tone": "menarik napas sungguhan lalu menjawab riang dan yakin",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "stretch",
+       "then": "nod",
+       "expr": "brave"
+      },
+      {
+       "who": "kakek",
+       "pose": "nod",
+       "expr": "happy"
+      }
+     ]
+    },
+    {
+     "say": "Kakek memeluk Momo erat-erat. Hangat sekali, seperti selimut di malam hujan.",
+     "tone": "haru, sangat lembut, pelan",
+     "music": "haru",
+     "cam": {
+      "x": 920,
+      "y": 650,
+      "z": 2.3,
+      "dur": 4
+     },
+     "do": [
+      {
+       "who": "momo",
+       "to": "@kakek:-78,0",
+       "dur": 1.2,
+       "then": "hug",
+       "expr": "dream"
+      },
+      {
+       "who": "kakek",
+       "pose": "hug",
+       "expr": "dream",
+       "delay": 1.1
+      },
+      {
+       "fx": "hearts",
+       "who": "kakek",
+       "delay": 2.2
+      }
+     ]
+    },
+    {
+     "who": "cici",
+     "say": "Ayo, Momo! Aku ikut! Sayapku kecil, tapi mataku tajam!",
+     "tone": "burung kecil cerewet, bersemangat sekali",
+     "cam": {
+      "x": 1100,
+      "y": 600,
+      "z": 1.6,
+      "dur": 2.2
+     },
+     "do": [
+      {
+       "who": "cici",
+       "pose": "hop",
+       "expr": "joy"
+      },
+      {
+       "who": "momo",
+       "pose": "idle",
+       "look": "r",
+       "expr": "joy"
+      },
+      {
+       "who": "kakek",
+       "pose": "idle",
+       "expr": "happy"
+      }
+     ]
+    },
+    {
+     "say": "Momo melambaikan tangan, lalu menuruni tangga tali. Petualangan besar pun dimulai!",
+     "tone": "bersemangat, berani, menaik di akhir",
+     "music": "berani",
+     "cam": {
+      "x": 640,
+      "y": 620,
+      "z": 1.5,
+      "dur": 5
+     },
+     "do": [
+      {
+       "who": "momo",
+       "pose": "wave",
+       "expr": "brave"
+      },
+      {
+       "who": "kakek",
+       "pose": "wave",
+       "delay": 0.6
+      },
+      {
+       "who": "momo",
+       "to": "ladderTop",
+       "dur": 2.2,
+       "delay": 2.2,
+       "then": "climb"
+      },
+      {
+       "who": "cici",
+       "to": "@ladderTop:60,-190",
+       "pose": "fly",
+       "dur": 2.4,
+       "delay": 2.4,
+       "then": "fly"
+      }
+     ],
+     "hold": 900
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "name": "Gerbang Hutan Bisik-Bisik",
+   "set": "hutanBisik",
+   "grade": "day",
+   "weather": "motes",
+   "music": "penasaran",
+   "ambience": "angin",
+   "props": {
+    "momo.scarf": "on",
+    "momo.pack": "on",
+    "whispers": "hidden",
+    "shadow": "hidden",
+    "ranting": "hidden",
+    "light": "off"
+   },
+   "cast": [
+    {
+     "id": "momo",
+     "at": "offL",
+     "face": "r",
+     "pose": "idle",
+     "expr": "happy"
+    },
+    {
+     "id": "cici",
+     "at": "@offL:70,-190",
+     "face": "r",
+     "pose": "fly",
+     "expr": "happy"
+    }
+   ],
+   "cam": {
+    "x": 420,
+    "y": 560,
+    "z": 1.25
+   },
+   "beats": [
+    {
+     "say": "Mereka berjalan melewati padang bunga, sampai tiba di depan hutan yang pohonnya tinggi-tinggi dan rapat.",
+     "tone": "bercerita dengan tenang, lalu kagum melihat hutan besar",
+     "cam": {
+      "x": 520,
+      "y": 470,
+      "z": 1.05,
+      "dur": 7,
+      "ease": "sine.inOut"
+     },
+     "do": [
+      {
+       "who": "momo",
+       "to": "gate",
+       "dur": 5.5,
+       "then": "idle"
+      },
+      {
+       "who": "cici",
+       "to": "@gate:70,-190",
+       "pose": "fly",
+       "dur": 5.6,
+       "then": "fly"
+      }
+     ]
+    },
+    {
+     "say": "Di gerbangnya ada papan kayu tua. Tulisannya: Hutan Bisik-Bisik.",
+     "tone": "pelan, membaca papan dengan nada misterius",
+     "cam": {
+      "x": 640,
+      "y": 560,
+      "z": 2.1,
+      "dur": 3
+     },
+     "do": [
+      {
+       "who": "momo",
+       "look": "up",
+       "expr": "curious"
+      },
+      {
+       "prop": "sign",
+       "state": "shake",
+       "delay": 2.6
+      }
+     ],
+     "sfx": [
+      "creak"
+     ]
+    },
+    {
+     "who": "cici",
+     "say": "Kenapa namanya Bisik-Bisik, ya?",
+     "tone": "heran dan polos",
+     "do": [
+      {
+       "who": "cici",
+       "expr": "curious"
+      },
+      {
+       "fx": "question",
+       "who": "cici"
+      }
+     ]
+    },
+    {
+     "say": "Belum sempat Momo menjawab, terdengar suara dari dalam hutan. Sssst… sssst… wusss…",
+     "tone": "berbisik misterius; bunyi sssst diucapkan seperti bisikan angin",
+     "music": "misteri",
+     "weather": "wind",
+     "sfx": [
+      "gust"
+     ],
+     "cam": {
+      "x": 1000,
+      "y": 560,
+      "z": 1.5,
+      "dur": 4.5
+     },
+     "do": [
+      {
+       "prop": "whispers",
+       "state": "show",
+       "delay": 2.6
+      },
+      {
+       "who": "momo",
+       "expr": "surprised",
+       "look": "r",
+       "delay": 2.6
+      },
+      {
+       "who": "cici",
+       "expr": "scared",
+       "pose": "hide",
+       "delay": 3
+      }
+     ]
+    },
+    {
+     "who": "momo",
+     "say": "Cici… kamu dengar itu? Hutannya… berbisik.",
+     "tone": "berbisik tegang, mata membesar",
+     "cam": {
+      "follow": "momo",
+      "z": 2.2,
+      "dur": 2
+     },
+     "do": [
+      {
+       "who": "momo",
+       "pose": "peek",
+       "expr": "worried"
+      }
+     ]
+    },
+    {
+     "say": "Di luar hutan, matahari bersinar terang. Tapi di dalam hutan, daun-daun yang rapat menutupi cahaya.",
+     "tone": "menjelaskan dengan jelas dan lembut seperti guru",
+     "weather": "motes",
+     "cam": {
+      "x": 820,
+      "y": 450,
+      "z": 1.0,
+      "dur": 5
+     },
+     "do": [
+      {
+       "who": "momo",
+       "pose": "idle",
+       "expr": "curious"
+      },
+      {
+       "who": "cici",
+       "pose": "fly",
+       "expr": "worried"
+      }
+     ]
+    },
+    {
+     "say": "Coba lihat baik-baik, ya!",
+     "tone": "mengajak anak-anak memperhatikan",
+     "ask": {
+      "type": "choice",
+      "q": "Di dalam hutan itu terang atau gelap?",
+      "options": [
+       {
+        "id": "terang",
+        "label": "Terang",
+        "art": "sun"
+       },
+       {
+        "id": "gelap",
+        "label": "Gelap",
+        "art": "moon"
+       }
+      ],
+      "answer": "gelap",
+      "praise": "Betul! Di dalam hutan gelap, karena cahaya matahari tertutup daun.",
+      "retry": "Coba lihat lagi. Apakah cahaya matahari bisa masuk ke dalam hutan?"
+     }
+    },
+    {
+     "say": "Momo menelan ludah. Kakinya terasa berat. Tapi ia teringat Pohon Induk yang sedang sakit.",
+     "tone": "pelan dan ragu, lalu menguat penuh tekad",
+     "music": "haru",
+     "cam": {
+      "follow": "momo",
+      "z": 2.3,
+      "dur": 3
+     },
+     "do": [
+      {
+       "who": "momo",
+       "expr": "worried",
+       "pose": "think"
+      },
+      {
+       "fx": "sweat",
+       "who": "momo",
+       "delay": 0.8
+      },
+      {
+       "who": "momo",
+       "expr": "brave",
+       "delay": 5.2
+      }
+     ]
+    },
+    {
+     "who": "momo",
+     "say": "Tarik napas… fuuuh. Ayo, Cici. Kita masuk pelan-pelan.",
+     "tone": "menarik napas sungguhan, berani walau masih gugup",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "stretch",
+       "then": "idle",
+       "expr": "brave"
+      },
+      {
+       "who": "cici",
+       "expr": "brave",
+       "delay": 2.5
+      }
+     ]
+    },
+    {
+     "say": "Langkah demi langkah, mereka masuk ke dalam Hutan Bisik-Bisik. Cahaya di belakang mereka makin lama makin kecil.",
+     "tone": "pelan, tegang, suara makin mengecil",
+     "music": "misteri",
+     "grade": "night",
+     "ambience": "malam",
+     "cam": {
+      "x": 1180,
+      "y": 560,
+      "z": 1.5,
+      "dur": 8,
+      "ease": "sine.inOut"
+     },
+     "do": [
+      {
+       "who": "momo",
+       "to": "in1",
+       "dur": 7,
+       "then": "idle"
+      },
+      {
+       "who": "cici",
+       "to": "@in1:60,-150",
+       "pose": "fly",
+       "dur": 7.1,
+       "then": "fly"
+      }
+     ],
+     "hold": 800
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "name": "Bayangan di Balik Pohon",
+   "set": "hutanBisik",
+   "grade": "night",
+   "weather": "none",
+   "music": "misteri",
+   "ambience": "malam",
+   "props": {
+    "momo.scarf": "on",
+    "momo.pack": "on",
+    "whispers": "hidden",
+    "shadow": "hidden",
+    "ranting": "hidden",
+    "light": "off",
+    "mushGlow": "hidden",
+    "momo.lamp": "off"
+   },
+   "cast": [
+    {
+     "id": "momo",
+     "at": "in1",
+     "face": "r",
+     "pose": "idle",
+     "expr": "worried"
+    },
+    {
+     "id": "cici",
+     "at": "@in1:60,-150",
+     "face": "r",
+     "pose": "fly",
+     "expr": "worried"
+    }
+   ],
+   "cam": {
+    "x": 1180,
+    "y": 560,
+    "z": 1.5
+   },
+   "beats": [
+    {
+     "say": "Di dalam hutan, semuanya tampak berbeda. Batang pohon seperti kaki raksasa, dan akar-akar seperti ular yang tidur.",
+     "tone": "pelan, merinding, bercerita dalam gelap",
+     "cam": {
+      "x": 1300,
+      "y": 430,
+      "z": 1.1,
+      "dur": 7,
+      "ease": "sine.inOut"
+     },
+     "do": [
+      {
+       "who": "momo",
+       "look": "up",
+       "expr": "worried"
+      }
+     ]
+    },
+    {
+     "say": "Kresek… kresek… Ada sesuatu yang bergerak di depan mereka.",
+     "tone": "berbisik tegang; kresek diucapkan pelan seperti bunyi daun",
+     "sfx": [
+      "rustle"
+     ],
+     "cam": {
+      "x": 1500,
+      "y": 560,
+      "z": 1.6,
+      "dur": 3
+     },
+     "do": [
+      {
+       "who": "momo",
+       "expr": "surprised",
+       "pose": "peek"
+      },
+      {
+       "fx": "exclaim",
+       "who": "momo",
+       "delay": 0.5
+      },
+      {
+       "who": "cici",
+       "pose": "hide",
+       "expr": "scared"
+      }
+     ]
+    },
+    {
+     "who": "cici",
+     "say": "Mo-Momo… itu apa? Tinggi sekali! Tangannya panjang!",
+     "tone": "ketakutan, gemetar, terbata-bata",
+     "music": "tegang",
+     "cam": {
+      "x": 1620,
+      "y": 480,
+      "z": 1.35,
+      "dur": 2.2,
+      "shake": 5
+     },
+     "do": [
+      {
+       "prop": "shadow",
+       "state": "show"
+      },
+      {
+       "who": "cici",
+       "to": "@momo:-50,-120",
+       "pose": "fly",
+       "dur": 0.7,
+       "then": "hide"
+      }
+     ]
+    },
+    {
+     "say": "Sebuah bayangan hitam berdiri di antara pohon. Tangannya panjang, jarinya runcing, dan ia bergoyang-goyang.",
+     "tone": "tegang, pelan, menakutkan tapi tidak berlebihan",
+     "cam": {
+      "x": 1760,
+      "y": 430,
+      "z": 1.75,
+      "dur": 5
+     },
+     "do": [
+      {
+       "who": "momo",
+       "pose": "scared",
+       "expr": "scared"
+      }
+     ]
+    },
+    {
+     "say": "Jantung Momo berdebar kencang. Dag dig dug, dag dig dug. Ia ingin lari pulang.",
+     "tone": "cepat dan cemas; dag dig dug seperti detak jantung",
+     "cam": {
+      "follow": "momo",
+      "z": 2.4,
+      "dur": 2,
+      "shake": 3
+     },
+     "do": [
+      {
+       "fx": "sweat",
+       "who": "momo"
+      },
+      {
+       "who": "momo",
+       "face": "l",
+       "delay": 3.4
+      }
+     ]
+    },
+    {
+     "say": "Tapi Momo ingat pesan Kakek: kalau gelap, cari cahaya.",
+     "tone": "melambat, teringat, mulai tenang",
+     "music": "haru",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "think",
+       "expr": "worried",
+       "face": "r"
+      },
+      {
+       "fx": "sparkle",
+       "who": "momo",
+       "delay": 2.4
+      }
+     ]
+    },
+    {
+     "say": "Momo mengeluarkan daun emas dari ranselnya. Daun itu berpendar lembut, seperti lampu kecil.",
+     "tone": "takjub, lembut, penuh harapan",
+     "sfx": [
+      "chime"
+     ],
+     "do": [
+      {
+       "who": "momo",
+       "pose": "point",
+       "expr": "brave"
+      },
+      {
+       "prop": "momo.lamp",
+       "state": "on",
+       "delay": 1.6
+      },
+      {
+       "prop": "light",
+       "state": "momo:230",
+       "delay": 1.8
+      },
+      {
+       "who": "cici",
+       "pose": "fly",
+       "expr": "curious",
+       "delay": 2.5
+      }
+     ]
+    },
+    {
+     "say": "Momo mengangkat daun itu tinggi-tinggi. Dan ternyata…",
+     "tone": "menahan napas, penuh rasa ingin tahu, menggantung",
+     "cam": {
+      "x": 1700,
+      "y": 470,
+      "z": 1.5,
+      "dur": 3.5
+     },
+     "do": [
+      {
+       "prop": "light",
+       "state": "momo:520",
+       "delay": 0.6
+      },
+      {
+       "prop": "shadow",
+       "state": "hidden",
+       "delay": 1.6
+      },
+      {
+       "prop": "ranting",
+       "state": "show",
+       "delay": 1.6
+      }
+     ],
+     "hold": 700
+    },
+    {
+     "say": "Lihat! Bayangan itu sebenarnya apa, ya?",
+     "tone": "bertanya kepada anak-anak dengan gembira",
+     "ask": {
+      "type": "choice",
+      "q": "Bayangan menakutkan itu sebenarnya apa?",
+      "options": [
+       {
+        "id": "raksasa",
+        "label": "Raksasa",
+        "art": "monster"
+       },
+       {
+        "id": "ranting",
+        "label": "Ranting pohon",
+        "art": "branch"
+       },
+       {
+        "id": "ular",
+        "label": "Ular",
+        "art": "snake"
+       }
+      ],
+      "answer": "ranting",
+      "praise": "Betul! Itu cuma ranting pohon yang tertiup angin.",
+      "retry": "Coba lihat lagi dengan cahaya daun emas. Ada daun-daun kecilnya, kan?"
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Hahaha! Cuma ranting! Halo, Ranting! Kamu bikin kaget saja!",
+     "tone": "tertawa lega lalu bercanda riang",
+     "music": "lucu",
+     "tts": "<laugh> Cuma ranting! Halo, Ranting! Kamu bikin kaget saja!",
+     "cam": {
+      "follow": "momo",
+      "z": 2.0,
+      "dur": 2
+     },
+     "do": [
+      {
+       "who": "momo",
+       "pose": "wave",
+       "expr": "joy"
+      },
+      {
+       "prop": "ranting",
+       "state": "shake",
+       "delay": 1.8
+      }
+     ]
+    },
+    {
+     "who": "cici",
+     "say": "Huuuh… aku kira raksasa. Aku hampir pingsan, tahu!",
+     "tone": "lega, lucu, sedikit merajuk",
+     "do": [
+      {
+       "who": "cici",
+       "pose": "fly",
+       "expr": "dizzy"
+      },
+      {
+       "fx": "dizzy",
+       "who": "cici"
+      },
+      {
+       "who": "momo",
+       "pose": "idle",
+       "expr": "joy"
+      }
+     ]
+    },
+    {
+     "say": "Momo belajar sesuatu. Dalam gelap, benda biasa bisa tampak menakutkan. Kalau diberi cahaya, kita tahu yang sebenarnya.",
+     "tone": "hangat dan bijak, menjelaskan pelajaran dengan jelas",
+     "music": "tenang",
+     "cam": {
+      "x": 1650,
+      "y": 500,
+      "z": 1.3,
+      "dur": 6
+     },
+     "do": [
+      {
+       "who": "momo",
+       "expr": "happy"
+      },
+      {
+       "who": "cici",
+       "expr": "happy"
+      }
+     ]
+    },
+    {
+     "say": "Mereka berjalan lagi. Di tepi jalan, tumbuh jamur-jamur kecil yang menyala biru.",
+     "tone": "penasaran, mulai ceria",
+     "music": "penasaran",
+     "cam": {
+      "x": 2080,
+      "y": 620,
+      "z": 1.7,
+      "dur": 6,
+      "ease": "sine.inOut"
+     },
+     "do": [
+      {
+       "who": "momo",
+       "to": "mush",
+       "dur": 4.6,
+       "then": "idle",
+       "expr": "curious"
+      },
+      {
+       "who": "cici",
+       "to": "@mush:60,-150",
+       "pose": "fly",
+       "dur": 4.7,
+       "then": "fly"
+      },
+      {
+       "prop": "mushGlow",
+       "state": "show",
+       "delay": 3
+      }
+     ]
+    },
+    {
+     "say": "Ada jamur yang bulat seperti bola, ada daun yang berbentuk segitiga, dan ada bunga yang berbentuk bintang.",
+     "tone": "menjelaskan satu per satu dengan jelas, jeda di tiap benda",
+     "cam": {
+      "x": 2230,
+      "y": 700,
+      "z": 2.3,
+      "dur": 4
+     },
+     "do": [
+      {
+       "prop": "shapeRound",
+       "state": "glow",
+       "delay": 0.8
+      },
+      {
+       "prop": "shapeTri",
+       "state": "glow",
+       "delay": 3.4
+      },
+      {
+       "prop": "shapeStar",
+       "state": "glow",
+       "delay": 6.2
+      }
+     ]
+    },
+    {
+     "say": "Ayo tebak!",
+     "tone": "mengajak bermain, riang",
+     "ask": {
+      "type": "choice",
+      "q": "Yang mana berbentuk segitiga?",
+      "options": [
+       {
+        "id": "jamur",
+        "label": "Jamur",
+        "art": "shapeRound"
+       },
+       {
+        "id": "daun",
+        "label": "Daun",
+        "art": "shapeTri"
+       },
+       {
+        "id": "bunga",
+        "label": "Bunga",
+        "art": "shapeStar"
+       }
+      ],
+      "answer": "daun",
+      "praise": "Hebat! Daun itu berbentuk segitiga, punya tiga sudut.",
+      "retry": "Segitiga punya tiga sudut yang runcing. Coba cari lagi!"
+     }
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "name": "Tangis di Dalam Batang Kayu",
+   "set": "hutanBisik",
+   "grade": "night",
+   "weather": "none",
+   "music": "misteri",
+   "ambience": "malam",
+   "props": {
+    "momo.scarf": "on",
+    "momo.pack": "on",
+    "whispers": "hidden",
+    "shadow": "hidden",
+    "ranting": "show",
+    "light": "momo:230",
+    "mushGlow": "show",
+    "logGlow": "hidden",
+    "momo.lamp": "on"
+   },
+   "cast": [
+    {
+     "id": "momo",
+     "at": "mush",
+     "face": "r",
+     "pose": "idle",
+     "expr": "happy"
+    },
+    {
+     "id": "cici",
+     "at": "@mush:60,-150",
+     "face": "r",
+     "pose": "fly",
+     "expr": "happy"
+    },
+    {
+     "id": "pipi",
+     "at": "logHole",
+     "face": "l",
+     "pose": "hide",
+     "expr": "cry",
+     "hidden": true
+    }
+   ],
+   "cam": {
+    "x": 2150,
+    "y": 600,
+    "z": 1.6
+   },
+   "beats": [
+    {
+     "say": "Tiba-tiba bisikan itu terdengar lagi. Kali ini lebih dekat. Hiks… hiks… sssst…",
+     "tone": "berbisik pelan dan misterius; hiks diucapkan seperti isak kecil",
+     "cam": {
+      "x": 2500,
+      "y": 620,
+      "z": 1.5,
+      "dur": 5
+     },
+     "do": [
+      {
+       "prop": "whispers",
+       "state": "show",
+       "delay": 2.2
+      },
+      {
+       "who": "momo",
+       "expr": "surprised",
+       "look": "r"
+      },
+      {
+       "who": "cici",
+       "expr": "worried"
+      }
+     ]
+    },
+    {
+     "who": "cici",
+     "say": "Momo, itu bukan bisikan. Itu… suara menangis!",
+     "tone": "berbisik kaget, menyadari sesuatu",
+     "do": [
+      {
+       "fx": "exclaim",
+       "who": "cici"
+      },
+      {
+       "who": "cici",
+       "expr": "surprised"
+      }
+     ]
+    },
+    {
+     "say": "Suara itu datang dari sebatang kayu tua yang berlubang. Dari dalamnya, terlihat cahaya kecil yang redup, kedap-kedip.",
+     "tone": "pelan, penasaran, iba",
+     "music": "sedih",
+     "cam": {
+      "x": 2720,
+      "y": 680,
+      "z": 2.0,
+      "dur": 6,
+      "ease": "sine.inOut"
+     },
+     "do": [
+      {
+       "prop": "whispers",
+       "state": "hidden"
+      },
+      {
+       "prop": "logGlow",
+       "state": "show",
+       "delay": 2.5
+      },
+      {
+       "who": "momo",
+       "to": "log",
+       "dur": 5,
+       "then": "peek",
+       "expr": "curious"
+      },
+      {
+       "who": "cici",
+       "to": "@log:-40,-170",
+       "pose": "fly",
+       "dur": 5.1,
+       "then": "fly"
+      }
+     ]
+    },
+    {
+     "who": "momo",
+     "say": "Halo? Ada siapa di dalam? Jangan takut, kami teman.",
+     "tone": "sangat lembut dan ramah, pelan",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "idle",
+       "expr": "happy"
+      }
+     ]
+    },
+    {
+     "say": "Pelan-pelan, seekor kunang-kunang kecil mengintip keluar. Matanya basah, dan cahayanya hampir padam.",
+     "tone": "lembut, iba, pelan sekali",
+     "cam": {
+      "x": 2860,
+      "y": 700,
+      "z": 2.7,
+      "dur": 4
+     },
+     "do": [
+      {
+       "prop": "pipi",
+       "state": "show",
+       "delay": 0.8
+      },
+      {
+       "who": "pipi",
+       "to": "logTop",
+       "pose": "fly",
+       "dur": 2.4,
+       "delay": 1,
+       "then": "sad",
+       "expr": "cry"
+      },
+      {
+       "fx": "tears",
+       "who": "pipi",
+       "delay": 4.4
+      }
+     ]
+    },
+    {
+     "who": "pipi",
+     "say": "A-aku Pipi. Aku tersesat… dan aku takut gelap.",
+     "tone": "terisak, malu-malu, pelan dan terbata",
+     "do": [
+      {
+       "who": "pipi",
+       "expr": "sad"
+      }
+     ]
+    },
+    {
+     "who": "cici",
+     "say": "Lho? Kunang-kunang kok takut gelap? Kamu kan punya lampu sendiri!",
+     "tone": "heran dan lucu, cerewet",
+     "music": "lucu",
+     "do": [
+      {
+       "who": "cici",
+       "expr": "curious"
+      },
+      {
+       "fx": "question",
+       "who": "cici"
+      }
+     ]
+    },
+    {
+     "who": "pipi",
+     "say": "Kalau aku takut, cahayaku jadi redup. Makin redup, aku makin takut. Hiks…",
+     "tone": "sedih, terisak di akhir",
+     "music": "sedih",
+     "do": [
+      {
+       "who": "pipi",
+       "expr": "cry",
+       "pose": "cry"
+      },
+      {
+       "fx": "tears",
+       "who": "pipi",
+       "delay": 3
+      }
+     ]
+    },
+    {
+     "say": "Jadi itulah bisik-bisik yang didengar semua hewan. Bukan hantu, bukan raksasa. Hanya Pipi kecil yang menangis sendirian.",
+     "tone": "haru, lembut, penuh pengertian",
+     "music": "haru",
+     "cam": {
+      "x": 2760,
+      "y": 640,
+      "z": 1.7,
+      "dur": 6
+     },
+     "do": [
+      {
+       "who": "cici",
+       "expr": "sad"
+      },
+      {
+       "who": "momo",
+       "expr": "sad"
+      }
+     ]
+    },
+    {
+     "say": "Momo tahu rasanya takut. Tadi pun jantungnya berdebar kencang. Ia duduk di samping Pipi.",
+     "tone": "hangat dan pelan",
+     "do": [
+      {
+       "who": "momo",
+       "to": "logSit",
+       "dur": 1.6,
+       "then": "sit",
+       "expr": "calm"
+      },
+      {
+       "who": "pipi",
+       "pose": "sad",
+       "expr": "sad"
+      }
+     ]
+    },
+    {
+     "who": "momo",
+     "say": "Aku juga takut, kok. Tapi kata Kakek, kalau takut, tarik napas pelan-pelan. Mau coba bersama?",
+     "tone": "lembut, menenangkan seperti kakak yang baik",
+     "cam": {
+      "x": 2840,
+      "y": 690,
+      "z": 2.4,
+      "dur": 3
+     },
+     "do": [
+      {
+       "who": "momo",
+       "expr": "happy"
+      },
+      {
+       "who": "pipi",
+       "expr": "curious",
+       "pose": "fly",
+       "delay": 4
+      }
+     ]
+    },
+    {
+     "say": "Ayo kita bantu Pipi. Tarik napas… tahan… lalu embuskan. Fuuuuh…",
+     "tone": "menuntun dengan sangat pelan dan menenangkan, jeda panjang di antara langkah",
+     "tts": "Ayo kita bantu Pipi. Tarik napas… <long pause> tahan… <long pause> lalu embuskan. Fuuuuh…",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "stretch",
+       "then": "sit",
+       "delay": 2
+      },
+      {
+       "who": "cici",
+       "pose": "stretch",
+       "then": "fly",
+       "delay": 2
+      }
+     ]
+    },
+    {
+     "say": "Cahaya Pipi berkedip. Sedikit lebih terang dari tadi.",
+     "tone": "takjub, pelan, penuh harapan",
+     "sfx": [
+      "chime"
+     ],
+     "do": [
+      {
+       "who": "pipi",
+       "expr": "calm",
+       "delay": 0.6
+      },
+      {
+       "fx": "sparkle",
+       "who": "pipi",
+       "delay": 0.8
+      }
+     ]
+    },
+    {
+     "who": "pipi",
+     "say": "Eh… cahayaku… menyala sedikit!",
+     "tone": "takjub pelan, tidak percaya",
+     "do": [
+      {
+       "who": "pipi",
+       "expr": "surprised",
+       "pose": "hop"
+      }
+     ]
+    },
+    {
+     "who": "momo",
+     "say": "Pipi, aku tahu tempat yang bagus. Ayo ikut, kita lihat langit!",
+     "tone": "riang, mengajak dengan semangat",
+     "music": "penasaran",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "point",
+       "expr": "joy"
+      },
+      {
+       "who": "pipi",
+       "expr": "curious",
+       "pose": "fly"
+      }
+     ],
+     "hold": 800
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "name": "Menghitung Bintang",
+   "set": "tanahLapang",
+   "grade": "night",
+   "weather": "none",
+   "music": "malam",
+   "ambience": "malam",
+   "props": {
+    "momo.scarf": "on",
+    "momo.pack": "on",
+    "light": "pipi:120"
+   },
+   "cast": [
+    {
+     "id": "momo",
+     "at": "left",
+     "face": "r",
+     "pose": "idle",
+     "expr": "happy"
+    },
+    {
+     "id": "cici",
+     "at": "@left:-60,-150",
+     "face": "r",
+     "pose": "fly",
+     "expr": "happy"
+    },
+    {
+     "id": "pipi",
+     "at": "@left:90,-170",
+     "face": "r",
+     "pose": "fly",
+     "expr": "calm"
+    }
+   ],
+   "cam": {
+    "x": 700,
+    "y": 700,
+    "z": 1.9
+   },
+   "beats": [
+    {
+     "say": "Di tengah hutan ada tanah lapang kecil. Di sana pohon-pohon membuka jalan, dan langit malam terlihat luas.",
+     "tone": "megah dan lembut, kagum",
+     "cam": {
+      "x": 900,
+      "y": 400,
+      "z": 1.0,
+      "dur": 8,
+      "ease": "sine.inOut"
+     },
+     "do": [
+      {
+       "who": "momo",
+       "to": "momo",
+       "dur": 4,
+       "then": "idle"
+      },
+      {
+       "who": "cici",
+       "to": "@momo:-70,-150",
+       "pose": "fly",
+       "dur": 4.1,
+       "then": "fly"
+      },
+      {
+       "who": "pipi",
+       "to": "rockTop",
+       "pose": "fly",
+       "dur": 4.6,
+       "then": "idle"
+      }
+     ]
+    },
+    {
+     "say": "Di langit yang gelap, ada titik-titik cahaya kecil yang berkelap-kelip.",
+     "tone": "takjub, pelan",
+     "do": [
+      {
+       "who": "momo",
+       "look": "up",
+       "expr": "curious"
+      },
+      {
+       "who": "pipi",
+       "look": "up"
+      },
+      {
+       "who": "cici",
+       "look": "up"
+      }
+     ]
+    },
+    {
+     "who": "pipi",
+     "say": "Waaah… apa itu? Banyak sekali lampu kecil di atas!",
+     "tone": "takjub polos, pelan lalu bersemangat",
+     "do": [
+      {
+       "who": "pipi",
+       "expr": "surprised",
+       "pose": "hop"
+      }
+     ]
+    },
+    {
+     "who": "momo",
+     "say": "Itu bintang, Pipi. Mereka kecil, dan langitnya gelap. Tapi mereka tetap bersinar.",
+     "tone": "hangat, pelan, yakin",
+     "cam": {
+      "x": 880,
+      "y": 520,
+      "z": 1.35,
+      "dur": 4
+     },
+     "do": [
+      {
+       "who": "momo",
+       "pose": "point",
+       "expr": "happy"
+      }
+     ]
+    },
+    {
+     "say": "Ada lima bintang yang paling terang. Ayo hitung bersama Pipi!",
+     "tone": "mengajak berhitung dengan riang",
+     "cam": {
+      "x": 900,
+      "y": 330,
+      "z": 1.25,
+      "dur": 3
+     },
+     "do": [
+      {
+       "prop": "bigStars",
+       "state": "glow"
+      }
+     ],
+     "ask": {
+      "type": "tap",
+      "q": "Ketuk bintang yang paling terang satu per satu!",
+      "items": [
+       "star1",
+       "star2",
+       "star3",
+       "star4",
+       "star5"
+      ],
+      "count": "number",
+      "praise": "Lima bintang! Terang sekali, ya!"
+     }
+    },
+    {
+     "say": "Setiap kali satu bintang dihitung, cahaya Pipi bertambah terang.",
+     "tone": "lembut, senang",
+     "cam": {
+      "x": 960,
+      "y": 620,
+      "z": 1.9,
+      "dur": 3.5
+     },
+     "do": [
+      {
+       "who": "pipi",
+       "expr": "happy"
+      },
+      {
+       "prop": "light",
+       "state": "pipi:240"
+      },
+      {
+       "fx": "sparkle",
+       "who": "pipi",
+       "delay": 1
+      }
+     ]
+    },
+    {
+     "say": "Bintang punya bentuk yang cantik, dengan lima ujung yang runcing.",
+     "tone": "menjelaskan dengan jelas",
+     "ask": {
+      "type": "choice",
+      "q": "Yang mana bentuk bintang?",
+      "options": [
+       {
+        "id": "lingkaran",
+        "label": "Lingkaran",
+        "art": "circle"
+       },
+       {
+        "id": "bintang",
+        "label": "Bintang",
+        "art": "star"
+       },
+       {
+        "id": "segitiga",
+        "label": "Segitiga",
+        "art": "triangle"
+       }
+      ],
+      "answer": "bintang",
+      "praise": "Betul! Itu bentuk bintang.",
+      "retry": "Bintang punya lima ujung yang runcing. Coba lagi, ya!"
+     }
+    },
+    {
+     "who": "pipi",
+     "say": "Bintang itu kecil seperti aku… tapi mereka tidak takut gelap.",
+     "tone": "merenung pelan, mulai mengerti",
+     "music": "haru",
+     "cam": {
+      "x": 980,
+      "y": 640,
+      "z": 2.3,
+      "dur": 3
+     },
+     "do": [
+      {
+       "who": "pipi",
+       "expr": "calm",
+       "look": "up"
+      }
+     ]
+    },
+    {
+     "who": "momo",
+     "say": "Karena gelap bukan musuh, Pipi. Justru di tempat gelap, cahaya kecilmu paling berguna.",
+     "tone": "hangat, tulus, pelan",
+     "do": [
+      {
+       "who": "momo",
+       "expr": "happy",
+       "look": "r",
+       "pose": "idle"
+      }
+     ]
+    },
+    {
+     "say": "Pipi menarik napas dalam-dalam. Lalu… cring! Cahayanya menyala terang benderang!",
+     "tone": "pelan menahan napas lalu meledak gembira",
+     "tts": "Pipi menarik napas dalam-dalam. <long pause> Lalu… cring! Cahayanya menyala terang benderang!",
+     "music": "gembira",
+     "cam": {
+      "x": 940,
+      "y": 560,
+      "z": 1.5,
+      "dur": 3.5
+     },
+     "do": [
+      {
+       "who": "pipi",
+       "pose": "stretch",
+       "then": "cheer"
+      },
+      {
+       "who": "pipi",
+       "expr": "joy",
+       "delay": 3.6
+      },
+      {
+       "prop": "light",
+       "state": "pipi:620",
+       "delay": 3.6
+      },
+      {
+       "fx": "shine",
+       "who": "pipi",
+       "delay": 3.6
+      },
+      {
+       "who": "momo",
+       "expr": "surprised",
+       "delay": 3.7
+      },
+      {
+       "who": "cici",
+       "expr": "surprised",
+       "delay": 3.7
+      }
+     ]
+    },
+    {
+     "who": "pipi",
+     "say": "Aku menyala! Lihat, lihat! Aku terang sekali!",
+     "tone": "girang sekali, melonjak-lonjak",
+     "sfx": [
+      "magic"
+     ],
+     "do": [
+      {
+       "who": "pipi",
+       "to": "@momo:60,-230",
+       "pose": "fly",
+       "dur": 1.4,
+       "then": "cheer"
+      },
+      {
+       "who": "momo",
+       "pose": "clap",
+       "expr": "joy"
+      }
+     ]
+    },
+    {
+     "who": "cici",
+     "say": "Aduh, silau! Tapi bagus sekali, Pipi! Kamu seperti bintang yang turun ke bumi!",
+     "tone": "lucu lalu kagum tulus",
+     "do": [
+      {
+       "who": "cici",
+       "pose": "hide",
+       "expr": "dizzy"
+      },
+      {
+       "who": "cici",
+       "pose": "hop",
+       "expr": "joy",
+       "delay": 1.8
+      }
+     ]
+    },
+    {
+     "say": "Tadi cahaya Pipi redup. Sekarang, cahayanya bagaimana?",
+     "tone": "bertanya kepada anak-anak, riang",
+     "ask": {
+      "type": "choice",
+      "q": "Sekarang cahaya Pipi terang atau redup?",
+      "options": [
+       {
+        "id": "redup",
+        "label": "Redup",
+        "art": "glowDim"
+       },
+       {
+        "id": "terang",
+        "label": "Terang",
+        "art": "glowBright"
+       }
+      ],
+      "answer": "terang",
+      "praise": "Betul! Sekarang cahaya Pipi terang.",
+      "retry": "Lihat Pipi sekarang. Cahayanya besar dan menyilaukan, kan?"
+     }
+    },
+    {
+     "say": "Mereka bertiga tertawa. Hutan yang tadi menyeramkan, sekarang terasa hangat.",
+     "tone": "hangat, lega, tersenyum",
+     "weather": "fireflies",
+     "cam": {
+      "x": 900,
+      "y": 560,
+      "z": 1.2,
+      "dur": 5
+     },
+     "do": [
+      {
+       "who": "momo",
+       "pose": "cheer",
+       "then": "idle",
+       "expr": "joy"
+      },
+      {
+       "who": "cici",
+       "pose": "fly",
+       "expr": "joy"
+      },
+      {
+       "fx": "notes",
+       "who": "momo",
+       "delay": 1
+      }
+     ]
+    },
+    {
+     "who": "pipi",
+     "say": "Momo, Cici, kalian mau ke mana? Biar aku yang terangi jalannya!",
+     "tone": "bersemangat, ingin membantu",
+     "do": [
+      {
+       "who": "pipi",
+       "pose": "fly",
+       "expr": "happy",
+       "face": "l"
+      }
+     ]
+    },
+    {
+     "who": "momo",
+     "say": "Kami mau ke Bukit Kabut, mencari Benih Pelangi untuk Pohon Induk.",
+     "tone": "yakin dan bersungguh-sungguh",
+     "music": "berani",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "point",
+       "expr": "brave"
+      }
+     ]
+    },
+    {
+     "who": "pipi",
+     "say": "Jauh sekali! Kalau begitu, ikuti cahayaku. Aku tahu jalan keluar hutan ini!",
+     "tone": "kaget lalu berani dan bangga",
+     "cam": {
+      "x": 1200,
+      "y": 600,
+      "z": 1.5,
+      "dur": 4
+     },
+     "do": [
+      {
+       "who": "pipi",
+       "expr": "brave",
+       "to": "@right:0,-200",
+       "pose": "fly",
+       "dur": 3,
+       "delay": 2.2,
+       "then": "fly"
+      },
+      {
+       "who": "momo",
+       "to": "right",
+       "dur": 3.2,
+       "delay": 3,
+       "then": "idle"
+      },
+      {
+       "who": "cici",
+       "to": "@right:-80,-150",
+       "pose": "fly",
+       "dur": 3.2,
+       "delay": 3,
+       "then": "fly"
+      }
+     ],
+     "hold": 900
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "name": "Cahaya Penunjuk Jalan",
+   "set": "hutanBisik",
+   "grade": "night",
+   "weather": "none",
+   "music": "berani",
+   "ambience": "malam",
+   "props": {
+    "momo.scarf": "on",
+    "momo.pack": "on",
+    "whispers": "hidden",
+    "shadow": "hidden",
+    "ranting": "show",
+    "light": "pipi:420",
+    "mushGlow": "show",
+    "logGlow": "hidden",
+    "momo.lamp": "off"
+   },
+   "cast": [
+    {
+     "id": "pipi",
+     "at": "@mush:160,-200",
+     "face": "l",
+     "pose": "fly",
+     "expr": "joy"
+    },
+    {
+     "id": "momo",
+     "at": "mush",
+     "face": "l",
+     "pose": "idle",
+     "expr": "joy"
+    },
+    {
+     "id": "cici",
+     "at": "@mush:-70,-150",
+     "face": "l",
+     "pose": "fly",
+     "expr": "joy"
+    }
+   ],
+   "cam": {
+    "x": 2100,
+    "y": 600,
+    "z": 1.6
+   },
+   "beats": [
+    {
+     "say": "Pipi terbang di depan, cahayanya seperti lentera kecil. Momo dan Cici mengikuti dari belakang.",
+     "tone": "riang, bersemangat, melangkah maju",
+     "cam": {
+      "follow": "momo",
+      "z": 1.5,
+      "dur": 3
+     },
+     "do": [
+      {
+       "who": "pipi",
+       "to": "@shadowSpot:120,-220",
+       "pose": "fly",
+       "dur": 7,
+       "then": "fly"
+      },
+      {
+       "who": "momo",
+       "to": "shadowSpot",
+       "dur": 7.4,
+       "then": "idle"
+      },
+      {
+       "who": "cici",
+       "to": "@shadowSpot:-70,-150",
+       "pose": "fly",
+       "dur": 7.5,
+       "then": "fly"
+      }
+     ]
+    },
+    {
+     "say": "Dan lihat! Dari balik daun-daun, kunang-kunang lain bermunculan. Satu, dua, sepuluh, banyak sekali!",
+     "tone": "takjub, makin lama makin gembira",
+     "weather": "fireflies",
+     "music": "gembira",
+     "sfx": [
+      "magic"
+     ],
+     "cam": {
+      "x": 1600,
+      "y": 450,
+      "z": 1.05,
+      "dur": 6
+     },
+     "do": [
+      {
+       "who": "momo",
+       "look": "up",
+       "expr": "surprised"
+      },
+      {
+       "who": "cici",
+       "expr": "surprised"
+      }
+     ]
+    },
+    {
+     "who": "pipi",
+     "say": "Itu keluargaku! Mereka mencariku!",
+     "tone": "girang dan terharu",
+     "do": [
+      {
+       "who": "pipi",
+       "pose": "cheer",
+       "expr": "joy"
+      },
+      {
+       "fx": "hearts",
+       "who": "pipi"
+      }
+     ]
+    },
+    {
+     "say": "Hutan Bisik-Bisik kini penuh cahaya. Ranting yang tadi seperti raksasa, sekarang tampak seperti tangan yang melambai.",
+     "tone": "hangat, lega, tersenyum",
+     "cam": {
+      "x": 1760,
+      "y": 440,
+      "z": 1.6,
+      "dur": 5
+     },
+     "do": [
+      {
+       "prop": "ranting",
+       "state": "shake",
+       "delay": 4
+      }
+     ]
+    },
+    {
+     "who": "cici",
+     "say": "Dadah, Ranting! Maaf ya, tadi aku kira kamu raksasa!",
+     "tone": "lucu dan riang",
+     "music": "lucu",
+     "do": [
+      {
+       "who": "cici",
+       "pose": "hop",
+       "expr": "joy"
+      },
+      {
+       "who": "momo",
+       "pose": "wave",
+       "expr": "joy"
+      }
+     ]
+    },
+    {
+     "say": "Akhirnya mereka tiba di ujung hutan. Langit di timur mulai berwarna jingga. Pagi hampir datang.",
+     "tone": "lega, tenang, hangat",
+     "music": "tenang",
+     "grade": "dawn",
+     "ambience": "hutan",
+     "cam": {
+      "x": 820,
+      "y": 520,
+      "z": 1.2,
+      "dur": 8,
+      "ease": "sine.inOut"
+     },
+     "do": [
+      {
+       "prop": "light",
+       "state": "pipi:260",
+       "delay": 4
+      },
+      {
+       "who": "pipi",
+       "to": "@gate:150,-210",
+       "pose": "fly",
+       "dur": 7,
+       "then": "fly"
+      },
+      {
+       "who": "momo",
+       "to": "gate",
+       "dur": 7.4,
+       "then": "idle"
+      },
+      {
+       "who": "cici",
+       "to": "@gate:-70,-150",
+       "pose": "fly",
+       "dur": 7.5,
+       "then": "fly"
+      }
+     ]
+    },
+    {
+     "who": "pipi",
+     "say": "Aku antar sampai sini, ya. Terima kasih sudah mengajariku berani, Momo.",
+     "tone": "haru, tulus, lembut",
+     "music": "haru",
+     "cam": {
+      "x": 680,
+      "y": 620,
+      "z": 2.1,
+      "dur": 3
+     },
+     "do": [
+      {
+       "who": "pipi",
+       "expr": "happy",
+       "face": "l"
+      },
+      {
+       "who": "momo",
+       "face": "r",
+       "expr": "happy"
+      }
+     ]
+    },
+    {
+     "who": "momo",
+     "say": "Terima kasih juga, Pipi. Tanpa cahayamu, kami pasti tersesat.",
+     "tone": "hangat dan tulus",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "wave",
+       "expr": "joy"
+      }
+     ]
+    },
+    {
+     "say": "Pipi berputar-putar di udara, lalu terbang pulang bersama keluarganya. Cahayanya terang, dan tidak redup lagi.",
+     "tone": "lembut, bahagia, sedikit haru",
+     "cam": {
+      "x": 900,
+      "y": 460,
+      "z": 1.2,
+      "dur": 6
+     },
+     "do": [
+      {
+       "who": "pipi",
+       "pose": "cheer",
+       "expr": "joy"
+      },
+      {
+       "who": "pipi",
+       "to": "@in1:200,-420",
+       "pose": "fly",
+       "dur": 4.5,
+       "delay": 2.6,
+       "then": "fly"
+      },
+      {
+       "prop": "light",
+       "state": "off",
+       "delay": 6.5
+      },
+      {
+       "prop": "pipi",
+       "state": "hidden",
+       "delay": 6.6
+      },
+      {
+       "who": "cici",
+       "pose": "hop",
+       "delay": 2.8
+      }
+     ]
+    },
+    {
+     "say": "Hari itu Momo belajar: rasa takut jadi kecil kalau kita menyalakan cahaya, dan menghadapinya bersama teman.",
+     "tone": "hangat, bijak, pelan, menyampaikan pesan cerita",
+     "music": "haru",
+     "weather": "motes",
+     "cam": {
+      "follow": "momo",
+      "z": 2.0,
+      "dur": 4
+     },
+     "do": [
+      {
+       "who": "momo",
+       "pose": "idle",
+       "expr": "happy",
+       "look": "cam"
+      },
+      {
+       "who": "cici",
+       "expr": "happy"
+      }
+     ]
+    },
+    {
+     "say": "Tapi dari kejauhan terdengar suara gemuruh. Grrruuuh… Itu bukan bisikan. Itu suara air yang sangat deras.",
+     "tone": "berubah tegang dan misterius; gemuruh diucapkan berat",
+     "music": "tegang",
+     "sfx": [
+      "thunder"
+     ],
+     "cam": {
+      "x": 360,
+      "y": 520,
+      "z": 1.3,
+      "dur": 4,
+      "shake": 4
+     },
+     "do": [
+      {
+       "who": "momo",
+       "face": "l",
+       "expr": "surprised",
+       "delay": 1.6
+      },
+      {
+       "fx": "exclaim",
+       "who": "momo",
+       "delay": 1.7
+      },
+      {
+       "who": "cici",
+       "expr": "scared",
+       "pose": "hide",
+       "delay": 1.8
+      }
+     ]
+    },
+    {
+     "who": "cici",
+     "say": "Momo… suara apa itu?",
+     "tone": "berbisik cemas"
+    },
+    {
+     "who": "momo",
+     "say": "Sepertinya… sungai. Dan kedengarannya, ia sedang marah.",
+     "tone": "pelan, tegang, serius",
+     "do": [
+      {
+       "who": "momo",
+       "expr": "worried",
+       "pose": "think"
+      }
+     ]
+    },
+    {
+     "say": "Apa yang menunggu Momo di depan sana? Kita lanjutkan di cerita berikutnya.",
+     "tone": "menutup bab dengan penasaran, mengajak anak-anak kembali",
+     "music": "misteri",
+     "cam": {
+      "x": 520,
+      "y": 470,
+      "z": 1.05,
+      "dur": 6
+     },
+     "do": [
+      {
+       "who": "momo",
+       "expr": "brave",
+       "pose": "idle"
+      }
+     ],
+     "hold": 1200
+    }
+   ]
+  }
+ ]
+}

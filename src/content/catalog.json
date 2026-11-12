@@ -1,0 +1,266 @@
+{
+ "ages": [
+  {
+   "id": "batita",
+   "label": "Batita",
+   "range": "0–2 th",
+   "emblem": "teddy",
+   "tint": "#3b2a6e",
+   "cover": "age-batita"
+  },
+  {
+   "id": "balita",
+   "label": "Balita",
+   "range": "3–4 th",
+   "emblem": "blocks",
+   "tint": "#1f4a3c",
+   "cover": "age-balita"
+  },
+  {
+   "id": "tk",
+   "label": "TK",
+   "range": "5–6 th",
+   "emblem": "cap",
+   "tint": "#4a2a7a",
+   "cover": "age-tk"
+  },
+  {
+   "id": "sd",
+   "label": "SD",
+   "range": "7–12 th",
+   "emblem": "openbook",
+   "tint": "#6a2424",
+   "cover": "age-sd"
+  }
+ ],
+ "activities": [
+  {
+   "id": "dongeng-tidur",
+   "label": "Dongeng Sebelum Tidur",
+   "emblem": "moon",
+   "tint": "#1b2c63",
+   "cover": "act-dongeng-tidur"
+  },
+  {
+   "id": "mengenal-hewan",
+   "label": "Mengenal Hewan",
+   "emblem": "paw",
+   "tint": "#5a3a1a",
+   "cover": "act-mengenal-hewan"
+  },
+  {
+   "id": "mengenal-angka",
+   "label": "Mengenal Angka",
+   "emblem": "numbers",
+   "tint": "#4b1d3a",
+   "cover": "act-mengenal-angka"
+  },
+  {
+   "id": "lainnya",
+   "label": "Lainnya",
+   "emblem": "star",
+   "tint": "#1f3d36",
+   "cover": "act-lainnya"
+  }
+ ],
+ "categories": [
+  {
+   "id": "petualangan",
+   "label": "Petualangan",
+   "emblem": "mountain",
+   "art": "scene:forest"
+  },
+  {
+   "id": "kerajaan",
+   "label": "Kerajaan",
+   "emblem": "castle",
+   "art": "cover:raja"
+  },
+  {
+   "id": "peri",
+   "label": "Peri",
+   "emblem": "fairy",
+   "art": "cover:putri"
+  },
+  {
+   "id": "hewan",
+   "label": "Hewan",
+   "emblem": "paw",
+   "art": "cover:kodok"
+  }
+ ],
+ "books": [
+  {
+   "id": "kisah-sang-raja-hebat",
+   "title": "Kisah Sang Raja Hebat",
+   "subtitle": "Raja Bijaksana",
+   "emblem": "castle",
+   "cover": "raja",
+   "tint": "#4a1620",
+   "categories": [
+    "petualangan",
+    "kerajaan"
+   ],
+   "ages": [
+    "balita",
+    "tk",
+    "sd"
+   ],
+   "activities": [
+    "dongeng-tidur",
+    "lainnya"
+   ],
+   "chapters": [
+    {
+     "id": "kisah-sang-raja-hebat-1",
+     "title": "Mahkota Emas",
+     "thumb": "peak"
+    },
+    {
+     "id": "kisah-sang-raja-hebat-2",
+     "title": "Rakyat yang Bahagia",
+     "thumb": "meadow"
+    },
+    {
+     "id": "kisah-sang-raja-hebat-3",
+     "title": "Pesta di Istana",
+     "thumb": "campfire"
+    }
+   ]
+  },
+  {
+   "id": "petualangan-si-monyet",
+   "title": "Momo dan Benih Pelangi",
+   "subtitle": "Kisah Momo",
+   "emblem": "momo",
+   "tint": "#14275a",
+   "categories": [
+    "petualangan",
+    "hewan"
+   ],
+   "ages": [
+    "balita",
+    "tk",
+    "sd"
+   ],
+   "activities": [
+    "dongeng-tidur",
+    "mengenal-hewan"
+   ],
+   "chapters": [
+    {
+     "id": "momo-1",
+     "title": "Daun Emas Berguguran",
+     "thumb": "leaves",
+     "story": "momo-ch1"
+    },
+    {
+     "id": "momo-2",
+     "title": "Hutan Bisik-Bisik",
+     "thumb": "darkforest",
+     "story": "momo-ch2"
+    },
+    {
+     "id": "momo-3",
+     "title": "Sungai yang Marah",
+     "thumb": "river",
+     "story": "momo-ch3"
+    },
+    {
+     "id": "momo-4",
+     "title": "Sahabat Baru yang Kikuk",
+     "thumb": "campfire",
+     "story": "momo-ch4"
+    },
+    {
+     "id": "momo-5",
+     "title": "Di Balik Bukit Kabut",
+     "thumb": "peak"
+    },
+    {
+     "id": "momo-6",
+     "title": "Pohon Pelangi",
+     "thumb": "rainbow"
+    }
+   ],
+   "cover": "momo"
+  },
+  {
+   "id": "si-putri-cantik",
+   "title": "Si Putri Cantik",
+   "subtitle": "Taman Sakura",
+   "emblem": "castle",
+   "cover": "putri",
+   "tint": "#3a1f55",
+   "categories": [
+    "petualangan",
+    "kerajaan",
+    "peri"
+   ],
+   "ages": [
+    "balita",
+    "tk",
+    "sd"
+   ],
+   "activities": [
+    "dongeng-tidur"
+   ],
+   "chapters": [
+    {
+     "id": "si-putri-cantik-1",
+     "title": "Taman Ajaib",
+     "thumb": "meadow"
+    },
+    {
+     "id": "si-putri-cantik-2",
+     "title": "Peri Bunga",
+     "thumb": "darkforest"
+    },
+    {
+     "id": "si-putri-cantik-3",
+     "title": "Gaun Bintang",
+     "thumb": "peak"
+    }
+   ]
+  },
+  {
+   "id": "kodok-pangeran",
+   "title": "Kodok yang Berubah Jadi Pangeran",
+   "subtitle": "Kolam Ajaib",
+   "emblem": "castle",
+   "cover": "kodok",
+   "tint": "#123f45",
+   "categories": [
+    "petualangan",
+    "kerajaan",
+    "hewan"
+   ],
+   "ages": [
+    "balita",
+    "tk",
+    "sd"
+   ],
+   "activities": [
+    "dongeng-tidur",
+    "mengenal-hewan"
+   ],
+   "chapters": [
+    {
+     "id": "kodok-pangeran-1",
+     "title": "Kolam Teratai",
+     "thumb": "river"
+    },
+    {
+     "id": "kodok-pangeran-2",
+     "title": "Ciuman Ajaib",
+     "thumb": "meadow"
+    },
+    {
+     "id": "kodok-pangeran-3",
+     "title": "Pangeran Kembali",
+     "thumb": "campfire"
+    }
+   ]
+  }
+ ]
+}

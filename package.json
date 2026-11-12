@@ -1,0 +1,33 @@
+{
+  "name": "story-book",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Story Book — buku cerita interaktif bergaya paper ink untuk Balita, TK, dan SD",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "build:single": "tsc --noEmit && vite build --mode single",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "audit:build": "node tools/audit-build.mjs",
+    "release": "npm test && npm run build && node tools/prepare-release.mjs && npm run audit:build"
+  },
+  "dependencies": {
+    "@fontsource/caveat": "^5.3.0",
+    "@fontsource/cinzel": "^5.3.0",
+    "@fontsource/fraunces": "^5.3.0",
+    "@fontsource/im-fell-english": "^5.3.0",
+    "@fontsource/im-fell-english-sc": "^5.3.0",
+    "@fontsource/kalam": "^5.3.0",
+    "@fontsource/lora": "^5.3.0",
+    "gsap": "^3.15.1"
+  },
+  "devDependencies": {
+    "jsdom": "^31.0.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.6",
+    "vite-plugin-singlefile": "^2.3.4",
+    "vitest": "^5.1.0"
+  }
+}

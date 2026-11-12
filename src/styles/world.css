@@ -1,0 +1,49 @@
+/* ==========================================================
+   Dunia persisten: perpustakaan, partikel debu emas, vignette
+   ========================================================== */
+.world { position: absolute; inset: 0; z-index: 0; overflow: hidden; transform-origin: 50% 55%; }
+.world__layer { position: absolute; inset: -2%; will-change: transform; }
+.world__bg { width: 100%; height: 100%; }
+.world__motes { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.world__vignette {
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 75% 70% at 50% 55%, transparent 40%, rgba(3, 6, 16, .55) 78%, rgba(2, 4, 10, .92) 100%),
+    linear-gradient(180deg, rgba(5, 10, 24, .35), transparent 30%, transparent 70%, rgba(5, 3, 2, .55));
+}
+.world__dim { position: absolute; inset: 0; background: #050a18; opacity: 0; pointer-events: none; }
+.world__flash { position: absolute; inset: 0; z-index: 60; pointer-events: none; opacity: 0;
+  background: radial-gradient(circle at 50% 50%, #fff8e0 0%, #ffd98a 35%, rgba(255, 190, 90, 0) 75%); }
+
+.lib-lantern__glow { animation: flicker 3.2s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+#lan-b .lib-lantern__glow { animation-delay: -1.3s; }
+#lan-c .lib-lantern__glow { animation-delay: -.6s; }
+#lan-d .lib-lantern__glow { animation-delay: -2.1s; }
+@keyframes flicker { 0%, 100% { opacity: .95; transform: scale(1); } 30% { opacity: .78; transform: scale(.96); } 55% { opacity: 1; transform: scale(1.03); } 75% { opacity: .85; } }
+.lib-star { animation: twinkle 4s ease-in-out infinite; }
+.lib-star:nth-child(3n) { animation-delay: -1.5s; } .lib-star:nth-child(5n) { animation-delay: -2.7s; }
+@keyframes twinkle { 50% { opacity: .2; } }
+.lib-rays { animation: rays 9s ease-in-out infinite; }
+@keyframes rays { 50% { opacity: .55; } }
+.lib-vines { animation: vines 8s ease-in-out infinite; transform-origin: 50% 0; transform-box: fill-box; }
+@keyframes vines { 50% { transform: rotate(.6deg) translateY(3px); } }
+
+/* ---------- Latar lukisan per layar ---------- */
+.bd-stack { position: absolute; inset: 0; }
+.bd { position: absolute; inset: 0; will-change: transform, opacity; }
+.bd__img { position: absolute; inset: -1%; background-size: cover; background-repeat: no-repeat; }
+.bd__dim { position: absolute; inset: 0; background: #050a18; }
+.bd__glows { position: absolute; inset: -1%; pointer-events: none; mix-blend-mode: screen; }
+.glow { position: absolute; width: calc(var(--r) * 2); aspect-ratio: 1; translate: -50% -50%; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 214, 140, .55), rgba(255, 170, 70, .18) 40%, transparent 70%);
+  animation: flicker 3.4s ease-in-out infinite; }
+.glow--candle { background: radial-gradient(circle, rgba(255, 220, 150, .7), rgba(255, 160, 60, .2) 45%, transparent 70%); animation-duration: 1.7s; }
+.glow--magic { aspect-ratio: 3 / 1; background: radial-gradient(ellipse, rgba(255, 210, 120, .5), rgba(255, 170, 60, .15) 45%, transparent 70%); animation: magic 4.5s ease-in-out infinite; }
+.glow--moon { background: radial-gradient(circle, rgba(200, 220, 255, .45), rgba(150, 180, 255, .12) 45%, transparent 70%); animation: rays 7s ease-in-out infinite; }
+@keyframes magic { 50% { opacity: .55; transform: scale(1.08); } }
+
+/* ---------- Efek transisi ---------- */
+.fx-canvas { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 70; pointer-events: none; }
+.fx-bloom { position: absolute; inset: 0; z-index: 69; pointer-events: none; opacity: 0;
+  --bx: 50%; --by: 50%; --br: 60vmax; --bc: 255, 214, 140;
+  background: radial-gradient(circle var(--br) at var(--bx) var(--by), rgba(255, 252, 238, 1) 0%, rgba(var(--bc), .96) 22%, rgba(var(--bc), .55) 48%, rgba(60, 30, 8, 0) 100%); }

@@ -1,0 +1,2534 @@
+{
+ "format": "paper",
+ "id": "momo-ch4",
+ "bookId": "petualangan-si-monyet",
+ "chapterId": "momo-4",
+ "chapterLabel": "Chapter 4",
+ "title": "Sahabat Baru yang Kikuk",
+ "scenes": [
+  {
+   "id": "s1",
+   "name": "Bruk! Bruk!",
+   "beats": [
+    {
+     "say": "Bruk! Bruk! Bruk! Suara itu makin dekat. Momo dan Cici bersembunyi di balik semak-semak.",
+     "tone": "tegang lalu penasaran; bruk diucapkan berat",
+     "do": [
+      {
+       "prop": "bush",
+       "state": "shake",
+       "delay": 0.3
+      },
+      {
+       "prop": "bush",
+       "state": "shake",
+       "delay": 2.08
+      },
+      {
+       "prop": "bush",
+       "state": "shake",
+       "delay": 3.56
+      }
+     ],
+     "cam": {
+      "x": 1320,
+      "y": 640,
+      "z": 1.6,
+      "dur": 6,
+      "shake": 4
+     },
+     "sfx": [
+      "thud"
+     ]
+    },
+    {
+     "who": "cici",
+     "say": "Momo, jangan-jangan itu raksasa sungguhan!",
+     "tone": "berbisik ketakutan",
+     "do": [
+      {
+       "who": "cici",
+       "expr": "scared"
+      },
+      {
+       "fx": "sweat",
+       "who": "cici",
+       "delay": 0.81
+      }
+     ],
+     "cam": {
+      "x": 1250,
+      "y": 620,
+      "z": 1.9,
+      "dur": 1.2
+     }
+    },
+    {
+     "say": "Semak-semak bergoyang. Lalu, keluarlah seekor anak badak berwarna abu-abu, dengan cula kecil di hidungnya.",
+     "tone": "tegang berubah jadi lucu dan lega",
+     "do": [
+      {
+       "prop": "bush",
+       "state": "shake"
+      },
+      {
+       "prop": "kiko",
+       "state": "show",
+       "delay": 1.49
+      },
+      {
+       "who": "kiko",
+       "to": "@bush:170,-4",
+       "dur": 2.4,
+       "pose": "walk",
+       "then": "idle",
+       "delay": 1.78
+      },
+      {
+       "who": "momo",
+       "expr": "surprised",
+       "pose": "peek",
+       "delay": 3.56
+      },
+      {
+       "fx": "exclaim",
+       "who": "momo",
+       "delay": 3.86
+      }
+     ],
+     "cam": {
+      "x": 1450,
+      "y": 640,
+      "z": 1.45,
+      "dur": 3
+     }
+    },
+    {
+     "say": "Anak badak itu melihat seekor kupu-kupu, lalu mengejarnya. Gubrak! Ia tersandung akar dan jatuh terguling.",
+     "tone": "lucu, gubrak diucapkan heboh",
+     "do": [
+      {
+       "who": "kiko",
+       "look": "up",
+       "expr": "joy",
+       "pose": "hop"
+      },
+      {
+       "fx": "sparkle",
+       "who": "kiko",
+       "delay": 0.63
+      },
+      {
+       "who": "kiko",
+       "to": "@bush:30,-4",
+       "dur": 1.3,
+       "pose": "run",
+       "then": "fall",
+       "delay": 2.21
+      },
+      {
+       "fx": "dizzy",
+       "who": "kiko",
+       "delay": 4.09
+      }
+     ],
+     "cam": {
+      "x": 1380,
+      "y": 660,
+      "z": 1.6,
+      "dur": 3,
+      "shake": 3
+     },
+     "sfx": [
+      "thud"
+     ]
+    },
+    {
+     "who": "kiko",
+     "say": "Aduh, aduh… hehe, aku jatuh lagi. Hari ini sudah tujuh kali!",
+     "tone": "polos, tertawa malu-malu",
+     "do": [
+      {
+       "who": "kiko",
+       "expr": "dizzy",
+       "pose": "talk",
+       "then": "idle"
+      },
+      {
+       "who": "kiko",
+       "expr": "joy",
+       "delay": 2.43
+      }
+     ],
+     "cam": {
+      "x": 1380,
+      "y": 660,
+      "z": 1.9,
+      "dur": 1.5
+     }
+    },
+    {
+     "say": "Momo dan Cici tidak bisa menahan tawa. Hihihi!",
+     "tone": "lucu, riang",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "clap",
+       "expr": "joy",
+       "then": "idle"
+      },
+      {
+       "who": "cici",
+       "pose": "hop",
+       "expr": "joy",
+       "then": "idle"
+      },
+      {
+       "fx": "notes",
+       "who": "momo",
+       "delay": 1.13
+      }
+     ],
+     "cam": {
+      "x": 1280,
+      "y": 650,
+      "z": 1.6,
+      "dur": 1.5
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Halo! Aku Momo, dan ini Cici. Kamu siapa?",
+     "tone": "ramah dan ceria",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "wave",
+       "expr": "happy",
+       "then": "idle",
+       "face": "r"
+      }
+     ],
+     "cam": {
+      "x": 1260,
+      "y": 640,
+      "z": 1.8,
+      "dur": 1.2
+     }
+    },
+    {
+     "who": "kiko",
+     "say": "Aku Kiko! Badanku memang besar, tapi aku masih kecil, lho. Aku suka main, tapi aku sering menabrak barang.",
+     "tone": "polos, ramah, agak pelan",
+     "do": [
+      {
+       "who": "kiko",
+       "pose": "talk",
+       "expr": "happy",
+       "then": "idle"
+      },
+      {
+       "who": "kiko",
+       "expr": "wink",
+       "delay": 4.43
+      }
+     ],
+     "cam": {
+      "x": 1400,
+      "y": 640,
+      "z": 1.9,
+      "dur": 1.5
+     }
+    },
+    {
+     "say": "Kiko memang kikuk. Kakinya besar, badannya berat, dan ia sering lupa melihat ke bawah.",
+     "tone": "lucu dan hangat",
+     "do": [
+      {
+       "who": "kiko",
+       "look": "down",
+       "delay": 2.97
+      },
+      {
+       "fx": "question",
+       "who": "kiko",
+       "delay": 3.56
+      }
+     ],
+     "cam": {
+      "x": 1340,
+      "y": 660,
+      "z": 1.5,
+      "dur": 4
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Kami sedang mencari Benih Pelangi di Bukit Kabut. Mau ikut?",
+     "tone": "riang mengajak",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "point",
+       "expr": "joy",
+       "then": "idle"
+      }
+     ],
+     "cam": {
+      "x": 1260,
+      "y": 640,
+      "z": 1.8,
+      "dur": 1.2
+     }
+    },
+    {
+     "who": "kiko",
+     "say": "Mau, mau, mau! Aku belum pernah punya teman berpetualang!",
+     "tone": "girang sekali, melompat-lompat",
+     "do": [
+      {
+       "who": "kiko",
+       "pose": "jump",
+       "expr": "joy",
+       "then": "idle"
+      },
+      {
+       "fx": "hearts",
+       "who": "kiko",
+       "delay": 1.66
+      }
+     ],
+     "cam": {
+      "x": 1380,
+      "y": 640,
+      "z": 1.8,
+      "dur": 1
+     }
+    },
+    {
+     "say": "Kiko melompat kegirangan. Bruk! Tanah bergetar, dan Cici sampai terpental dari dahan.",
+     "tone": "lucu, bruk diucapkan berat",
+     "do": [
+      {
+       "who": "kiko",
+       "pose": "jump",
+       "then": "idle"
+      },
+      {
+       "who": "cici",
+       "to": "@bush:-200,-330",
+       "dur": 0.4,
+       "pose": "fly",
+       "then": "fly",
+       "delay": 0.63
+      },
+      {
+       "who": "cici",
+       "to": "@bush:-130,-160",
+       "dur": 1.2,
+       "pose": "fly",
+       "then": "idle",
+       "delay": 2.35
+      },
+      {
+       "fx": "dizzy",
+       "who": "cici",
+       "delay": 2.61
+      }
+     ],
+     "cam": {
+      "x": 1320,
+      "y": 600,
+      "z": 1.4,
+      "dur": 1,
+      "shake": 6
+     },
+     "sfx": [
+      "thud"
+     ]
+    },
+    {
+     "who": "cici",
+     "say": "Kikooo! Pelan-pelan, dong!",
+     "tone": "kesal tapi lucu, merajuk",
+     "do": [
+      {
+       "who": "cici",
+       "pose": "hop",
+       "expr": "worried",
+       "then": "idle"
+      }
+     ],
+     "cam": {
+      "x": 1250,
+      "y": 620,
+      "z": 1.9,
+      "dur": 1
+     }
+    },
+    {
+     "say": "Ayo kita bandingkan mereka!",
+     "tone": "mengajak anak-anak, riang",
+     "ask": {
+      "type": "choice",
+      "q": "Siapa yang badannya paling besar?",
+      "options": [
+       {
+        "id": "kiko",
+        "label": "Kiko",
+        "art": "rhino"
+       },
+       {
+        "id": "cici",
+        "label": "Cici",
+        "art": "bird"
+       }
+      ],
+      "answer": "kiko",
+      "praise": "Betul! Kiko si anak badak yang paling besar.",
+      "retry": "Lihat lagi, ya. Siapa yang badannya paling besar?"
+     },
+     "cam": {
+      "x": 1330,
+      "y": 620,
+      "z": 1.4,
+      "dur": 1
+     }
+    }
+   ],
+   "set": "jalan",
+   "grade": "day",
+   "weather": "motes",
+   "music": "penasaran",
+   "ambience": "hutan",
+   "props": {
+    "momo.scarf": "on",
+    "momo.pack": "on",
+    "ducks": "hidden",
+    "pecker": "hidden",
+    "kiko": "hidden"
+   },
+   "cast": [
+    {
+     "id": "momo",
+     "at": "@bush:-190,0",
+     "face": "r",
+     "pose": "hide",
+     "expr": "scared"
+    },
+    {
+     "id": "cici",
+     "at": "@bush:-130,-160",
+     "face": "r",
+     "pose": "scared",
+     "expr": "scared"
+    },
+    {
+     "id": "kiko",
+     "at": "@bush:300,-4",
+     "face": "l",
+     "pose": "idle",
+     "expr": "curious"
+    }
+   ],
+   "cam": {
+    "x": 1300,
+    "y": 620,
+    "z": 1.45
+   }
+  },
+  {
+   "id": "s2",
+   "name": "Tenda Daun",
+   "beats": [
+    {
+     "say": "Hari mulai sore. Langit berwarna jingga. Mereka harus beristirahat sebelum malam tiba.",
+     "tone": "tenang dan hangat",
+     "do": [
+      {
+       "who": "momo",
+       "look": "up"
+      }
+     ],
+     "cam": {
+      "x": 1100,
+      "y": 500,
+      "z": 1.05,
+      "dur": 7
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Ayo kita buat tenda dari daun pisang! Kakek pernah mengajariku.",
+     "tone": "bersemangat",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "point",
+       "expr": "joy",
+       "then": "idle"
+      }
+     ],
+     "cam": {
+      "x": 860,
+      "y": 620,
+      "z": 1.7,
+      "dur": 1.5
+     }
+    },
+    {
+     "say": "Momo menancapkan ranting-ranting, lalu menutupnya dengan daun pisang yang lebar. Cici membantu membawa daun-daun kecil.",
+     "tone": "tekun dan riang",
+     "do": [
+      {
+       "prop": "tent",
+       "state": "build",
+       "delay": 0.94
+      },
+      {
+       "who": "momo",
+       "to": "@tentL:120,0",
+       "dur": 1.5,
+       "pose": "walk",
+       "then": "idle",
+       "delay": 0.63
+      },
+      {
+       "who": "cici",
+       "to": "@tentL:220,-120",
+       "dur": 2,
+       "pose": "fly",
+       "then": "fly",
+       "delay": 2.52
+      },
+      {
+       "fx": "sparkle",
+       "at": [
+        1000,
+        640
+       ],
+       "delay": 5.35
+      }
+     ],
+     "cam": {
+      "x": 1000,
+      "y": 620,
+      "z": 1.35,
+      "dur": 3
+     }
+    },
+    {
+     "say": "Tenda daun itu jadi cantik sekali. Momo menyimpan bulu kuning dari Dodo di dalamnya.",
+     "tone": "bangga dan hangat",
+     "do": [
+      {
+       "who": "momo",
+       "to": "tentL",
+       "dur": 1,
+       "pose": "walk",
+       "then": "idle",
+       "expr": "joy"
+      },
+      {
+       "fx": "sparkle",
+       "at": [
+        1000,
+        700
+       ],
+       "delay": 1.78
+      }
+     ],
+     "cam": {
+      "x": 980,
+      "y": 620,
+      "z": 1.45,
+      "dur": 2
+     }
+    },
+    {
+     "who": "kiko",
+     "say": "Aku juga mau bantu! Aku ambilkan daun yang paling besar!",
+     "tone": "bersemangat, polos",
+     "do": [
+      {
+       "who": "kiko",
+       "pose": "hop",
+       "expr": "joy",
+       "then": "idle"
+      },
+      {
+       "fx": "exclaim",
+       "who": "kiko",
+       "delay": 0.9
+      }
+     ],
+     "cam": {
+      "x": 1350,
+      "y": 620,
+      "z": 1.7,
+      "dur": 1.2
+     }
+    },
+    {
+     "say": "Kiko berlari membawa daun yang sangat besar. Tapi ia tidak melihat ke bawah…",
+     "tone": "tegang dan menggantung",
+     "do": [
+      {
+       "who": "kiko",
+       "to": [
+        1560,
+        786
+       ],
+       "dur": 1.6,
+       "pose": "walk",
+       "then": "idle",
+       "face": "r"
+      },
+      {
+       "who": "kiko",
+       "to": "tentR",
+       "dur": 2.2,
+       "pose": "run",
+       "then": "idle",
+       "face": "l",
+       "delay": 2.51
+      }
+     ],
+     "cam": {
+      "x": 1300,
+      "y": 620,
+      "z": 1.35,
+      "dur": 3
+     }
+    },
+    {
+     "say": "Gubrak! Kiko tersandung, dan jatuh menimpa tenda daun. Krak! Tenda itu roboh dan rata dengan tanah.",
+     "tone": "kaget, cepat",
+     "do": [
+      {
+       "who": "kiko",
+       "pose": "fall",
+       "expr": "dizzy"
+      },
+      {
+       "prop": "tent",
+       "state": "collapse",
+       "delay": 2.0
+      },
+      {
+       "prop": "sticks",
+       "state": "show",
+       "delay": 2.33
+      },
+      {
+       "fx": "puff",
+       "at": [
+        1000,
+        760
+       ],
+       "delay": 2.13
+      },
+      {
+       "who": "momo",
+       "expr": "surprised",
+       "pose": "scared",
+       "delay": 2.33
+      },
+      {
+       "who": "cici",
+       "pose": "scared",
+       "delay": 2.33
+      }
+     ],
+     "cam": {
+      "x": 1100,
+      "y": 640,
+      "z": 1.4,
+      "dur": 1,
+      "shake": 8
+     },
+     "sfx": [
+      "thud",
+      "creak"
+     ]
+    },
+    {
+     "who": "momo",
+     "say": "Kiko! Lihat apa yang kamu lakukan! Tendaku rusak! Bulu dari Dodo juga hilang!",
+     "tone": "marah, keras, kecewa",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "point",
+       "expr": "brave",
+       "then": "idle",
+       "face": "r"
+      },
+      {
+       "fx": "exclaim",
+       "who": "momo",
+       "delay": 0.56
+      }
+     ],
+     "cam": {
+      "x": 900,
+      "y": 640,
+      "z": 1.8,
+      "dur": 1
+     }
+    },
+    {
+     "say": "Wajah Momo merah. Tangannya mengepal. Momo sedang marah sekali.",
+     "tone": "tegang, pelan, serius",
+     "do": [
+      {
+       "who": "momo",
+       "expr": "brave",
+       "pose": "shake",
+       "then": "idle"
+      }
+     ],
+     "cam": {
+      "x": 860,
+      "y": 640,
+      "z": 2.1,
+      "dur": 2
+     }
+    },
+    {
+     "who": "kiko",
+     "say": "A-aku… aku tidak sengaja…",
+     "tone": "takut dan sedih, terbata-bata",
+     "do": [
+      {
+       "who": "kiko",
+       "pose": "idle",
+       "expr": "scared"
+      },
+      {
+       "who": "kiko",
+       "pose": "scared",
+       "delay": 0.23
+      },
+      {
+       "fx": "sweat",
+       "who": "kiko",
+       "delay": 0.7
+      }
+     ],
+     "cam": {
+      "x": 1260,
+      "y": 640,
+      "z": 2,
+      "dur": 1
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Kamu selalu menabrak barang! Lebih baik kamu tidak usah ikut!",
+     "tone": "marah dan ketus",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "point",
+       "expr": "brave",
+       "then": "idle"
+      }
+     ],
+     "cam": {
+      "x": 880,
+      "y": 640,
+      "z": 1.9,
+      "dur": 1
+     }
+    },
+    {
+     "say": "Kiko menunduk. Matanya berkaca-kaca. Pelan-pelan, ia berjalan menjauh sendirian.",
+     "tone": "sedih, pelan, lirih",
+     "do": [
+      {
+       "who": "kiko",
+       "expr": "sad",
+       "pose": "sad"
+      },
+      {
+       "who": "kiko",
+       "to": "tree",
+       "dur": 5,
+       "pose": "walk",
+       "then": "sad",
+       "face": "r",
+       "delay": 1.29
+      },
+      {
+       "fx": "tears",
+       "who": "kiko",
+       "delay": 1.03
+      },
+      {
+       "who": "momo",
+       "expr": "worried",
+       "delay": 4.11
+      }
+     ],
+     "cam": {
+      "x": 1500,
+      "y": 640,
+      "z": 1.3,
+      "dur": 8
+     },
+     "music": "sedih"
+    },
+    {
+     "say": "Coba ingat wajah Momo tadi, ya.",
+     "tone": "lembut mengajak berpikir",
+     "ask": {
+      "type": "choice",
+      "q": "Bagaimana perasaan Momo tadi?",
+      "options": [
+       {
+        "id": "marah",
+        "label": "Marah",
+        "art": "angry"
+       },
+       {
+        "id": "ngantuk",
+        "label": "Mengantuk",
+        "art": "sleepy"
+       }
+      ],
+      "answer": "marah",
+      "praise": "Betul, Momo marah. Marah itu wajar, tapi kata-kata kasar bisa melukai hati teman.",
+      "retry": "Ingat lagi wajah Momo yang merah dan tangannya yang mengepal."
+     },
+     "cam": {
+      "x": 1150,
+      "y": 600,
+      "z": 1.2,
+      "dur": 1.5
+     }
+    }
+   ],
+   "set": "kemah",
+   "grade": "dusk",
+   "weather": "motes",
+   "music": "ceria",
+   "ambience": "hutan",
+   "props": {
+    "momo.scarf": "on",
+    "momo.pack": "on",
+    "tent": "hidden",
+    "sticks": "hidden",
+    "feather": "hidden",
+    "flies": "hidden"
+   },
+   "cast": [
+    {
+     "id": "momo",
+     "at": "tentL",
+     "face": "r",
+     "pose": "idle",
+     "expr": "happy"
+    },
+    {
+     "id": "cici",
+     "at": "@tentL:90,-170",
+     "face": "r",
+     "pose": "fly",
+     "expr": "happy"
+    },
+    {
+     "id": "kiko",
+     "at": "kiko",
+     "face": "l",
+     "pose": "idle",
+     "expr": "happy"
+    }
+   ],
+   "cam": {
+    "x": 1050,
+    "y": 560,
+    "z": 1.15
+   }
+  },
+  {
+   "id": "s3",
+   "name": "Kata Maaf",
+   "beats": [
+    {
+     "say": "Suasana jadi sepi. Hanya terdengar suara jangkrik. Krik… krik…",
+     "tone": "sepi, pelan",
+     "cam": {
+      "x": 1200,
+      "y": 560,
+      "z": 1.15,
+      "dur": 6
+     }
+    },
+    {
+     "who": "cici",
+     "say": "Momo, tadi kata-katamu kasar sekali. Lihat, Kiko sedih.",
+     "tone": "lembut tapi menegur",
+     "do": [
+      {
+       "who": "cici",
+       "pose": "talk",
+       "expr": "worried",
+       "then": "idle"
+      },
+      {
+       "who": "momo",
+       "look": "r",
+       "delay": 2.65
+      }
+     ],
+     "cam": {
+      "x": 860,
+      "y": 620,
+      "z": 1.8,
+      "dur": 1.5
+     }
+    },
+    {
+     "say": "Momo menarik napas dalam-dalam. Satu… dua… tiga… Pelan-pelan, marahnya mereda.",
+     "tone": "menenangkan, menghitung pelan",
+     "do": [
+      {
+       "who": "momo",
+       "expr": "calm",
+       "pose": "idle"
+      },
+      {
+       "fx": "puff",
+       "who": "momo",
+       "delay": 1.04
+      },
+      {
+       "fx": "puff",
+       "who": "momo",
+       "delay": 2.35
+      },
+      {
+       "fx": "puff",
+       "who": "momo",
+       "delay": 3.65
+      }
+     ],
+     "cam": {
+      "x": 820,
+      "y": 640,
+      "z": 2,
+      "dur": 3
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Kamu benar, Cici. Kiko tidak sengaja. Dia cuma ingin membantu.",
+     "tone": "menyesal, pelan",
+     "do": [
+      {
+       "who": "momo",
+       "expr": "sad",
+       "look": "down"
+      }
+     ],
+     "cam": {
+      "x": 820,
+      "y": 640,
+      "z": 2,
+      "dur": 1
+     }
+    },
+    {
+     "say": "Momo berjalan menghampiri Kiko, yang duduk sendirian di bawah pohon.",
+     "tone": "lembut",
+     "do": [
+      {
+       "who": "momo",
+       "to": [
+        1560,
+        786
+       ],
+       "dur": 4,
+       "pose": "walk",
+       "then": "idle",
+       "expr": "worried"
+      },
+      {
+       "who": "cici",
+       "to": [
+        1500,
+        620
+       ],
+       "dur": 4,
+       "pose": "fly",
+       "then": "idle"
+      }
+     ],
+     "cam": {
+      "x": 1500,
+      "y": 620,
+      "z": 1.4,
+      "dur": 4
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Kiko… maafkan aku, ya. Tadi aku marah dan bicara kasar. Itu tidak baik.",
+     "tone": "tulus dan menyesal",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "talk",
+       "expr": "sad",
+       "then": "idle"
+      }
+     ],
+     "cam": {
+      "x": 1640,
+      "y": 640,
+      "z": 1.9,
+      "dur": 1.5
+     }
+    },
+    {
+     "who": "kiko",
+     "say": "Aku juga minta maaf, Momo. Tendamu jadi rusak gara-gara aku. Hiks…",
+     "tone": "sedih, terisak",
+     "do": [
+      {
+       "who": "kiko",
+       "face": "l",
+       "expr": "cry"
+      },
+      {
+       "fx": "tears",
+       "who": "kiko",
+       "delay": 1.46
+      }
+     ],
+     "cam": {
+      "x": 1700,
+      "y": 640,
+      "z": 2,
+      "dur": 1
+     }
+    },
+    {
+     "say": "Lalu Kiko mengangkat kakinya pelan-pelan. Di bawah kakinya, ada sehelai bulu kuning.",
+     "tone": "lembut, kejutan kecil yang manis",
+     "do": [
+      {
+       "who": "kiko",
+       "pose": "idle",
+       "expr": "curious"
+      },
+      {
+       "prop": "feather",
+       "state": "pop",
+       "delay": 2.35
+      },
+      {
+       "fx": "sparkle",
+       "at": [
+        1690,
+        760
+       ],
+       "delay": 2.61
+      }
+     ],
+     "cam": {
+      "x": 1680,
+      "y": 700,
+      "z": 2.2,
+      "dur": 2
+     }
+    },
+    {
+     "who": "kiko",
+     "say": "Ini bulu dari Dodo! Tadi menempel di kakiku. Aku simpan supaya tidak hilang.",
+     "tone": "malu-malu tapi senang",
+     "do": [
+      {
+       "who": "kiko",
+       "pose": "talk",
+       "expr": "happy",
+       "then": "idle"
+      }
+     ],
+     "cam": {
+      "x": 1680,
+      "y": 650,
+      "z": 1.9,
+      "dur": 1
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Terima kasih, Kiko! Ayo kita bangun tendanya lagi. Kali ini, bersama-sama!",
+     "tone": "gembira dan hangat",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "hug",
+       "expr": "joy",
+       "then": "idle"
+      },
+      {
+       "fx": "hearts",
+       "who": "momo",
+       "delay": 1.46
+      },
+      {
+       "prop": "feather",
+       "state": "hidden",
+       "delay": 2.43
+      }
+     ],
+     "cam": {
+      "x": 1650,
+      "y": 640,
+      "z": 1.9,
+      "dur": 1.5
+     }
+    },
+    {
+     "say": "Momo memasang ranting, Cici merapikan daun, dan Kiko memegangi tiang yang paling berat. Tenda baru jadi lebih kuat!",
+     "tone": "riang dan kompak",
+     "do": [
+      {
+       "who": "momo",
+       "to": "tentL",
+       "dur": 2.5,
+       "pose": "walk",
+       "then": "idle",
+       "expr": "happy"
+      },
+      {
+       "who": "kiko",
+       "to": "tentR",
+       "dur": 2.8,
+       "pose": "walk",
+       "then": "idle",
+       "expr": "happy"
+      },
+      {
+       "who": "cici",
+       "to": [
+        1000,
+        600
+       ],
+       "dur": 2.4,
+       "pose": "fly",
+       "then": "fly"
+      },
+      {
+       "prop": "sticks",
+       "state": "hidden",
+       "delay": 3.32
+      },
+      {
+       "prop": "tent",
+       "state": "build",
+       "delay": 3.32
+      },
+      {
+       "fx": "sparkle",
+       "at": [
+        1000,
+        640
+       ],
+       "delay": 6.27
+      }
+     ],
+     "cam": {
+      "x": 1050,
+      "y": 600,
+      "z": 1.3,
+      "dur": 3
+     }
+    },
+    {
+     "say": "Momo dan Kiko sudah belajar sesuatu. Ayo kita ingat!",
+     "tone": "mengajak dengan hangat",
+     "ask": {
+      "type": "choice",
+      "q": "Kalau kita berbuat salah, apa yang sebaiknya kita katakan?",
+      "options": [
+       {
+        "id": "maaf",
+        "label": "Maaf",
+        "art": "sorry"
+       },
+       {
+        "id": "biarin",
+        "label": "Biarin!",
+        "art": "angry"
+       }
+      ],
+      "answer": "maaf",
+      "praise": "Pintar! Bilang maaf membuat hati teman jadi lega.",
+      "retry": "Hmm, coba ingat lagi. Kata apa yang Momo dan Kiko ucapkan tadi?"
+     },
+     "cam": {
+      "x": 1030,
+      "y": 600,
+      "z": 1.25,
+      "dur": 1
+     }
+    },
+    {
+     "say": "Malam itu, mereka tidur berdempetan di tenda daun. Hangat dan nyaman.",
+     "tone": "lembut, mengantuk, menenangkan",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "sleep",
+       "expr": "sleepy"
+      },
+      {
+       "who": "kiko",
+       "pose": "sleep",
+       "expr": "sleepy",
+       "delay": 0.73
+      },
+      {
+       "who": "cici",
+       "pose": "idle",
+       "expr": "sleepy",
+       "delay": 1.22
+      },
+      {
+       "fx": "zzz",
+       "who": "kiko",
+       "delay": 2.43
+      },
+      {
+       "fx": "zzz",
+       "who": "momo",
+       "delay": 3.4
+      }
+     ],
+     "cam": {
+      "x": 1030,
+      "y": 640,
+      "z": 1.5,
+      "dur": 6
+     },
+     "music": "malam"
+    }
+   ],
+   "set": "kemah",
+   "grade": "night",
+   "weather": "fireflies",
+   "music": "sedih",
+   "ambience": "malam",
+   "props": {
+    "momo.scarf": "on",
+    "momo.pack": "on",
+    "tent": "collapse",
+    "sticks": "show",
+    "feather": "hidden",
+    "flies": "show"
+   },
+   "cast": [
+    {
+     "id": "momo",
+     "at": "tentL",
+     "face": "r",
+     "pose": "idle",
+     "expr": "worried"
+    },
+    {
+     "id": "cici",
+     "at": "@tentL:90,-160",
+     "face": "l",
+     "pose": "idle",
+     "expr": "worried"
+    },
+    {
+     "id": "kiko",
+     "at": "tree",
+     "face": "r",
+     "pose": "sad",
+     "expr": "sad"
+    }
+   ],
+   "cam": {
+    "x": 1250,
+    "y": 560,
+    "z": 1.05
+   }
+  },
+  {
+   "id": "s4",
+   "name": "Batu Besar",
+   "beats": [
+    {
+     "say": "Keesokan paginya, mereka berjalan ke arah matahari terbit. Tapi tiba-tiba, jalan mereka tertutup!",
+     "tone": "ceria lalu kaget",
+     "do": [
+      {
+       "who": "momo",
+       "to": "helper",
+       "dur": 4,
+       "pose": "walk",
+       "then": "idle"
+      },
+      {
+       "who": "kiko",
+       "to": [
+        560,
+        790
+       ],
+       "dur": 4,
+       "pose": "walk",
+       "then": "idle"
+      },
+      {
+       "who": "cici",
+       "to": "@helper:60,-200",
+       "dur": 4,
+       "pose": "fly",
+       "then": "fly"
+      },
+      {
+       "who": "momo",
+       "expr": "surprised",
+       "delay": 4.18
+      },
+      {
+       "fx": "exclaim",
+       "who": "momo",
+       "delay": 4.46
+      }
+     ],
+     "cam": {
+      "follow": "momo",
+      "z": 1.3,
+      "dur": 4
+     },
+     "grade": "day"
+    },
+    {
+     "say": "Sebuah batu besar menghalangi jalan sempit di antara dua tebing.",
+     "tone": "tegang",
+     "do": [
+      {
+       "who": "momo",
+       "look": "up",
+       "expr": "worried"
+      }
+     ],
+     "cam": {
+      "x": 1200,
+      "y": 560,
+      "z": 1.15,
+      "dur": 2.5
+     },
+     "music": "tegang"
+    },
+    {
+     "who": "momo",
+     "say": "Ayo kita dorong! Hiiip!",
+     "tone": "bersemangat lalu mengejan",
+     "do": [
+      {
+       "who": "momo",
+       "to": "push",
+       "dur": 0.8,
+       "pose": "run",
+       "then": "stretch",
+       "expr": "brave"
+      }
+     ],
+     "cam": {
+      "x": 1050,
+      "y": 640,
+      "z": 1.7,
+      "dur": 1
+     }
+    },
+    {
+     "say": "Momo mendorong sekuat tenaga. Batu itu tidak bergerak sedikit pun. Cici ikut mendorong dengan sayapnya. Tetap tidak bergerak.",
+     "tone": "lucu, berat",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "stretch",
+       "expr": "worried"
+      },
+      {
+       "fx": "sweat",
+       "who": "momo",
+       "delay": 1.84
+      },
+      {
+       "who": "cici",
+       "to": [
+        1060,
+        660
+       ],
+       "dur": 1,
+       "pose": "fly",
+       "then": "fly",
+       "delay": 3.32
+      },
+      {
+       "who": "cici",
+       "expr": "dizzy",
+       "delay": 5.9
+      }
+     ],
+     "cam": {
+      "x": 1030,
+      "y": 660,
+      "z": 1.8,
+      "dur": 2
+     }
+    },
+    {
+     "who": "cici",
+     "say": "Hah… hah… batunya berat sekali!",
+     "tone": "terengah-engah, lucu",
+     "do": [
+      {
+       "who": "cici",
+       "pose": "idle",
+       "expr": "dizzy"
+      },
+      {
+       "who": "cici",
+       "to": "@helper:40,-180",
+       "dur": 1,
+       "pose": "fly",
+       "then": "fly",
+       "delay": 0.54
+      }
+     ],
+     "cam": {
+      "x": 980,
+      "y": 640,
+      "z": 1.7,
+      "dur": 1
+     }
+    },
+    {
+     "who": "kiko",
+     "say": "Biar aku coba! Badanku besar dan kuat!",
+     "tone": "percaya diri, bersemangat",
+     "do": [
+      {
+       "who": "kiko",
+       "pose": "hop",
+       "expr": "brave",
+       "then": "idle"
+      },
+      {
+       "fx": "sparkle",
+       "who": "kiko",
+       "delay": 1.03
+      }
+     ],
+     "cam": {
+      "x": 700,
+      "y": 640,
+      "z": 1.7,
+      "dur": 1
+     }
+    },
+    {
+     "say": "Kiko mendorong batu itu. Batunya bergeser sedikit… tapi kaki Kiko tergelincir di tanah yang licin.",
+     "tone": "tegang",
+     "do": [
+      {
+       "who": "momo",
+       "to": "helper",
+       "dur": 1,
+       "pose": "walk",
+       "then": "idle"
+      },
+      {
+       "who": "kiko",
+       "to": [
+        1000,
+        790
+       ],
+       "dur": 1.6,
+       "pose": "walk",
+       "then": "push"
+      },
+      {
+       "prop": "boulder",
+       "state": "nudge",
+       "delay": 2.83
+      },
+      {
+       "who": "kiko",
+       "pose": "scared",
+       "expr": "worried",
+       "delay": 4.72
+      },
+      {
+       "fx": "sweat",
+       "who": "kiko",
+       "delay": 4.91
+      }
+     ],
+     "cam": {
+      "x": 1050,
+      "y": 640,
+      "z": 1.5,
+      "dur": 2
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Aku punya ide! Kita kerjakan bersama-sama! Cici, cari bagian batu yang retak. Aku ganjal kaki Kiko dengan batu kecil.",
+     "tone": "berpikir lalu bersemangat",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "think",
+       "expr": "curious"
+      },
+      {
+       "fx": "exclaim",
+       "who": "momo",
+       "delay": 1.94
+      },
+      {
+       "who": "momo",
+       "pose": "point",
+       "expr": "brave",
+       "then": "idle",
+       "delay": 2.71
+      }
+     ],
+     "cam": {
+      "x": 920,
+      "y": 640,
+      "z": 1.6,
+      "dur": 1.5
+     }
+    },
+    {
+     "say": "Cici terbang memeriksa batu. Momo menaruh batu-batu kecil di belakang kaki Kiko, supaya tidak tergelincir.",
+     "tone": "tekun",
+     "do": [
+      {
+       "who": "cici",
+       "to": [
+        1250,
+        560
+       ],
+       "dur": 1.5,
+       "pose": "fly",
+       "then": "fly"
+      },
+      {
+       "who": "momo",
+       "to": [
+        880,
+        796
+       ],
+       "dur": 1,
+       "pose": "walk",
+       "then": "idle",
+       "delay": 2.83
+      },
+      {
+       "prop": "wedge",
+       "state": "pop",
+       "delay": 3.78
+      },
+      {
+       "fx": "sparkle",
+       "at": [
+        930,
+        780
+       ],
+       "delay": 4.09
+      }
+     ],
+     "cam": {
+      "x": 1050,
+      "y": 620,
+      "z": 1.4,
+      "dur": 2
+     }
+    },
+    {
+     "who": "cici",
+     "say": "Di sini! Dorong bagian kiri bawah!",
+     "tone": "memandu dengan lantang",
+     "do": [
+      {
+       "prop": "crack",
+       "state": "pop"
+      },
+      {
+       "who": "cici",
+       "pose": "hop",
+       "then": "fly"
+      }
+     ],
+     "cam": {
+      "x": 1200,
+      "y": 600,
+      "z": 1.6,
+      "dur": 1
+     }
+    },
+    {
+     "say": "Ayo kita bantu dengan berhitung! Satu… dua… tiga… dorong!",
+     "tone": "mengajak, makin keras dan bersemangat",
+     "do": [
+      {
+       "who": "kiko",
+       "pose": "push",
+       "expr": "brave",
+       "delay": 0.83
+      },
+      {
+       "who": "momo",
+       "pose": "cheer",
+       "then": "idle",
+       "delay": 1.24
+      },
+      {
+       "who": "cici",
+       "pose": "hop",
+       "then": "fly",
+       "delay": 2.07
+      },
+      {
+       "fx": "exclaim",
+       "who": "kiko",
+       "delay": 3.52
+      }
+     ],
+     "cam": {
+      "x": 1060,
+      "y": 640,
+      "z": 1.5,
+      "dur": 2
+     },
+     "music": "berani"
+    },
+    {
+     "say": "Kiko mendorong sekuat tenaga. Gruduk, gruduk… batu besar itu menggelinding ke samping. Jalan pun terbuka!",
+     "tone": "tegang lalu lega",
+     "do": [
+      {
+       "who": "kiko",
+       "pose": "push"
+      },
+      {
+       "prop": "boulder",
+       "state": "roll",
+       "delay": 1.89
+      },
+      {
+       "fx": "puff",
+       "at": [
+        1450,
+        780
+       ],
+       "delay": 3.15
+      },
+      {
+       "who": "kiko",
+       "pose": "jump",
+       "expr": "joy",
+       "then": "idle",
+       "delay": 4.72
+      }
+     ],
+     "cam": {
+      "x": 1350,
+      "y": 620,
+      "z": 1.25,
+      "dur": 3,
+      "shake": 6
+     },
+     "sfx": [
+      "thud",
+      "whoosh"
+     ]
+    },
+    {
+     "who": "momo",
+     "say": "Horeee! Kita berhasil karena bekerja sama!",
+     "tone": "gembira sekali",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "cheer",
+       "expr": "joy",
+       "then": "idle"
+      },
+      {
+       "who": "cici",
+       "pose": "hop",
+       "expr": "joy",
+       "then": "fly"
+      },
+      {
+       "fx": "sparkle",
+       "who": "momo",
+       "delay": 0.61
+      }
+     ],
+     "cam": {
+      "x": 1000,
+      "y": 620,
+      "z": 1.5,
+      "dur": 1
+     },
+     "music": "gembira"
+    },
+    {
+     "who": "kiko",
+     "say": "Ternyata badanku yang besar bisa berguna juga!",
+     "tone": "bangga dan haru",
+     "do": [
+      {
+       "who": "kiko",
+       "pose": "hop",
+       "expr": "joy",
+       "then": "idle"
+      },
+      {
+       "fx": "hearts",
+       "who": "kiko",
+       "delay": 1.03
+      }
+     ],
+     "cam": {
+      "x": 1040,
+      "y": 640,
+      "z": 1.8,
+      "dur": 1
+     }
+    },
+    {
+     "say": "Ayo kita pikirkan!",
+     "tone": "mengajak berpikir",
+     "ask": {
+      "type": "choice",
+      "q": "Kenapa batu besar itu bisa bergeser?",
+      "options": [
+       {
+        "id": "sama",
+        "label": "Bekerja sama",
+        "art": "team"
+       },
+       {
+        "id": "sendiri",
+        "label": "Sendiri-sendiri",
+        "art": "alone"
+       }
+      ],
+      "answer": "sama",
+      "praise": "Hebat! Kalau bekerja sama, yang sulit jadi bisa.",
+      "retry": "Ingat, tadi Momo, Cici, dan Kiko melakukannya bagaimana?"
+     },
+     "cam": {
+      "x": 1000,
+      "y": 620,
+      "z": 1.4,
+      "dur": 1
+     }
+    }
+   ],
+   "set": "tebing",
+   "grade": "dawn",
+   "weather": "motes",
+   "music": "ceria",
+   "ambience": "angin",
+   "props": {
+    "momo.scarf": "on",
+    "momo.pack": "on",
+    "wedge": "hidden",
+    "crack": "hidden",
+    "trackA": "hidden",
+    "trackB": "hidden",
+    "trackC": "hidden",
+    "trackD": "hidden",
+    "trackE": "hidden"
+   },
+   "cast": [
+    {
+     "id": "momo",
+     "at": "start",
+     "face": "r",
+     "pose": "walk",
+     "expr": "happy"
+    },
+    {
+     "id": "cici",
+     "at": "@start:80,-180",
+     "face": "r",
+     "pose": "fly",
+     "expr": "happy"
+    },
+    {
+     "id": "kiko",
+     "at": "@start:-240,0",
+     "face": "r",
+     "pose": "walk",
+     "expr": "happy"
+    }
+   ],
+   "cam": {
+    "x": 500,
+    "y": 600,
+    "z": 1.3
+   }
+  },
+  {
+   "id": "s5",
+   "name": "Jejak Huruf",
+   "beats": [
+    {
+     "say": "Di balik batu, ada tanah lembut yang basah. Di atasnya ada banyak jejak kaki hewan.",
+     "tone": "penasaran",
+     "do": [
+      {
+       "who": "momo",
+       "to": [
+        1720,
+        800
+       ],
+       "dur": 2,
+       "pose": "walk",
+       "then": "idle"
+      },
+      {
+       "who": "kiko",
+       "to": [
+        1500,
+        792
+       ],
+       "dur": 2.4,
+       "pose": "walk",
+       "then": "idle"
+      },
+      {
+       "who": "momo",
+       "look": "down",
+       "delay": 3.15
+      }
+     ],
+     "cam": {
+      "x": 2100,
+      "y": 680,
+      "z": 1.35,
+      "dur": 5
+     }
+    },
+    {
+     "who": "cici",
+     "say": "Lihat! Jejak-jejak ini bentuknya seperti huruf!",
+     "tone": "takjub",
+     "do": [
+      {
+       "who": "cici",
+       "pose": "hop",
+       "expr": "surprised",
+       "then": "fly"
+      },
+      {
+       "fx": "exclaim",
+       "who": "cici",
+       "delay": 0.31
+      }
+     ],
+     "cam": {
+      "x": 2050,
+      "y": 640,
+      "z": 1.5,
+      "dur": 1
+     }
+    },
+    {
+     "say": "Jejak pertama berbentuk seperti atap rumah dengan garis di tengah. Itu huruf A! A untuk Ayam.",
+     "tone": "menjelaskan dengan riang, tegas di huruf",
+     "do": [
+      {
+       "prop": "trackA",
+       "state": "pop",
+       "delay": 2.66
+      },
+      {
+       "fx": "sparkle",
+       "at": "mudA",
+       "delay": 3.0
+      }
+     ],
+     "cam": {
+      "x": 1880,
+      "y": 760,
+      "z": 2,
+      "dur": 2
+     }
+    },
+    {
+     "say": "Lalu ada huruf B, seperti dua perut yang gendut. B untuk Bebek, seperti Dodo!",
+     "tone": "lucu dan riang",
+     "do": [
+      {
+       "prop": "trackB",
+       "state": "pop",
+       "delay": 0.89
+      },
+      {
+       "fx": "sparkle",
+       "at": "mudB",
+       "delay": 1.19
+      }
+     ],
+     "cam": {
+      "x": 2000,
+      "y": 760,
+      "z": 2,
+      "dur": 1.5
+     }
+    },
+    {
+     "say": "Huruf C melengkung seperti bulan sabit. C untuk Cici!",
+     "tone": "riang",
+     "do": [
+      {
+       "prop": "trackC",
+       "state": "pop",
+       "delay": 0.62
+      },
+      {
+       "fx": "sparkle",
+       "at": "mudC",
+       "delay": 0.83
+      }
+     ],
+     "cam": {
+      "x": 2140,
+      "y": 760,
+      "z": 2,
+      "dur": 1.5
+     }
+    },
+    {
+     "who": "cici",
+     "say": "Wah, ada huruf namaku!",
+     "tone": "bangga, girang",
+     "do": [
+      {
+       "who": "cici",
+       "pose": "hop",
+       "expr": "joy",
+       "then": "fly"
+      },
+      {
+       "fx": "hearts",
+       "who": "cici",
+       "delay": 0.47
+      }
+     ],
+     "cam": {
+      "x": 1900,
+      "y": 620,
+      "z": 1.8,
+      "dur": 1
+     }
+    },
+    {
+     "say": "Huruf D seperti perut buncit yang menghadap ke kanan. D untuk Domba.",
+     "tone": "riang",
+     "do": [
+      {
+       "prop": "trackD",
+       "state": "pop",
+       "delay": 0.78
+      },
+      {
+       "fx": "sparkle",
+       "at": "mudD",
+       "delay": 1.04
+      }
+     ],
+     "cam": {
+      "x": 2280,
+      "y": 760,
+      "z": 2,
+      "dur": 1.5
+     }
+    },
+    {
+     "say": "Dan huruf E punya tiga garis seperti sisir. E untuk Elang.",
+     "tone": "riang",
+     "do": [
+      {
+       "prop": "trackE",
+       "state": "pop",
+       "delay": 1.22
+      },
+      {
+       "fx": "sparkle",
+       "at": "mudE",
+       "delay": 1.46
+      }
+     ],
+     "cam": {
+      "x": 2400,
+      "y": 760,
+      "z": 2,
+      "dur": 1.5
+     }
+    },
+    {
+     "who": "kiko",
+     "say": "Huruf namaku apa, ya?",
+     "tone": "penasaran dan polos",
+     "do": [
+      {
+       "who": "kiko",
+       "pose": "talk",
+       "expr": "curious",
+       "then": "idle"
+      },
+      {
+       "fx": "question",
+       "who": "kiko",
+       "delay": 0.47
+      }
+     ],
+     "cam": {
+      "x": 1560,
+      "y": 640,
+      "z": 1.9,
+      "dur": 1.5
+     }
+    },
+    {
+     "say": "Ayo bantu Kiko!",
+     "tone": "mengajak",
+     "ask": {
+      "type": "choice",
+      "q": "Nama Kiko dimulai dengan huruf apa?",
+      "options": [
+       {
+        "id": "k",
+        "label": "K",
+        "art": "letterK"
+       },
+       {
+        "id": "a",
+        "label": "A",
+        "art": "letterA"
+       }
+      ],
+      "answer": "k",
+      "praise": "Betul! Kiko dimulai dengan huruf K.",
+      "retry": "Coba ucapkan pelan-pelan: Ki-ko. Bunyinya ka, kan?"
+     },
+     "cam": {
+      "x": 2050,
+      "y": 700,
+      "z": 1.35,
+      "dur": 1
+     }
+    },
+    {
+     "say": "Ayo kita ulangi bersama! A, B, C, D, E!",
+     "tone": "riang dan berirama, jeda di tiap huruf",
+     "do": [
+      {
+       "fx": "sparkle",
+       "at": "mudA",
+       "delay": 0.83
+      },
+      {
+       "fx": "sparkle",
+       "at": "mudB",
+       "delay": 1.45
+      },
+      {
+       "fx": "sparkle",
+       "at": "mudC",
+       "delay": 2.07
+      },
+      {
+       "fx": "sparkle",
+       "at": "mudD",
+       "delay": 2.69
+      },
+      {
+       "fx": "sparkle",
+       "at": "mudE",
+       "delay": 3.31
+      },
+      {
+       "who": "momo",
+       "pose": "clap",
+       "expr": "joy",
+       "then": "idle",
+       "delay": 1.24
+      }
+     ],
+     "cam": {
+      "x": 2110,
+      "y": 740,
+      "z": 1.5,
+      "dur": 2
+     }
+    },
+    {
+     "say": "Sekarang tebak lagi!",
+     "tone": "riang",
+     "ask": {
+      "type": "choice",
+      "q": "Huruf mana yang untuk Cici?",
+      "options": [
+       {
+        "id": "c",
+        "label": "C",
+        "art": "letterC"
+       },
+       {
+        "id": "e",
+        "label": "E",
+        "art": "letterE"
+       }
+      ],
+      "answer": "c",
+      "praise": "Pintar! C untuk Cici.",
+      "retry": "Ingat, huruf C melengkung seperti bulan sabit."
+     },
+     "cam": {
+      "x": 2110,
+      "y": 740,
+      "z": 1.5,
+      "dur": 1
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Belajar huruf ternyata seru, ya!",
+     "tone": "senang",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "cheer",
+       "expr": "joy",
+       "then": "idle"
+      },
+      {
+       "who": "kiko",
+       "pose": "hop",
+       "expr": "joy",
+       "then": "idle",
+       "delay": 0.54
+      },
+      {
+       "who": "cici",
+       "pose": "hop",
+       "then": "fly",
+       "delay": 0.54
+      }
+     ],
+     "cam": {
+      "x": 1800,
+      "y": 640,
+      "z": 1.3,
+      "dur": 1.5
+     }
+    }
+   ],
+   "set": "tebing",
+   "grade": "day",
+   "weather": "motes",
+   "music": "penasaran",
+   "ambience": "angin",
+   "props": {
+    "momo.scarf": "on",
+    "momo.pack": "on",
+    "boulder": "hidden",
+    "wedge": "hidden",
+    "crack": "hidden",
+    "trackA": "hidden",
+    "trackB": "hidden",
+    "trackC": "hidden",
+    "trackD": "hidden",
+    "trackE": "hidden"
+   },
+   "cast": [
+    {
+     "id": "momo",
+     "at": "pass",
+     "face": "r",
+     "pose": "walk",
+     "expr": "curious"
+    },
+    {
+     "id": "cici",
+     "at": "@pass:80,-190",
+     "face": "r",
+     "pose": "fly",
+     "expr": "curious"
+    },
+    {
+     "id": "kiko",
+     "at": "@pass:-260,0",
+     "face": "r",
+     "pose": "walk",
+     "expr": "happy"
+    }
+   ],
+   "cam": {
+    "x": 1800,
+    "y": 620,
+    "z": 1.3
+   }
+  },
+  {
+   "id": "s6",
+   "name": "Kabut di Kejauhan",
+   "beats": [
+    {
+     "say": "Mereka berjalan lagi bertiga. Momo di depan, Cici terbang di atas, dan Kiko di belakang menjaga mereka.",
+     "tone": "hangat, berirama",
+     "do": [
+      {
+       "who": "momo",
+       "to": "mid",
+       "dur": 6,
+       "pose": "walk",
+       "then": "idle"
+      },
+      {
+       "who": "kiko",
+       "to": [
+        640,
+        770
+       ],
+       "dur": 6,
+       "pose": "walk",
+       "then": "idle"
+      },
+      {
+       "who": "cici",
+       "to": "@mid:40,-220",
+       "dur": 6,
+       "pose": "fly",
+       "then": "fly"
+      }
+     ],
+     "cam": {
+      "follow": "momo",
+      "z": 1.25,
+      "dur": 6
+     }
+    },
+    {
+     "who": "kiko",
+     "say": "Momo, Cici… terima kasih sudah mau berteman denganku, walau aku kikuk.",
+     "tone": "tulus dan haru",
+     "do": [
+      {
+       "who": "kiko",
+       "pose": "talk",
+       "expr": "happy",
+       "then": "idle"
+      },
+      {
+       "who": "momo",
+       "face": "l",
+       "delay": 0.97
+      }
+     ],
+     "cam": {
+      "x": 760,
+      "y": 620,
+      "z": 1.7,
+      "dur": 1.5
+     }
+    },
+    {
+     "who": "momo",
+     "say": "Kikuk tidak apa-apa, Kiko. Setiap teman punya kelebihan. Kamu kuat, Cici bermata tajam, dan aku…",
+     "tone": "hangat lalu bingung lucu",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "talk",
+       "expr": "happy",
+       "then": "idle"
+      },
+      {
+       "who": "momo",
+       "expr": "curious",
+       "pose": "think",
+       "delay": 4.73
+      },
+      {
+       "fx": "question",
+       "who": "momo",
+       "delay": 5.35
+      }
+     ],
+     "cam": {
+      "x": 800,
+      "y": 620,
+      "z": 1.6,
+      "dur": 2
+     }
+    },
+    {
+     "who": "cici",
+     "say": "Dan kamu pemberani, Momo!",
+     "tone": "riang",
+     "do": [
+      {
+       "who": "cici",
+       "pose": "hop",
+       "expr": "joy",
+       "then": "fly"
+      },
+      {
+       "who": "momo",
+       "expr": "joy",
+       "delay": 0.94
+      }
+     ],
+     "cam": {
+      "x": 860,
+      "y": 580,
+      "z": 1.6,
+      "dur": 1
+     }
+    },
+    {
+     "say": "Mereka tertawa bersama. Hahaha!",
+     "tone": "riang",
+     "do": [
+      {
+       "who": "momo",
+       "pose": "cheer",
+       "expr": "joy",
+       "then": "idle"
+      },
+      {
+       "who": "kiko",
+       "pose": "hop",
+       "expr": "joy",
+       "then": "idle"
+      },
+      {
+       "fx": "notes",
+       "who": "kiko",
+       "delay": 0.47
+      }
+     ],
+     "cam": {
+      "x": 800,
+      "y": 620,
+      "z": 1.5,
+      "dur": 1
+     },
+     "music": "gembira"
+    },
+    {
+     "say": "Sore itu, mereka sampai di puncak jalan. Di kejauhan, terlihat bukit tinggi yang diselimuti kabut putih tebal.",
+     "tone": "takjub, pelan",
+     "do": [
+      {
+       "who": "momo",
+       "to": "edge",
+       "dur": 4,
+       "pose": "walk",
+       "then": "idle",
+       "face": "r"
+      },
+      {
+       "who": "kiko",
+       "to": "top",
+       "dur": 4,
+       "pose": "walk",
+       "then": "idle",
+       "face": "r"
+      },
+      {
+       "who": "cici",
+       "to": "@edge:40,-200",
+       "dur": 4,
+       "pose": "fly",
+       "then": "fly"
+      }
+     ],
+     "cam": {
+      "x": 1700,
+      "y": 420,
+      "z": 1.0,
+      "dur": 9
+     },
+     "grade": "dusk",
+     "music": "penasaran"
+    },
+    {
+     "who": "momo",
+     "say": "Itu dia… Bukit Kabut!",
+     "tone": "takjub, berbisik",
+     "do": [
+      {
+       "who": "momo",
+       "expr": "surprised",
+       "look": "r"
+      }
+     ],
+     "cam": {
+      "x": 1650,
+      "y": 560,
+      "z": 1.6,
+      "dur": 1
+     }
+    },
+    {
+     "say": "Kabutnya tebal dan dingin. Tidak ada yang tahu apa yang ada di baliknya.",
+     "tone": "misterius",
+     "cam": {
+      "x": 1800,
+      "y": 420,
+      "z": 1.05,
+      "dur": 6
+     }
+    },
+    {
+     "who": "kiko",
+     "say": "Kabutnya putih sekali… seperti kapas raksasa. Kita bisa tersesat di sana.",
+     "tone": "cemas",
+     "do": [
+      {
+       "who": "kiko",
+       "expr": "worried",
+       "pose": "scared",
+       "then": "idle"
+      }
+     ],
+     "cam": {
+      "x": 1360,
+      "y": 620,
+      "z": 1.7,
+      "dur": 1.5
+     }
+    },
+    {
+     "say": "Tiba-tiba, terdengar suara dari pohon tua. Huu… huu…",
+     "tone": "misterius, huu diucapkan berat",
+     "do": [
+      {
+       "who": "momo",
+       "look": "r",
+       "expr": "worried"
+      },
+      {
+       "who": "kiko",
+       "look": "r",
+       "expr": "scared",
+       "delay": 1.13
+      },
+      {
+       "who": "cici",
+       "expr": "scared",
+       "delay": 1.13
+      },
+      {
+       "fx": "question",
+       "who": "momo",
+       "delay": 2.27
+      }
+     ],
+     "cam": {
+      "x": 1900,
+      "y": 520,
+      "z": 1.3,
+      "dur": 4
+     },
+     "music": "misteri",
+     "ambience": "malam"
+    },
+    {
+     "say": "Sepasang mata bulat besar menyala di balik daun. Siapakah dia? Kita lanjutkan di cerita berikutnya.",
+     "tone": "misterius, menutup bab dengan penasaran",
+     "do": [
+      {
+       "prop": "eyes",
+       "state": "pop",
+       "delay": 0.94
+      },
+      {
+       "who": "momo",
+       "pose": "scared",
+       "expr": "scared",
+       "delay": 1.26
+      },
+      {
+       "who": "cici",
+       "pose": "hide",
+       "delay": 1.26
+      },
+      {
+       "who": "kiko",
+       "pose": "scared",
+       "delay": 1.26
+      }
+     ],
+     "cam": {
+      "x": 2150,
+      "y": 470,
+      "z": 2.2,
+      "dur": 4
+     }
+    }
+   ],
+   "set": "puncak",
+   "grade": "day",
+   "weather": "motes",
+   "music": "haru",
+   "ambience": "angin",
+   "props": {
+    "momo.scarf": "on",
+    "momo.pack": "on",
+    "eyes": "hidden"
+   },
+   "cast": [
+    {
+     "id": "momo",
+     "at": "start",
+     "face": "r",
+     "pose": "walk",
+     "expr": "happy"
+    },
+    {
+     "id": "cici",
+     "at": "@start:60,-200",
+     "face": "r",
+     "pose": "fly",
+     "expr": "happy"
+    },
+    {
+     "id": "kiko",
+     "at": "@start:-260,0",
+     "face": "r",
+     "pose": "walk",
+     "expr": "happy"
+    }
+   ],
+   "cam": {
+    "x": 400,
+    "y": 600,
+    "z": 1.3
+   }
+  }
+ ]
+}

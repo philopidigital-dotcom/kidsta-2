@@ -1,0 +1,18 @@
+node_modules/
+dist/
+dist-single/
+.vercel/
+.env
+.env.*
+archive/
+archives/
+Arsip/
+dev/
+Suara Narator/
+tools/suara/
+**/kunci*
+**/mentah/
+**/__pycache__/
+*.wav
+*.zip
+*.log
